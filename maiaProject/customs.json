@@ -1,0 +1,13 @@
+{
+    "elements": {
+        "p": {}
+    },
+    "attributes": {
+        "clear": {
+            "context": "input"
+        },
+        "placeholder": {
+            "context": "input"
+        }
+    }
+}
