@@ -28,6 +28,10 @@
         <servlet-name>Login</servlet-name>
         <servlet-class>Servlet.Login</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>LoginAdm</servlet-name>
+        <servlet-class>Servlet.LoginAdm</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>CadastroAluno</servlet-name>
         <url-pattern>/CadastroAluno</url-pattern>
@@ -36,7 +40,7 @@
         <servlet-name>Login</servlet-name>
         <url-pattern>/Login</url-pattern>
     </servlet-mapping>
-        <servlet-mapping>
+    <servlet-mapping>
         <servlet-name>ListaAluno</servlet-name>
         <url-pattern>/ListaAluno</url-pattern>
     </servlet-mapping>
@@ -52,20 +56,22 @@
         <servlet-name>AtualizaAluno</servlet-name>
         <url-pattern>/AtualizaAluno</url-pattern>
     </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LoginAdm</servlet-name>
+        <url-pattern>/LoginAdm</url-pattern>
+    </servlet-mapping>
     <session-config>
-       
         <session-timeout>
             30
         </session-timeout>
     </session-config>
-  
     <jsp-config>
         <taglib>
             <taglib-uri>http://displaytag.sf.net</taglib-uri>
             <taglib-location>/WEB-INF/displaytag-1.2.tld</taglib-location>
         </taglib>
     </jsp-config>
-     <welcome-file-list>
+    <welcome-file-list>
         <welcome-file>index.jsp</welcome-file>
     </welcome-file-list>
 </web-app>
