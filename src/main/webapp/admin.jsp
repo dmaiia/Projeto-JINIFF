@@ -1,10 +1,16 @@
+<%-- 
+    Document   : admin
+    Created on : 06/09/2016, 11:46:00
+    Author     : aluno
+--%>
+
 <!DOCTYPE html>
 <html>
 <head>
 
-    <title>Jogos Internos</title>
+    <title>Bem vindo!</title>
 	
-    <link rel="stylesheet" href="style.css" type="text/css" /> 
+    <link rel="stylesheet" href="admin.css" type="text/css" /> 
 
 	
 </head>
@@ -12,26 +18,11 @@
 	<image src = "Imagens/logoiff.gif" id ="logoIFF" />
 	<image src = "Imagens/jogos_internos.png" id = "logoJogos"/>
 
-
-
-	<div id = "login">
-            <a href="http://localhost:8080/maiaProject/login.jsp">
-                <p><strong> Login </strong></p>
-            </a>
-        </div>
-        
-        <div id = "logi">
-            <a href="http://localhost:8080/maiaProject/adminlogin.jsp">
-                <p><strong> Login Admin</strong></p>
-            </a>
-        </div>
-
-
-		
+	
 
 	<nav>
   <ul class="menu">
-        <li><a href="#"><strong>HOME</strong></a></li>
+        <li><a href="http://localhost:8080/maiaProject/index.jsp"><strong>HOME</strong></a></li>
         <li><a href="#"><strong>SOBRE</strong></a></li>
             <li><a href="#"><strong>MENU</strong></a>
                 <ul>
@@ -46,18 +37,19 @@
   </ul>
 </nav>
 		
-
-
-	<image src = "Imagens/central2.jpg" id = "logoCentral" />
-		
+        <h1> Bem vindo Adm! </h1>
+        <h3> Aproveite os recursos do site. </h3>
+        
+        <input class="botão" type="submit" value="Outros usuários" onClick="window.open('ListaAluno')" />
+	
 	
 	<div id = "inferior">
 	
-	<image src = "Imagens/facebook.png" id ="facebook" />
+            <a href="https://www.facebook.com/"> <image src = "Imagens/facebook.png" id ="facebook"  /> </a>
 	<br>
-	<image src = "Imagens/twitter.png" id ="twitter" />
+        <a href="https://twitter.com/"><image src = "Imagens/twitter.png" id ="twitter" /> </a>
 	</br>
-	<image src = "Imagens/instagram.png" id ="instagram" />
+        <a href="https://instagram.com/"><image src = "Imagens/instagram.png" id ="instagram" /> </a>
 	<br>
 	
 
@@ -65,4 +57,3 @@
 
 	</div>
 </html>
-

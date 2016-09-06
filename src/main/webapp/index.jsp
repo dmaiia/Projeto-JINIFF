@@ -16,7 +16,13 @@
 
 	<div id = "login">
             <a href="http://localhost:8080/maiaProject/login.jsp">
-                <p><strong> Log in </strong></p>
+                <p><strong> Login </strong></p>
+            </a>
+        </div>
+        
+        <div id = "logi">
+            <a href="http://localhost:8080/maiaProject/adminlogin.jsp">
+                <p><strong> Login Admin</strong></p>
             </a>
         </div>
 
