@@ -15,13 +15,13 @@
 
 
 	<div id = "login">
-            <a href="http://localhost:8080/maiaProject/login.jsp">
+            <a href="login.jsp">
                 <p><strong> Login </strong></p>
             </a>
         </div>
         
         <div id = "logi">
-            <a href="http://localhost:8080/maiaProject/adminlogin.jsp">
+            <a href="adminlogin.jsp">
                 <p><strong> Login Admin</strong></p>
             </a>
         </div>
@@ -42,7 +42,7 @@
             </li>
         <li><a href="#"><strong>CORDENADORES</strong></a></li>
         <li><a href="#"><strong>CONTATO</strong></a></li> 
-        <li><a href="http://localhost:8080/maiaProject/cadastro.jsp"><strong>CADASTRO</strong></a></li>
+        <li><a href="cadastro.jsp"><strong>CADASTRO</strong></a></li>
   </ul>
 </nav>
 		

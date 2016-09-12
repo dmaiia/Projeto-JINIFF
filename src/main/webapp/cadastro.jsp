@@ -22,7 +22,7 @@
 
     <nav>
         <ul class="menu">
-            <li><a href="http://localhost:8080/maiaProject/index.jsp"><strong>HOME</strong></a></li>
+            <li><a href="index.jsp"><strong>HOME</strong></a></li>
             <li><a href="#"><strong>SOBRE</strong></a></li>
             <li><a href="#"><strong>MENU</strong></a>
                 <ul>

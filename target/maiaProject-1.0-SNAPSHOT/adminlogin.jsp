@@ -22,7 +22,7 @@
 
 	<fieldset>
             <p> LOG IN ADMIN </p>
-		<form action="Login" method="post">
+		<form action="LoginAdm" method="post">
 		<div class="acomodar">
 		<label> 
 			<input type="email" value="" name="email" required="required" placeholder= "Email" />
