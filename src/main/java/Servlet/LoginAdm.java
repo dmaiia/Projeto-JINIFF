@@ -46,7 +46,7 @@ public class LoginAdm extends HttpServlet {
                 response.sendRedirect("errologin.jsp"); //error page
             } else {
                 session.setAttribute("currentSessionUser", user);
-                response.sendRedirect("adminlogin.jsp"); //logged-in page             
+                response.sendRedirect("admin.jsp"); //logged-in page             
             }
         } catch (Throwable theException) {
             System.out.println(theException);
