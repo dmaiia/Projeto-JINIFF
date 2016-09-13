@@ -16,7 +16,7 @@
 
 	<nav>
   <ul class="menu">
-        <li><a href="index.jsp"><strong>HOME</strong></a></li>
+        <li><a href="home.jsp"><strong>HOME</strong></a></li>
         <li><a href="#"><strong>SOBRE</strong></a></li>
             <li><a href="#"><strong>MENU</strong></a>
                 <ul>
@@ -26,15 +26,15 @@
                 </ul>
             </li>
         <li><a href="#"><strong>CORDENADORES</strong></a></li>
-        <li><a href="#"><strong>CONTATO</strong></a></li> 
-        <li><a href="cadastro.jsp"><strong>CADASTRO</strong></a></li>
+        <li><a href="#"><strong>CONTATO</strong></a></li>
+        
   </ul>
 </nav>
 		
         <h1> Bem vindo! </h1>
         <h3> Aproveite os recursos do site. </h3>
         
-        <input type="submit" value="Outros usuários" onClick="window.open('ListaAluno')" />
+        
 	
 	
 	<div id = "inferior">
