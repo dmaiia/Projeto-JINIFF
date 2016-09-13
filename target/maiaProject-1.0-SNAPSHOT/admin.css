@@ -28,29 +28,29 @@
 
 
 				/* BOTÃO DE LOGIN */
-#login{
+.botao{
         float: right;
         width:10%;
         height:10%;
         margin-top: 3%;
         margin-right: 5%;
-        border: gray solid 0.5px; 
+        border: #A9A9A9 solid 3px; 
         cursor: pointer;
-        border-radius: 5px 5px 5px 5px;
+        border-radius: 2px 2px 2px 2px;
 }
-#login:hover{background-color:  #333;}
+.botao:hover{background-color:  #333;}
 
-#login p:hover{color: white;}
+.botao p:hover{color: white;}
 
-#login a{color: white;}
+.botao a{color: white;}
 
-#login a:hover{color: transparent;}
+.botao a:hover{color: transparent;}
 
-#login p{
+.botao p{
         text-align: center;
         font-family: Cursive;
         font-size: 150%;
-        color: gray;
+        color: #A9A9A9;
         padding: 10px;
 }
 
