@@ -13,8 +13,8 @@ import javax.servlet.http.HttpSession;
  *
  * @author aluno
  */
-@WebServlet(name = "LogOut", urlPatterns = {"/LogOut"})
-public class LogOut extends HttpServlet {
+@WebServlet(name = "LogOutAdmin", urlPatterns = {"/LogOutAdmin"})
+public class LogOutAdmin extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -30,7 +30,7 @@ public class LogOut extends HttpServlet {
 
         HttpSession session = request.getSession(true);
         session.invalidate();
-        response.sendRedirect("login.jsp");
+        response.sendRedirect("adminlogin.jsp");
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

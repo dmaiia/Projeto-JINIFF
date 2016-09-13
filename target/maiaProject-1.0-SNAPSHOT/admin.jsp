@@ -4,7 +4,21 @@
     Author     : aluno
 --%>
 
+<%@page import="Entidade.Admin"%>
 <!DOCTYPE html>
+
+<%
+response.setHeader("Cache-Control", "no-cache"); //Forces caches to obtain a new copy of the page from the origin server
+    response.setHeader("Cache-Control", "no-store"); //Directs caches not to store the page under any circumstance
+    response.setDateHeader("Expires", 0); //Causes the proxy cache to see the page as "stale"
+    response.setHeader("Pragma", "no-cache"); //HTTP 1.0 backward compatibility
+    Admin admin = (Admin) session.getAttribute("currentSessionUser");
+    if (null == admin) {
+        request.setAttribute("Error", "Sessao finalizada. Por favor, faça seu login.");
+        RequestDispatcher rd = request.getRequestDispatcher("adminlogin.jsp");
+        rd.forward(request, response);
+    }
+%>
 <html>
 <head>
 
@@ -18,7 +32,9 @@
 	<image src = "Imagens/logoiff.gif" id ="logoIFF" />
 	<image src = "Imagens/jogos_internos.png" id = "logoJogos"/>
 
-	
+	<form action="LogOutAdmin" method="post">
+            <input type="submit" class="botao" value="Sair">
+        </form>
 
 	<nav>
   <ul class="menu">
@@ -38,7 +54,7 @@
   </ul>
 </nav>
 		
-        <h1> Bem vindo Adm! </h1>
+        <h1> Bem vindo Administrador! </h1>
         <h3> Aproveite os recursos do site. </h3>
         
 	
