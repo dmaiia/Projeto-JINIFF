@@ -30,7 +30,7 @@ public class LogOut extends HttpServlet {
 
         HttpSession session = request.getSession(true);
         session.invalidate();
-        response.sendRedirect("index.jsp");
+        response.sendRedirect("login.jsp");
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
