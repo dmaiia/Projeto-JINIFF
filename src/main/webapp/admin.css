@@ -26,7 +26,31 @@
 	background: -moz-linear-gradient(right, black, white);
 }
 
+.botão{
+        float: right;
+        width:10%;
+        height:10%;
+        margin-top: 3%;
+        margin-right: 5%;
+        border: #A9A9A9 solid 3px; 
+        cursor: pointer;
+        border-radius: 2px 2px 2px 2px;
+}
+.botão:hover{background-color:  #333;}
 
+.botão p:hover{color: white;}
+
+.botão a{color: white;}
+
+.botão a:hover{color: transparent;}
+
+.botão p{
+        text-align: center;
+        font-family: Cursive;
+        font-size: 150%;
+        color: #A9A9A9;
+        padding: 10px;
+}
 				/* BOTÃO DE LOGIN */
 .botao{
         float: right;

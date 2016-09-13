@@ -33,7 +33,7 @@ response.setHeader("Cache-Control", "no-cache"); //Forces caches to obtain a new
 	<image src = "Imagens/jogos_internos.png" id = "logoJogos"/>
 
 	<form action="LogOutAdmin" method="post">
-            <input type="submit" class="botao" value="Sair">
+            <input type="submit" class="botão" value="Sair"/>
         </form>
 
 	<nav>
