@@ -1,7 +1,6 @@
 package Hibernate;
 
 import Entidade.Admin;
-import Entidade.Aluno;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.AnnotationConfiguration;

@@ -19,7 +19,42 @@ public class AdminDAO {
     * @return retorna o código gerado
     */
   
-   
+    /**
+     * Este metodo adiciona um aluno ao Banco de Dados
+     * @param adm
+     * @param email
+     * @param senha
+     * @param aluno um objeto ja preenchido da classe aluno
+     * @return retorna o código gerado
+     * 
+     */
+     public boolean addAdmin(Admin adm){
+      Session session = HibernateUtil.abrirSessaoComBD();
+      Transaction tx = null;
+      boolean foi = false;
+      String admID = null;
+      
+      try{
+         tx = session.beginTransaction();
+         
+         admID = (String)session.save(adm); 
+         tx.commit();
+      }catch (HibernateException e) {
+         if (admID!=null){ tx.rollback();
+         e.printStackTrace(); 
+            } throw e;
+         
+     
+      }finally {
+         session.close(); 
+      }
+      
+       if(admID!= null){
+          foi = true;
+      }
+      
+      return foi;
+   }
     public Admin login(String email, String senha) {
         Session session = HibernateUtil.abrirSessaoComBD();
         Admin Admin = null;
@@ -28,10 +63,27 @@ public class AdminDAO {
                     .createQuery("from Admin where email= :email and senha= :senha")
                     .setString("email", email).setString("senha", senha).uniqueResult();
         } catch (HibernateException he) {
-            he.printStackTrace();
         }
         return Admin;
     }
+    public List<Admin> listaAdmin( ){
+      Session session = HibernateUtil.abrirSessaoComBD();
+      Transaction tx = null;
+      List <Admin> admins = null;
+      try{
+         tx = session.beginTransaction();
+        List<Admin> result = (List<Admin>) session.createQuery("from Admin").list();        
+         tx.commit();
+         
+      }catch (HibernateException e) {
+         if (tx!=null) tx.rollback();
+          e.printStackTrace();
+         
+      }finally {
+         session.close(); 
+      }
+      return admins;
+   }
 
    public List<Aluno> listaAluno( ){
       Session session = HibernateUtil.abrirSessaoComBD();

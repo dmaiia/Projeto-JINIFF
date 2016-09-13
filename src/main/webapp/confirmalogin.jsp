@@ -48,7 +48,7 @@ response.setHeader("Cache-Control", "no-cache"); //Forces caches to obtain a new
             </li>
         <li><a href="#"><strong>CORDENADORES</strong></a></li>
         <li><a href="#"><strong>CONTATO</strong></a></li> 
-        <li><a href="http://localhost:8080/maiaProject/cadastro.jsp"><strong>CADASTRO</strong></a></li>
+        <li><a href="cadastro.jsp"><strong>CADASTRO</strong></a></li>
   </ul>
 </nav>
 		
