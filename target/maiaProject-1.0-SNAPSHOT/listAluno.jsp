@@ -15,29 +15,20 @@
         <title>Lista</title>
     </head>
     <body>
+        <form action="LogOut" method="post">
+
         <image src = "Imagens/logoiff.gif" id ="logoIFF" />
 	<image src = "Imagens/jogos_internos.png" id = "logoJogos"/>
 
+ <input type="submit" class="botao" value="Sair">
 
-
-	<div id = "login">
-            <a href="login.jsp">
-                <p><strong> Login </strong></p>
-            </a>
-        </div>
-        
-        <div id = "logi">
-            <a href="adminlogin.jsp">
-                <p><strong> Login Admin</strong></p>
-            </a>
-        </div>
-
+	
 
 		
 
 	<nav>
   <ul class="menu">
-        <li><a href="home.jsp"><strong>HOME</strong></a></li>
+        <li><a href="homeadm.jsp"><strong>HOME</strong></a></li>
         <li><a href="#"><strong>SOBRE</strong></a></li>
             <li><a href="#"><strong>MENU</strong></a>
                 <ul>
@@ -62,8 +53,8 @@
         <display:column property="ano" />
         <display:column property="numero" />
         <display:column property="senha" />
-        <display:column title="Editar" href="CarregaAluno" paramId="email" paramProperty="email"><img src="lixei.png"  title="Atualizar"/></display:column>
-        <display:column title="Deletar" href="DeletaAluno" paramId="email" paramProperty="email"><img src="atuali.png" title="Apagar"/></display:column>
+        <display:column title="Editar" href="CarregaAluno" paramId="email" paramProperty="email"><img src="delete.png"  title="Atualizar"/></display:column>
+        <display:column title="Deletar" href="DeletaAluno" paramId="email" paramProperty="email"><img src="edit.png" title="Apagar"/></display:column>
     </display:table>
 
 		
@@ -80,5 +71,6 @@
 
     
 <br/>
+        </form>
     </body>
 </html>

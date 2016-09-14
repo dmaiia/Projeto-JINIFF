@@ -4,7 +4,7 @@
 
     <title>Jogos Internos</title>
 	
-    <link rel="stylesheet" href="Home.css" type="text/css" /> 
+    <link rel="stylesheet" href="homeadm.css" type="text/css" /> 
 
 	
 </head>
@@ -17,7 +17,7 @@
 
 	<nav>
   <ul class="menu">
-        <li><a href="#"><strong>HOME</strong></a></li>
+        <li><a href="homeadm.jsp"><strong>HOME</strong></a></li>
         <li><a href="#"><strong>SOBRE</strong></a></li>
             <li><a href="#"><strong>MENU</strong></a>
                 <ul>
@@ -28,7 +28,8 @@
             </li>
         <li><a href="#"><strong>CORDENADORES</strong></a></li>
         <li><a href="#"><strong>CONTATO</strong></a></li> 
-        
+                       <li><a href="ListaAluno"><strong>LISTA DE USUÁRIOS</strong></a></li>
+
         
   </ul>
 </nav>
@@ -53,4 +54,5 @@
 
 	</div>
 </html>
+
 

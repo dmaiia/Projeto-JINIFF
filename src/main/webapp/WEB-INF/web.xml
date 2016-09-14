@@ -36,10 +36,6 @@
         <servlet-name>LoginAdm</servlet-name>
         <servlet-class>Servlet.LoginAdm</servlet-class>
     </servlet>
-    <servlet>
-        <servlet-name>CadastroMod</servlet-name>
-        <servlet-class>Servlet.CadastroMod</servlet-class>
-    </servlet>
     <servlet-mapping>
         <servlet-name>CadastroAluno</servlet-name>
         <url-pattern>/CadastroAluno</url-pattern>
@@ -71,10 +67,6 @@
     <servlet-mapping>
         <servlet-name>LoginAdm</servlet-name>
         <url-pattern>/LoginAdm</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>CadastroMod</servlet-name>
-        <url-pattern>/CadastroMod</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

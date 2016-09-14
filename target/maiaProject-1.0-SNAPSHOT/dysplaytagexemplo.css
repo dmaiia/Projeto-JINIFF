@@ -37,58 +37,27 @@
 
 
 				/* BOTÃO DE LOGIN */
-#login{
+.botao{
         float: right;
         width:10%;
-        height:4%;
+        height:40px;
         margin-top: 3%;
         margin-right: 5%;
         border: #A9A9A9 solid 3px; 
         cursor: pointer;
         border-radius: 2px 2px 2px 2px;
+        
 }
-#login:hover{background-color:  #333;}
+.botao:hover{background-color:  #333; color: white;}
 
-#login p:hover{color: white;}
 
-#login a{color: white;}
-
-#login a:hover{color: transparent;}
-
-#login p{
+.botao p{
         text-align: center;
         font-family: Cursive;
         font-size: 150%;
         color: #A9A9A9;
         padding: 10px;
 }
-
-#logi{
-        float: right;
-        width:10%;
-        height:6%;
-        margin-top: 3%;
-        margin-right: 5%;
-        border: #A9A9A9 solid 3px; 
-        cursor: pointer;
-        border-radius: 2px 2px 2px 2px;
-}
-#logi:hover{background-color:  #333;}
-
-#logi p:hover{color: white;}
-
-#logi a{color: white;}
-
-#logi a:hover{color: transparent;}
-
-#logi p{
-        text-align: center;
-        font-family: Cursive;
-        font-size: 150%;
-        color: #A9A9A9;
-        padding: 10px;
-}
-
 
 
 				/* MENU */
@@ -213,7 +182,7 @@ width:150px;
     width:100%;
     height:500px;
     position:relative;
-    bottom:-135px;
+    bottom:-100px;
 }
 
 .dataTable th {
@@ -372,7 +341,7 @@ html,body {
     color: black;
     font-family: "century gothic", verdana, arial, helvetica, sans-serif;
     font-weight: bold;
-    text-align: left;
+    text-align: center;
     display:inline;
     white-space: nowrap;
 }
@@ -382,6 +351,8 @@ html,body {
     height: 100%;
     background-color: #d6cfe6;
     font-family: verdana, arial, helvetica, sans-serif;
+     text-align: center;
+
 }
 
 .content {
