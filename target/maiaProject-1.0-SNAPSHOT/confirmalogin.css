@@ -40,13 +40,19 @@
         cursor: pointer;
         border-radius: 2px 2px 2px 2px;
 }
-.botao:hover{background-color:  #333;}
+.botao{
+        float: right;
+        width:10%;
+        height:40px;
+        margin-top: 3%;
+        margin-right: 5%;
+        border: #A9A9A9 solid 3px; 
+        cursor: pointer;
+        border-radius: 2px 2px 2px 2px;
+        
+}
+.botao:hover{background-color:  #333; color: white;}
 
-.botao p:hover{color: white;}
-
-.botao a{color: white;}
-
-.botao a:hover{color: transparent;}
 
 .botao p{
         text-align: center;

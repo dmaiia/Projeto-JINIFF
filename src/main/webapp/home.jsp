@@ -4,14 +4,16 @@
 
     <title>Jogos Internos</title>
 	
-    <link rel="stylesheet" href="style.css" type="text/css" /> 
+    <link rel="stylesheet" href="Home.css" type="text/css" /> 
 
 	
 </head>
+        <form action="LogOut" method="post">
 
 	<image src = "Imagens/logoiff.gif" id ="logoIFF" />
 	<image src = "Imagens/jogos_internos.png" id = "logoJogos"/>
-		
+		 <input type="submit" class="botao" value="Sair">
+
 
 	<nav>
   <ul class="menu">
@@ -47,6 +49,7 @@
 	
 
         <footer> </footer>
+        </form>
 
 	</div>
 </html>
