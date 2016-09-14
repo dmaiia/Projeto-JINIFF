@@ -28,13 +28,12 @@ response.setHeader("Cache-Control", "no-cache"); //Forces caches to obtain a new
 
 	
 </head>
-
+<form action="LogOutAdmin" method="post">
 	<image src = "Imagens/logoiff.gif" id ="logoIFF" />
 	<image src = "Imagens/jogos_internos.png" id = "logoJogos"/>
 
-	<form action="LogOutAdmin" method="post">
-            <input type="submit" class="botão" value="Sair"/>
-        </form>
+            <input type="submit" class="botao" value="Sair"/>
+        
 
 	<nav>
   <ul class="menu">
@@ -72,4 +71,5 @@ response.setHeader("Cache-Control", "no-cache"); //Forces caches to obtain a new
         <footer> </footer>
 
 	</div>
+         </form>
 </html>
