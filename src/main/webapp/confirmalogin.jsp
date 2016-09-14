@@ -48,6 +48,7 @@ response.setHeader("Cache-Control", "no-cache"); //Forces caches to obtain a new
             </li>
         <li><a href="#"><strong>CORDENADORES</strong></a></li>
         <li><a href="#"><strong>CONTATO</strong></a></li>
+        <li><a href="ListaAluno"><strong>LISTA DE USUÁRIOS</strong></a></li>
         
   </ul>
 </nav>
