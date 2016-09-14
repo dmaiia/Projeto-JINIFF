@@ -15,23 +15,14 @@
         <title>Lista</title>
     </head>
     <body>
+        <form action="LogOut" method="post">
+
         <image src = "Imagens/logoiff.gif" id ="logoIFF" />
 	<image src = "Imagens/jogos_internos.png" id = "logoJogos"/>
 
+ <input type="submit" class="botao" value="Sair">
 
-
-	<div id = "login">
-            <a href="login.jsp">
-                <p><strong> Login </strong></p>
-            </a>
-        </div>
-        
-        <div id = "logi">
-            <a href="adminlogin.jsp">
-                <p><strong> Login Admin</strong></p>
-            </a>
-        </div>
-
+	
 
 		
 
@@ -80,5 +71,6 @@
 
     
 <br/>
+        </form>
     </body>
 </html>
