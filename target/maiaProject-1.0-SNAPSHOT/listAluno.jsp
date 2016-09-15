@@ -8,6 +8,24 @@
 
 
 <!DOCTYPE html>
+
+<%
+    Aluno usuario = (Aluno) session.getAttribute("currentSessionUser");
+%>
+
+<%
+response.setHeader("Cache-Control", "no-cache"); //Forces caches to obtain a new copy of the page from the origin server
+    response.setHeader("Cache-Control", "no-store"); //Directs caches not to store the page under any circumstance
+    response.setDateHeader("Expires", 0); //Causes the proxy cache to see the page as "stale"
+    response.setHeader("Pragma", "no-cache"); //HTTP 1.0 backward compatibility
+    Aluno aluno = (Aluno) session.getAttribute("currentSessionUser");
+    if (null == aluno) {
+        request.setAttribute("Error", "Sessao finalizada. Por favor, faça seu login.");
+        RequestDispatcher rd = request.getRequestDispatcher("login.jsp");
+        rd.forward(request, response);
+    }
+%>
+
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -28,7 +46,7 @@
 
 	<nav>
   <ul class="menu">
-        <li><a href="homeadm.jsp"><strong>HOME</strong></a></li>
+        <li><a href="home.jsp"><strong>HOME</strong></a></li>
         <li><a href="#"><strong>SOBRE</strong></a></li>
             <li><a href="#"><strong>MENU</strong></a>
                 <ul>
@@ -39,11 +57,12 @@
             </li>
         <li><a href="#"><strong>CORDENADORES</strong></a></li>
         <li><a href="#"><strong>CONTATO</strong></a></li> 
+        <li><a href="ListaAluno"><strong>LISTA DE USUÁRIOS</strong></a></li>
         
   </ul>
 </nav>
 		
-<display:table name="${sessionScope.alunos}" class="dataTable">
+<display:table name="${sessionScope.currentSessionUser}" class="dataTable">
         <display:column property="email" />
         <display:column property="nome" />
         <display:column property="sobrenome" />
