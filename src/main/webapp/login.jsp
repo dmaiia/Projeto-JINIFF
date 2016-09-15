@@ -9,12 +9,12 @@
 	
 </head>
     <body>
+        <fieldset>
         <video autoplay loop class="video">
             <source src="Videos/esportes.webm" type="video/webm"> 
             <source src="Videos/videoplayback.mp4" type="video/mp4"> 
         </video> 
 
-	<fieldset>
             <p> LOG IN </p>
 		<form action="Login" method="post">
 		<div class="acomodar">
@@ -27,6 +27,8 @@
 		<input type="submit" value="LOG IN" />
 	</div>
 </form>
+                            <input class="botao" type="submit" value="Home" onClick="window.open('index.jsp')" />
+
 	</fieldset>
     </body>
 </html>
