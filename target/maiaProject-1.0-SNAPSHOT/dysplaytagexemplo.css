@@ -341,7 +341,7 @@ html,body {
     color: black;
     font-family: "century gothic", verdana, arial, helvetica, sans-serif;
     font-weight: bold;
-    text-align: left;
+    text-align: center;
     display:inline;
     white-space: nowrap;
 }
@@ -351,6 +351,8 @@ html,body {
     height: 100%;
     background-color: #d6cfe6;
     font-family: verdana, arial, helvetica, sans-serif;
+     text-align: center;
+
 }
 
 .content {

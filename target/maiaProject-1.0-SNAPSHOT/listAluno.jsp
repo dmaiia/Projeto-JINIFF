@@ -28,7 +28,7 @@
 
 	<nav>
   <ul class="menu">
-        <li><a href="home.jsp"><strong>HOME</strong></a></li>
+        <li><a href="homeadm.jsp"><strong>HOME</strong></a></li>
         <li><a href="#"><strong>SOBRE</strong></a></li>
             <li><a href="#"><strong>MENU</strong></a>
                 <ul>
