@@ -53,8 +53,8 @@
         <display:column property="ano" />
         <display:column property="numero" />
         <display:column property="senha" />
-        <display:column title="Editar" href="CarregaAluno" paramId="email" paramProperty="email"><img src="delete.png"  title="Atualizar"/></display:column>
-        <display:column title="Deletar" href="DeletaAluno" paramId="email" paramProperty="email"><img src="edit.png" title="Apagar"/></display:column>
+        <display:column title="Editar" href="CarregaAluno" paramId="email" paramProperty="email"><img src="edit.png"  title="Atualizar"/></display:column>
+        <display:column title="Deletar" href="DeletaAluno" paramId="email" paramProperty="email"><img src="delete.png" title="Apagar"/></display:column>
     </display:table>
 
 		
