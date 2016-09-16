@@ -3,7 +3,30 @@
     <head>
 
         <title>Cadastro</title>
-
+        <script language="JavaScript" type="text/javascript">
+   function mascaraData(campoData){
+              var data = campoData.value;
+              if (data.length == 2){
+                  data = data + '/';
+                  document.forms[0].data.value = data;
+      return true;              
+              }
+              if (data.length == 5){
+                  data = data + '/';
+                  document.forms[0].data.value = data;
+                  return true;
+              }
+         }
+         
+         function mascara(t, mask){
+                var i = t.value.length;
+                var saida = mask.substring(1,0);
+                var texto = mask.substring(i)
+                if (texto.substring(0,1) != saida){
+                t.value += texto.substring(0,1);
+            }
+        }
+</script>
         <link rel="stylesheet" href="cadastro.css" type="text/css" /> 
 
 
@@ -59,22 +82,22 @@
                     <input type="text" value="" name="lastname" required="required" placeholder= "Digite seu sobrenome..." />
                 </label>
                 <label>		 
-                    <input type="radio" value="male" name="gender"/> <p> Masculino </p> 
+                    <input type="radio" value="male" required="required" name="gender"/> <p> Masculino </p> 
                 </label>
                 <label>    
-                    <input type="radio" value="female" name="gender"/> <p> Feminino  </p>
+                    <input type="radio" value="female" required="required" name="gender"/> <p> Feminino  </p>
                 </label>
                 <label>
-                    <input type="date" value="" name="bday" required="required" placeholder= "dia / mes / ano" />
+                    <input type="text" id="data" value="" name="bday" OnKeyUp="mascaraData(this);" maxlength="10" required="required" placeholder= "dia / mes / ano" />
                 </label>
                 <label>
                     <input type="text" value="" name="course" required="required" placeholder= "Digite seu curso..." />
                 </label>
                 <label>
-                    <input type="number" maxlength="2" value="" name="ano" required="required" placeholder= "S&eacute;rie ..." />
+                    <input type="text" maxlength="1" value="" name="ano" required="required" placeholder= "S&eacute;rie ..." />
                 </label>
                 <label>
-                    <input type="number" value="" name="numero" required="required" placeholder= "Digite seu Whatsapp..." />
+                    <input type="text" value="" name="numero" onkeypress="mascara(this, '### #-####-####')" maxlength="15" required="required" placeholder= "Digite seu Whatsapp..." />
                 </label>
                 <label>
                     <input type="email" value="" name="email" required="required" placeholder= "Digite seu e-mail..." />

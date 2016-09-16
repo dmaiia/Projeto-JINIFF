@@ -6,6 +6,30 @@
 
 <html>
     <head>
+            <script language="JavaScript" type="text/javascript">
+   function mascaraData(campoData){
+              var data = campoData.value;
+              if (data.length == 2){
+                  data = data + '/';
+                  document.forms[0].data.value = data;
+      return true;              
+              }
+              if (data.length == 5){
+                  data = data + '/';
+                  document.forms[0].data.value = data;
+                  return true;
+              }
+         }
+         
+         function mascara(t, mask){
+                var i = t.value.length;
+                var saida = mask.substring(1,0);
+                var texto = mask.substring(i)
+                if (texto.substring(0,1) != saida){
+                t.value += texto.substring(0,1);
+            }
+        }
+</script>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
                 <link rel="stylesheet" href="atuali.css" type="text/css" /> 
 
@@ -63,16 +87,16 @@
             <input type="radio" value="${sessionScope.alunoAtual.sexo}" name="gender" required="required" /> <p> Feminino</p> <br/> <br/>
            </label>
            <label>
-            <input type="date" value="${sessionScope.alunoAtual.dataNascimento}" name="bday" required="required" placeholder="Data de Nascimento..." /> <br/> <br/>
+            <input type="date" value="${sessionScope.alunoAtual.dataNascimento}" id="data" OnKeyUp="mascaraData(this);" maxlength="10" name="bday" required="required" placeholder="Data de Nascimento..." /> <br/> <br/>
            </label>
            <label>
             <input type="text" value="${sessionScope.alunoAtual.curso}" name="course" required="required" placeholder="Digite seu Curso..." /> <br/> <br/>
            </label>
            <label>
-            <input type="number" value="${sessionScope.alunoAtual.ano}" name="ano" required="required" placeholder="Digite sua série..." /> <br/> <br/>
+               <input type="text" maxlength="1" value="${sessionScope.alunoAtual.ano}" name="ano" required="required" placeholder="Digite sua série..." /> <br/> <br/>
            </label>
            <label>
-            <input type="number" value="${sessionScope.alunoAtual.numero}" name="numero" required="required" placeholder="Digite seu WhatsApp..." /> <br/> <br/>
+            <input type="text" value="${sessionScope.alunoAtual.numero}" onkeypress="mascara(this, '### #-####-####')" maxlength="15" name="numero" required="required" placeholder="Digite seu WhatsApp..." /> <br/> <br/>
            </label> 
            <label>
             <input type="email" value="${sessionScope.alunoAtual.email}" name="email" required="required" placeholder="Digite seu e-mail..." /> <br/> <br/>
@@ -81,7 +105,7 @@
             <input type="password" value="${sessionScope.alunoAtual.senha}" name="password" required="required" placeholder="Digite sua Senha..."/> <br/> <br/>
            </label>
            <label>
-            <input type="submit" class="botao" value="Atualizar" onClick="('ListaAluno')">
+            <input type="submit" class="botao" value="Atualizar">
            </label>
            
            </fieldset>

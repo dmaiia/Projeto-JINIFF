@@ -64,7 +64,7 @@ public class CadastroAluno extends HttpServlet {
             
             AlunoDAO alDAO = new AlunoDAO();
             alDAO.addAluno(aluno);
-            response.sendRedirect("cadastro.jsp");
+            response.sendRedirect("login.jsp");
             
         } finally {
             out.close();
