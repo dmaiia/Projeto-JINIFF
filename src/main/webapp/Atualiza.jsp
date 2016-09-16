@@ -100,8 +100,8 @@
             <input type="text" value="${sessionScope.alunoAtual.numero}" onkeypress="mascara(this, '### #-####-####')" maxlength="15" name="numero" required="required" placeholder="Digite seu WhatsApp..." /> <br/> <br/>
            </label> 
            <label>
-            <input type="email" value="${sessionScope.alunoAtual.email}" name="email" required="required" placeholder="Digite seu e-mail..." /> <br/> <br/>
-           </label> 
+            <input type="email" value="${sessionScope.alunoAtual.email}" readonly="true" name="email" required="required" placeholder="Digite seu e-mail..." /> <br/> <br/>
+           </label>
            <label> 
             <input type="password" value="${sessionScope.alunoAtual.senha}" name="password" required="required" placeholder="Digite sua Senha..."/> <br/> <br/>
            </label>
