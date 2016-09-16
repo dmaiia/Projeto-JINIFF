@@ -1,12 +1,5 @@
-<%-- 
-    Document   : admin
-    Created on : 06/09/2016, 11:46:00
-    Author     : aluno
---%>
-
 <%@page import="Entidade.Admin"%>
 <!DOCTYPE html>
-
 <%
 response.setHeader("Cache-Control", "no-cache"); //Forces caches to obtain a new copy of the page from the origin server
     response.setHeader("Cache-Control", "no-store"); //Directs caches not to store the page under any circumstance
@@ -22,18 +15,18 @@ response.setHeader("Cache-Control", "no-cache"); //Forces caches to obtain a new
 <html>
 <head>
 
-    <title>Bem vindo!</title>
+    <title>Jogos Internos</title>
 	
-    <link rel="stylesheet" href="admin.css" type="text/css" /> 
+    <link rel="stylesheet" href="homeadm.css" type="text/css" /> 
 
 	
 </head>
-<form action="LogOutAdmin" method="post">
+        <form action="LogOut" method="post">
+
 	<image src = "Imagens/logoiff.gif" id ="logoIFF" />
 	<image src = "Imagens/jogos_internos.png" id = "logoJogos"/>
+		 <input type="submit" class="botao" value="Sair">
 
-            <input type="submit" class="botao" value="Sair"/>
-        
 
 	<nav>
   <ul class="menu">
@@ -48,28 +41,31 @@ response.setHeader("Cache-Control", "no-cache"); //Forces caches to obtain a new
             </li>
         <li><a href="#"><strong>CORDENADORES</strong></a></li>
         <li><a href="#"><strong>CONTATO</strong></a></li> 
-                <li><a href="ListaAdmin"><strong>LISTA DE USUÁRIOS</strong></a></li>
+                       <li><a href="ListaAdmin"><strong>LISTA DE USUÁRIOS</strong></a></li>
 
+        
   </ul>
 </nav>
 		
-        <h1> Bem vindo Administrador! </h1>
-        <h3> Aproveite os recursos do site. </h3>
-        
-	
+
+
+	<image src = "Imagens/central2.jpg" id = "logoCentral" />
+		
 	
 	<div id = "inferior">
 	
-            <a href="https://www.facebook.com/"> <image src = "Imagens/facebook.png" id ="facebook"  /> </a>
+	<image src = "Imagens/facebook.png" id ="facebook" />
 	<br>
-        <a href="https://twitter.com/"><image src = "Imagens/twitter.png" id ="twitter" /> </a>
+	<image src = "Imagens/twitter.png" id ="twitter" />
 	</br>
-        <a href="https://instagram.com/"><image src = "Imagens/instagram.png" id ="instagram" /> </a>
+	<image src = "Imagens/instagram.png" id ="instagram" />
 	<br>
 	
 
         <footer> </footer>
+        </form>
 
 	</div>
-         </form>
 </html>
+
+

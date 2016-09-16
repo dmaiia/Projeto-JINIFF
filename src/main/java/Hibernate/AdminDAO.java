@@ -66,24 +66,7 @@ public class AdminDAO {
         }
         return Admin;
     }
-    public List<Admin> listaAdmin( ){
-      Session session = HibernateUtil.abrirSessaoComBD();
-      Transaction tx = null;
-      List <Admin> admins = null;
-      try{
-         tx = session.beginTransaction();
-        List<Admin> result = (List<Admin>) session.createQuery("from Admin").list();        
-         tx.commit();
-         
-      }catch (HibernateException e) {
-         if (tx!=null) tx.rollback();
-          e.printStackTrace();
-         
-      }finally {
-         session.close(); 
-      }
-      return admins;
-   }
+   
 
    public List<Aluno> listaAluno( ){
       Session session = HibernateUtil.abrirSessaoComBD();

@@ -1,21 +1,16 @@
 package Servlet;
 
-import Entidade.Admin;
-import Hibernate.AdminDAO;
+import Entidade.Aluno;
+import Hibernate.AlunoDAO;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.List;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-
-
-/**
- *
- * @author Diego Maia
- */
-public class CadastroAdm extends HttpServlet {
+public class ListaAdmin extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -28,30 +23,11 @@ public class CadastroAdm extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        response.setContentType("text/html;charset=UTF-8");
-        PrintWriter out = response.getWriter();
-        try {
-            /* TODO output your page here. You may use following sample code. */
-            
-            
-            String email = request.getParameter("email");
-            String senha = request.getParameter("password");
-            
-            
-
-            Admin adm = new Admin();
-            
-           
-            adm.setEmail(email);
-            adm.setSenha(senha);
-            
-            AdminDAO adDAO = new AdminDAO();
-            adDAO.addAdmin(adm);
-            response.sendRedirect("adminlogin.jsp");
-            
-        } finally {
-            out.close();
-        }
+       
+        AlunoDAO alunodao = new AlunoDAO();
+        List<Aluno> alunos = alunodao.listaAluno();
+        request.getSession(true).setAttribute("alunos", alunos);
+        response.sendRedirect("ListAdmin.jsp");
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
@@ -92,5 +68,4 @@ public class CadastroAdm extends HttpServlet {
     public String getServletInfo() {
         return "Short description";
     }// </editor-fold>
-
 }

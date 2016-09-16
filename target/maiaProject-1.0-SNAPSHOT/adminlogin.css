@@ -46,7 +46,28 @@ fieldset input[type=submit]{
     padding: 19px;
 }
 
+.botao{
+        top:-630px;
+        ṕosition:relative;
+        width:10px;
+        height:60px;
+        margin-top: 3%;
+        margin-right: 5%;
+        border: #A9A9A9 solid 3px; 
+        cursor: pointer;
+        border-radius: 2px 2px 2px 2px;
+        left:-415px;
+}
+.botao:hover{background-color: -moz-linear-gradient(right, black, white); color: white;}
 
+
+.botao p{
+        text-align: center;
+        font-family: Cursive;
+        font-size: 150%;
+        color: #A9A9A9;
+        padding: 10px;
+}
 
 .acomodar{
     margin: 9px;

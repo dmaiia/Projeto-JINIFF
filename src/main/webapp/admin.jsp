@@ -28,17 +28,16 @@ response.setHeader("Cache-Control", "no-cache"); //Forces caches to obtain a new
 
 	
 </head>
-
+<form action="LogOutAdmin" method="post">
 	<image src = "Imagens/logoiff.gif" id ="logoIFF" />
 	<image src = "Imagens/jogos_internos.png" id = "logoJogos"/>
 
-	<form action="LogOutAdmin" method="post">
-            <input type="submit" class="botão" value="Sair"/>
-        </form>
+            <input type="submit" class="botao" value="Sair"/>
+        
 
 	<nav>
   <ul class="menu">
-        <li><a href="home.jsp"><strong>HOME</strong></a></li>
+        <li><a href="homeadm.jsp"><strong>HOME</strong></a></li>
         <li><a href="#"><strong>SOBRE</strong></a></li>
             <li><a href="#"><strong>MENU</strong></a>
                 <ul>
@@ -49,7 +48,7 @@ response.setHeader("Cache-Control", "no-cache"); //Forces caches to obtain a new
             </li>
         <li><a href="#"><strong>CORDENADORES</strong></a></li>
         <li><a href="#"><strong>CONTATO</strong></a></li> 
-                <li><a href="ListaAluno"><strong>Lista de Usuários</strong></a></li>
+                <li><a href="ListaAdmin"><strong>LISTA DE USUÁRIOS</strong></a></li>
 
   </ul>
 </nav>
@@ -72,4 +71,5 @@ response.setHeader("Cache-Control", "no-cache"); //Forces caches to obtain a new
         <footer> </footer>
 
 	</div>
+         </form>
 </html>

@@ -8,6 +8,24 @@
 
 
 <!DOCTYPE html>
+
+<%
+    Aluno usuario = (Aluno) session.getAttribute("currentSessionUser");
+%>
+
+<%
+response.setHeader("Cache-Control", "no-cache"); //Forces caches to obtain a new copy of the page from the origin server
+    response.setHeader("Cache-Control", "no-store"); //Directs caches not to store the page under any circumstance
+    response.setDateHeader("Expires", 0); //Causes the proxy cache to see the page as "stale"
+    response.setHeader("Pragma", "no-cache"); //HTTP 1.0 backward compatibility
+    Aluno aluno = (Aluno) session.getAttribute("currentSessionUser");
+    if (null == aluno) {
+        request.setAttribute("Error", "Sessao finalizada. Por favor, faça seu login.");
+        RequestDispatcher rd = request.getRequestDispatcher("login.jsp");
+        rd.forward(request, response);
+    }
+%>
+
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -15,23 +33,14 @@
         <title>Lista</title>
     </head>
     <body>
+        <form action="LogOut" method="post">
+
         <image src = "Imagens/logoiff.gif" id ="logoIFF" />
 	<image src = "Imagens/jogos_internos.png" id = "logoJogos"/>
 
+ <input type="submit" class="botao" value="Sair">
 
-
-	<div id = "login">
-            <a href="login.jsp">
-                <p><strong> Login </strong></p>
-            </a>
-        </div>
-        
-        <div id = "logi">
-            <a href="adminlogin.jsp">
-                <p><strong> Login Admin</strong></p>
-            </a>
-        </div>
-
+	
 
 		
 
@@ -48,11 +57,12 @@
             </li>
         <li><a href="#"><strong>CORDENADORES</strong></a></li>
         <li><a href="#"><strong>CONTATO</strong></a></li> 
+        <li><a href="ListaAluno"><strong>DADOS PESSOAIS</strong></a></li>
         
   </ul>
 </nav>
 		
-<display:table name="${sessionScope.alunos}" class="dataTable">
+<display:table name="${sessionScope.currentSessionUser}" class="dataTable">
         <display:column property="email" />
         <display:column property="nome" />
         <display:column property="sobrenome" />
@@ -62,8 +72,8 @@
         <display:column property="ano" />
         <display:column property="numero" />
         <display:column property="senha" />
-        <display:column title="Editar" href="CarregaAluno" paramId="email" paramProperty="email"><img src="lixei.png"  title="Atualizar"/></display:column>
-        <display:column title="Deletar" href="DeletaAluno" paramId="email" paramProperty="email"><img src="atuali.png" title="Apagar"/></display:column>
+        <display:column title="Editar" href="CarregaAluno" paramId="email" paramProperty="email"><img src="edit.png"  title="Atualizar"/></display:column>
+        <display:column title="Deletar" href="DeletaAluno" paramId="email" paramProperty="email"><img src="delete.png" title="Apagar"/></display:column>
     </display:table>
 
 		
@@ -80,5 +90,6 @@
 
     
 <br/>
+        </form>
     </body>
 </html>
