@@ -58,7 +58,7 @@ public class DeletaAluno extends HttpServlet {
   request.getSession(true).setAttribute("alunos", alunos);
             // e volta para a página da listagem
             // TODO: Se nessa volta tiver uma mensagem falando que deu certo, ganha uma moral extra
-          response.sendRedirect("listAluno.jsp");
+          response.sendRedirect("ListAdmin.jsp");
            
         } finally {
             out.close();
