@@ -56,6 +56,35 @@ fieldset input[type=submit]{
     margin: 9px;
 }
 
+#botao{
+        position:relative;
+        top:-600px;
+        right:-1200px;
+        width:10%;
+        height:10%;
+        margin-top: 3%;
+        margin-right: 5%;
+        border: #A9A9A9 solid 3px; 
+        cursor: pointer;
+        border-radius: 6px 6px 6px 6px;
+        background-color: #333;
+}
+#botao:hover{background-color:  #333; border: white solid 3px; }
+
+#botao p:hover{color: white;}
+
+#botao a{color: #333;}
+
+#botao a:hover{color: transparent;}
+
+#botao p{
+        text-align: center;
+        font-family: Cursive;
+        font-size: 150%;
+        color: white;
+        padding: 10px;
+}
+
 video{
     position: fixed;
     right: 0;

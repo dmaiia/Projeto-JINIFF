@@ -43,7 +43,7 @@ public class LoginAdm extends HttpServlet {
 
             if (user == null) {
                 session.invalidate();
-                response.sendRedirect("errologin.jsp"); //error page
+                response.sendRedirect("errologinadm.jsp"); //error page
             } else {
                 session.setAttribute("currentSessionUser", user);
                 response.sendRedirect("admin.jsp"); //logged-in page             

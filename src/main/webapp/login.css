@@ -50,28 +50,35 @@ fieldset input[type=submit]{
     margin: 9px;
 }
 
-.botao{
-        top:-590px;
-        ṕosition:relative;
-        width:10px;
-        height:60px;
+#botao{
+        position:relative;
+        top:-500px;
+        right:-1200px;
+        width:10%;
+        height:10%;
         margin-top: 3%;
         margin-right: 5%;
         border: #A9A9A9 solid 3px; 
         cursor: pointer;
-        border-radius: 2px 2px 2px 2px;
-        left:-415px;
+        border-radius: 6px 6px 6px 6px;
+        background-color: #333;
 }
-.botao:hover{background-color: -moz-linear-gradient(right, black, white); color: white;}
+#botao:hover{background-color:  #333; border: white solid 3px; }
 
+#botao p:hover{color: white;}
 
-.botao p{
+#botao a{color: #333;}
+
+#botao a:hover{color: transparent;}
+
+#botao p{
         text-align: center;
         font-family: Cursive;
         font-size: 150%;
-        color: #A9A9A9;
+        color: white;
         padding: 10px;
 }
+
 
 video{
     position: fixed;

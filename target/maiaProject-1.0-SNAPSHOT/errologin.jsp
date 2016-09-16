@@ -31,6 +31,11 @@
             <h5> <strong> Erro! Email ou senha incorretos </strong> </h5>
             </br>
 	</fieldset>
+        <div id = "botao">
+                            <a href="index.jsp">
+                <p>Home</p>
+                                </a>
+        </div>
     </body>
 </html>
     

@@ -2,7 +2,7 @@ fieldset{
     float:top;
     position: relative;
     width: 20%;
-    height: 200px;
+    height: 300px;
     border: none;
     margin-left: 30%;	
     margin-top: 20%;
@@ -14,7 +14,12 @@ fieldset p{
     font-size: 150%;
     margin-left: 55%;
 }
-
+h5{
+    font-family: Arial;
+    color: red;
+    text-align: center;
+    margin-left: 46%;
+}
 label{
     float: left;
     position: relative;
@@ -31,12 +36,13 @@ fieldset label input{
 }
 
 fieldset input[type=submit]{
-    right:0px;
+    float: right;
     position: relative;
-    width: 150%;
+    width: 163%;
     clear: both;
     margin-top: 13%;
     margin-right: -63%;
+    margin-bottom: 13%;
     color: white;
     font: Arial;
     font-size: 130%;
@@ -46,9 +52,13 @@ fieldset input[type=submit]{
     padding: 19px;
 }
 
+.acomodar{
+    margin: 9px;
+}
+
 #botao{
         position:relative;
-        top:-500px;
+        top:-600px;
         right:-1200px;
         width:10%;
         height:10%;
@@ -75,10 +85,6 @@ fieldset input[type=submit]{
         padding: 10px;
 }
 
-.acomodar{
-    margin: 9px;
-}
-
 video{
     position: fixed;
     right: 0;
@@ -90,4 +96,3 @@ video{
     z-index: -1000;
     background-size: cover;
 }
-

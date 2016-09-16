@@ -30,12 +30,17 @@
 		<label>
 			<input type="password" value="" name="password" required="required" placeholder="Password" />
 		</label>
-		<input class="botão" type="submit" value="LOG IN" />
+		<input class="botão" type="submit" value="LOG IN ADM" />
 	</div>
 </form>
-                                        <input class="botao" type="submit" value="Home" onClick="window.open('index.jsp')" />
+                                     
 
 	</fieldset>
+             <div id = "botao">
+                            <a href="index.jsp">
+                <p>Home</p>
+                                </a>
+        </div>
     </body>
 </html>
     
