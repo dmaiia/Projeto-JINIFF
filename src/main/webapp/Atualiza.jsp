@@ -75,13 +75,13 @@
             <input type="number" value="${sessionScope.alunoAtual.numero}" name="numero" required="required" placeholder="Digite seu WhatsApp..." /> <br/> <br/>
            </label> 
            <label>
-            <input type="email" value="${sessionScope.alunoAtual.email}" name="email" required="required" placeholder="Digite seu Email..." /> <br/> <br/>
-           </label>
+            <input type="email" value="${sessionScope.alunoAtual.email}" name="email" required="required" placeholder="Digite seu e-mail..." /> <br/> <br/>
+           </label> 
            <label> 
             <input type="password" value="${sessionScope.alunoAtual.senha}" name="password" required="required" placeholder="Digite sua Senha..."/> <br/> <br/>
            </label>
            <label>
-            <input type="submit" class="botao" value="Atualizar" onClick="window.open('ListaAluno')">
+            <input type="submit" class="botao" value="Atualizar" onClick="('ListaAluno')">
            </label>
            
            </fieldset>
