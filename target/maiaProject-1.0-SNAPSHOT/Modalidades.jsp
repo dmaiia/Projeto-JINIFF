@@ -1,34 +1,34 @@
-<%@page import="Entidade.Aluno"%>
 <!DOCTYPE html>
-<%
-response.setHeader("Cache-Control", "no-cache"); //Forces caches to obtain a new copy of the page from the origin server
-    response.setHeader("Cache-Control", "no-store"); //Directs caches not to store the page under any circumstance
-    response.setDateHeader("Expires", 0); //Causes the proxy cache to see the page as "stale"
-    response.setHeader("Pragma", "no-cache"); //HTTP 1.0 backward compatibility
-    Aluno aluno = (Aluno) session.getAttribute("currentSessionUser");
-    if (null == aluno) {
-        request.setAttribute("Error", "Sessao finalizada. Por favor, faça seu login.");
-        RequestDispatcher rd = request.getRequestDispatcher("login.jsp");
-        rd.forward(request, response);
-    }
-%>
-
 <html>
 <head>
 
-    <title>Jogos Internos</title>
+    <title>Modalidades</title>
 	
-    <link rel="stylesheet" href="Home.css" type="text/css" /> 
+    <link rel="stylesheet" href="Modalidades.css" type="text/css" /> 
                                     <link rel="shortcut icon" href="Imagens/j.png" >
 
 	
 </head>
-        <form action="LogOut" method="post">
 
 	<image src = "Imagens/logoiff.gif" id ="logoIFF" />
 	<image src = "Imagens/jogos_internos.png" id = "logoJogos"/>
-		 <input type="submit" class="botao" value="Sair">
 
+
+
+	<div id = "login">
+            <a href="login.jsp">
+                <p><strong> Login </strong></p>
+            </a>
+        </div>
+        
+        <div id = "logi">
+            <a href="adminlogin.jsp">
+                <p><strong> Login Admin</strong></p>
+            </a>
+        </div>
+
+
+		
 
 	<nav>
   <ul class="menu">
@@ -43,15 +43,17 @@ response.setHeader("Cache-Control", "no-cache"); //Forces caches to obtain a new
             </li>
         <li><a href="#"><strong>COORDENADORES</strong></a></li>
         <li><a href="#"><strong>CONTATO</strong></a></li> 
-        <li><a href="ListaAluno"><strong>LISTA DE USUÁRIOS</strong></a></li>
-        
+        <li><a href="cadastro.jsp"><strong>CADASTRO</strong></a></li>
         
   </ul>
 </nav>
-		
+        <div id="Modalidades">
+            <h1> Molidades </h1>
+            
+        </div>
 
 
-	<image src = "Imagens/central2.jpg" id = "logoCentral" />
+	
 		
 	
 	<div id = "inferior">
@@ -65,8 +67,8 @@ response.setHeader("Cache-Control", "no-cache"); //Forces caches to obtain a new
 	
 
         <footer> </footer>
-        </form>
 
 	</div>
 </html>
+
 

@@ -19,6 +19,7 @@ response.setHeader("Cache-Control", "no-cache"); //Forces caches to obtain a new
     <title>Jogos Internos</title>
 	
     <link rel="stylesheet" href="Home.css" type="text/css" /> 
+                                    <link rel="shortcut icon" href="Imagens/j.png" >
 
 	
 </head>

@@ -8,6 +8,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
                 <link rel="stylesheet" href="atuali.css" type="text/css" /> 
+                                                <link rel="shortcut icon" href="Imagens/j.png" >
 
         <title>Atualizar</title>
     </head>

@@ -5,6 +5,7 @@
         <title>Cadastro</title>
 
         <link rel="stylesheet" href="cadastro.css" type="text/css" /> 
+                                        <link rel="shortcut icon" href="Imagens/j.png" >
 
 
     </head>
@@ -33,7 +34,6 @@
             </li>
             <li><a href="#"><strong>CORDENADORES</strong></a></li>
             <li><a href="#"><strong>CONTATO</strong></a></li>
-            <li><a href="#"><strong>CADASTRO</strong></a></li>
         </ul>
     </nav>
 

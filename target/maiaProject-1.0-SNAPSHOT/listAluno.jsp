@@ -30,6 +30,8 @@ response.setHeader("Cache-Control", "no-cache"); //Forces caches to obtain a new
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" type="text/css" href="dysplaytagexemplo.css">
+                                        <link rel="shortcut icon" href="Imagens/j.png" >
+
         <title>Lista</title>
     </head>
     <body>

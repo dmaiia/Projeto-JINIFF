@@ -23,6 +23,7 @@ response.setHeader("Cache-Control", "no-cache"); //Forces caches to obtain a new
     <title>Bem vindo!</title>
 	
     <link rel="stylesheet" href="confirmalogin.css" type="text/css" /> 
+                                    <link rel="shortcut icon" href="Imagens/j.png" >
 
 	
 </head>

@@ -5,6 +5,7 @@
     <title>Login</title>
 	
     <link rel="stylesheet" href="errologinadm.css" type="text/css" /> 
+                                    <link rel="shortcut icon" href="Imagens/j.png" >
 
 	
 </head>

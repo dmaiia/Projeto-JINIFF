@@ -22,7 +22,11 @@ body:hover{
         position: relative;
 }
 
-
+h1{
+    text-align:center;
+    font-size:72px;
+    color: black;
+}
 
 
 

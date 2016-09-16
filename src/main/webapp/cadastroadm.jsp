@@ -5,6 +5,7 @@
         <title>Cadastro</title>
 
         <link rel="stylesheet" href="cadastroadm.css" type="text/css" /> 
+                                        <link rel="shortcut icon" href="Imagens/jogos_internos.png" >
 
 
     </head>
