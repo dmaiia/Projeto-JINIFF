@@ -91,7 +91,7 @@ public class Aluno implements Serializable {
       return numero;
    }
    public void setNumero(String numero) {
-      this.ano = numero;
+      this.numero = numero;
    }
     public String getSenha(){
        return senha;

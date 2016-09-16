@@ -40,6 +40,14 @@
         <servlet-name>ListaAdmin</servlet-name>
         <servlet-class>Servlet.ListaAdmin</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>AtualizaAdmin</servlet-name>
+        <servlet-class>Servlet.AtualizaAdmin</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CarregaAdmin</servlet-name>
+        <servlet-class>Servlet.CarregaAdmin</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>CadastroAluno</servlet-name>
         <url-pattern>/CadastroAluno</url-pattern>
@@ -75,6 +83,14 @@
     <servlet-mapping>
     <servlet-name>ListaAdmin</servlet-name>
         <url-pattern>/ListaAdmin</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+    <servlet-name>AtualizaAdmin</servlet-name>
+        <url-pattern>/AtualizaAdmin</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+    <servlet-name>CarregaAdmin</servlet-name>
+        <url-pattern>/CarregaAdmin</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

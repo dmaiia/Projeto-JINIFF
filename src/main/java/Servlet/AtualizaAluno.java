@@ -46,8 +46,8 @@ public class AtualizaAluno extends HttpServlet {
             
 //     ESSE METODO VCS VAO PRECISAR MUDAR PARA QUE TENHA
 //      TODOS OS PARAMETROS DA SUA ENTIDADE!
-            alunodao.updateAluno(aluno.getEmail(), email, nome, sobrenome, data_nascimento, sexo, curso, ano,
-            numero, senha);
+            alunodao.updateAluno(aluno.getEmail(), nome, sobrenome, data_nascimento, sexo, curso, ano,
+            numero,  email, senha);
 
 
             // aí, depois de atualizar, vc recarrega a list na sessão http:
@@ -55,7 +55,7 @@ public class AtualizaAluno extends HttpServlet {
             request.getSession(true).setAttribute("alunos", alunos);
             // e volta para a página da listagem
             // TODO: Se nessa volta tiver uma mensagem falando que deu certo, ganha uma moral extra
-            response.sendRedirect("ListAluno.jsp");
+            response.sendRedirect("listAluno.jsp");
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

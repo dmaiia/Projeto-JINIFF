@@ -12,7 +12,7 @@
         <title>Atualizar</title>
     </head>
     <body>
-        <form action="AtualizaAluno" method="post">
+        <form action="AtualizaAdmin" method="post">
         <div id="superior" />
 
         <image src = "Imagens/logoiff.gif" id ="logoIFF" />
@@ -81,7 +81,7 @@
             <input type="password" value="${sessionScope.alunoAtual.senha}" name="password" required="required" placeholder="Digite sua Senha..."/> <br/> <br/>
            </label>
            <label>
-            <input type="submit" class="botao" value="Atualizar" onClick="('ListaAluno')">
+            <input type="submit" class="botao" value="Atualizar" onClick="('ListaAdmin')">
            </label>
            
            </fieldset>

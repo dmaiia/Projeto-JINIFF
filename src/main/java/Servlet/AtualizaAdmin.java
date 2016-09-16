@@ -1,4 +1,5 @@
 package Servlet;
+
 import Entidade.Aluno;
 import Hibernate.AlunoDAO;
 import java.io.IOException;
@@ -13,7 +14,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author luizc
  */
-public class DeletaAluno extends HttpServlet {
+public class AtualizaAdmin extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -26,43 +27,35 @@ public class DeletaAluno extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        response.setContentType("text/html;charset=UTF-8");
-        PrintWriter out = response.getWriter();
-        try {
-            /* TODO output your page here. You may use following sample code. */
-            out.println("<!DOCTYPE html>");
-            out.println("<html>");
-            out.println("<head>");
-            out.println("<title>Servlet DemiteEmpregado</title>");
-            out.println("</head>");
-            out.println("<body>");
-            out.println("<h1>Servlet DemiteEmpregado at " + request.getContextPath() + "</h1>");
-            out.println("ué... o Luiiiiiiiiiizzz não fez o servlet para Deletar a Entidade?");
-            out.println("<br/>Gente, quer moleza? Senta no pudim. Leiam os comentários no servlet para algumas instruções adicionais.");
-            out.println("</body>");
-            out.println("</html>");
+        //esse servlet vai ser bem parecido com o do cadastro.
+        // vc pega todas as propriedades que vem do form
+        // só que aí vc joga essas informações no método de update do DAO.
+//
+    Aluno aluno = (Aluno) request.getSession(true).getAttribute("alunoAtual");
+        AlunoDAO alunodao = new AlunoDAO();
 
-            // seguinte, aqui vcs precisam pegar a propriedade que veio do displaytag.
+            String nome = request.getParameter("firstname");
+            String sobrenome = request.getParameter("lastname");
+            String sexo = request.getParameter("gender");
+            String data_nascimento = request.getParameter("bday");
+            String curso = request.getParameter("course");
+            String ano = request.getParameter("ano");
             String email = request.getParameter("email");
-            // eu coloquei o nome do código de "cod" lá na coluna do delete, no arquivo listaTotal.jsp
-   //         request.getParameter("cod");
-            /* daí vcs vão utilizar esse codigo
-            (no caso, A CHAVE PRIMÁRIA das vossas respectivas tabelas)
-            para chamar o objeto e deletá-lo.
-            O método no EmpregadoDAO parece funcionar blzinha...            */
-      AlunoDAO alunodao = new AlunoDAO();
+            String senha = request.getParameter("password");
+            String numero = request.getParameter("numero");
+            
+//     ESSE METODO VCS VAO PRECISAR MUDAR PARA QUE TENHA
+//      TODOS OS PARAMETROS DA SUA ENTIDADE!
+            alunodao.updateAluno(aluno.getEmail(), nome, sobrenome, data_nascimento, sexo, curso, ano,
+            numero,  email, senha);
 
-      alunodao.deleteAluno(email);
-        
-        List<Aluno> alunos = alunodao.listaAluno();
-  request.getSession(true).setAttribute("alunos", alunos);
+
+            // aí, depois de atualizar, vc recarrega a list na sessão http:
+            List<Aluno> alunos = alunodao.listaAluno();
+            request.getSession(true).setAttribute("alunos", alunos);
             // e volta para a página da listagem
             // TODO: Se nessa volta tiver uma mensagem falando que deu certo, ganha uma moral extra
-          response.sendRedirect("ListAdmin.jsp");
-           
-        } finally {
-            out.close();
-        }
+            response.sendRedirect("ListAdmin.jsp");
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

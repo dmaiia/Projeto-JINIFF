@@ -1,9 +1,10 @@
 package Servlet;
+import Entidade.Admin;
 import Entidade.Aluno;
+import Hibernate.AdminDAO;
 import Hibernate.AlunoDAO;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.List;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -13,7 +14,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author luizc
  */
-public class DeletaAluno extends HttpServlet {
+public class CarregaAdmin extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -26,43 +27,17 @@ public class DeletaAluno extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        response.setContentType("text/html;charset=UTF-8");
-        PrintWriter out = response.getWriter();
-        try {
-            /* TODO output your page here. You may use following sample code. */
-            out.println("<!DOCTYPE html>");
-            out.println("<html>");
-            out.println("<head>");
-            out.println("<title>Servlet DemiteEmpregado</title>");
-            out.println("</head>");
-            out.println("<body>");
-            out.println("<h1>Servlet DemiteEmpregado at " + request.getContextPath() + "</h1>");
-            out.println("ué... o Luiiiiiiiiiizzz não fez o servlet para Deletar a Entidade?");
-            out.println("<br/>Gente, quer moleza? Senta no pudim. Leiam os comentários no servlet para algumas instruções adicionais.");
-            out.println("</body>");
-            out.println("</html>");
-
-            // seguinte, aqui vcs precisam pegar a propriedade que veio do displaytag.
-            String email = request.getParameter("email");
-            // eu coloquei o nome do código de "cod" lá na coluna do delete, no arquivo listaTotal.jsp
-   //         request.getParameter("cod");
-            /* daí vcs vão utilizar esse codigo
-            (no caso, A CHAVE PRIMÁRIA das vossas respectivas tabelas)
-            para chamar o objeto e deletá-lo.
-            O método no EmpregadoDAO parece funcionar blzinha...            */
-      AlunoDAO alunodao = new AlunoDAO();
-
-      alunodao.deleteAluno(email);
-        
-        List<Aluno> alunos = alunodao.listaAluno();
-  request.getSession(true).setAttribute("alunos", alunos);
-            // e volta para a página da listagem
-            // TODO: Se nessa volta tiver uma mensagem falando que deu certo, ganha uma moral extra
-          response.sendRedirect("ListAdmin.jsp");
-           
-        } finally {
-            out.close();
-        }
+        String email = request.getParameter("email");
+      
+        System.out.println("loko vei... " + email);
+        AdminDAO adminDao = new AdminDAO();
+        Aluno admin= adminDao.recuperaAluno(email);
+       
+        System.out.println("what?");
+        System.out.println("Só p testar: " + admin.getEmail());
+       
+        request.getSession(true).setAttribute("alunoAtual", admin);
+        response.sendRedirect("AtualizaAdmin.jsp");
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
