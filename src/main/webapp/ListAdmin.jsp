@@ -29,7 +29,7 @@ response.setHeader("Cache-Control", "no-cache"); //Forces caches to obtain a new
         <title>Lista</title>
     </head>
     <body>
-        <form action="LogOut" method="post">
+        <form action="LogOutAdmin" method="post">
 
         <image src = "Imagens/logoiff.gif" id ="logoIFF" />
 	<image src = "Imagens/jogos_internos.png" id = "logoJogos"/>
@@ -58,9 +58,9 @@ response.setHeader("Cache-Control", "no-cache"); //Forces caches to obtain a new
 </nav>
 		
 <display:table name="${sessionScope.alunos}" class="dataTable">
-        <display:column property="email" />
         <display:column property="nome" />
         <display:column property="sobrenome" />
+        <display:column property="email" />
         <display:column property="dataNascimento" />
         <display:column property="sexo" />
         <display:column property="curso" />
@@ -68,7 +68,7 @@ response.setHeader("Cache-Control", "no-cache"); //Forces caches to obtain a new
         <display:column property="numero" />
         <display:column property="senha" />
         <display:column title="Editar" href="CarregaAdmin" paramId="email" paramProperty="email"><img src="edit.png"  title="Atualizar"/></display:column>
-        <display:column title="Deletar" href="DeletaAluno" paramId="email" paramProperty="email"><img src="delete.png" title="Apagar"/></display:column>
+        <display:column title="Deletar" href="DeletaAdmin" paramId="email" paramProperty="email"><img src="delete.png" title="Apagar"/></display:column>
     </display:table>
 
 		

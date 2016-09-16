@@ -22,7 +22,7 @@ response.setHeader("Cache-Control", "no-cache"); //Forces caches to obtain a new
 
 	
 </head>
-        <form action="LogOut" method="post">
+        <form action="LogOutAdmin" method="post">
 
 	<image src = "Imagens/logoiff.gif" id ="logoIFF" />
 	<image src = "Imagens/jogos_internos.png" id = "logoJogos"/>

@@ -65,9 +65,9 @@ response.setHeader("Cache-Control", "no-cache"); //Forces caches to obtain a new
 </nav>
 		
 <display:table name="${sessionScope.currentSessionUser}" class="dataTable">
-        <display:column property="email" />
         <display:column property="nome" />
         <display:column property="sobrenome" />
+        <display:column property="email" />
         <display:column property="dataNascimento" />
         <display:column property="sexo" />
         <display:column property="curso" />
