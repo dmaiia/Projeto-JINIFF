@@ -65,7 +65,7 @@ response.setHeader("Cache-Control", "no-cache"); //Forces caches to obtain a new
         <display:column property="ano" />
         <display:column property="numero" />
         <display:column property="senha" />
-        <display:column title="Editar" href="CarregaAluno" paramId="email" paramProperty="email"><img src="edit.png"  title="Atualizar"/></display:column>
+        <display:column title="Editar" href="CarregaAdmin" paramId="email" paramProperty="email"><img src="edit.png"  title="Atualizar"/></display:column>
         <display:column title="Deletar" href="DeletaAluno" paramId="email" paramProperty="email"><img src="delete.png" title="Apagar"/></display:column>
     </display:table>
 
