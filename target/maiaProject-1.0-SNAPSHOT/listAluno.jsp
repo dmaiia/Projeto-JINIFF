@@ -86,7 +86,7 @@ response.setHeader("Cache-Control", "no-cache"); //Forces caches to obtain a new
 	</br>
 	<image src = "Imagens/instagram.png" id ="instagram" />
 	<br>
-	
+        </div>
 
     
 <br/>

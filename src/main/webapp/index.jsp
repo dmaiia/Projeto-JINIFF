@@ -40,7 +40,7 @@
                       <li><a href="#"><strong>TABELAS</strong></a></li>                   
                 </ul>
             </li>
-        <li><a href="#"><strong>CORDENADORES</strong></a></li>
+        <li><a href="#"><strong>COORDENADORES</strong></a></li>
         <li><a href="#"><strong>CONTATO</strong></a></li> 
         <li><a href="cadastro.jsp"><strong>CADASTRO</strong></a></li>
         
