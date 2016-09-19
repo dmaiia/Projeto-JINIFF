@@ -44,20 +44,13 @@ public class DeletaAluno extends HttpServlet {
 
             // seguinte, aqui vcs precisam pegar a propriedade que veio do displaytag.
             String email = request.getParameter("email");
-            // eu coloquei o nome do código de "cod" lá na coluna do delete, no arquivo listaTotal.jsp
-   //         request.getParameter("cod");
-            /* daí vcs vão utilizar esse codigo
-            (no caso, A CHAVE PRIMÁRIA das vossas respectivas tabelas)
-            para chamar o objeto e deletá-lo.
-            O método no EmpregadoDAO parece funcionar blzinha...            */
       AlunoDAO alunodao = new AlunoDAO();
 
       alunodao.deleteAluno(email);
         
         List<Aluno> alunos = alunodao.listaAluno();
   request.getSession(true).setAttribute("alunos", alunos);
-            // e volta para a página da listagem
-            // TODO: Se nessa volta tiver uma mensagem falando que deu certo, ganha uma moral extra
+           
           response.sendRedirect("index.jsp");
            
         } finally {
