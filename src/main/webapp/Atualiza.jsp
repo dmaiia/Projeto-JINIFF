@@ -49,7 +49,7 @@
 
     <nav>
         <ul class="menu">
-            <li><a href="index.jsp"><strong>HOME</strong></a></li>
+            <li><a href="home.jsp"><strong>HOME</strong></a></li>
             <li><a href="#"><strong>SOBRE</strong></a></li>
             <li><a href="#"><strong>MENU</strong></a>
                 <ul>
@@ -60,6 +60,7 @@
             </li>
             <li><a href="#"><strong>COORDENADORES</strong></a></li>
             <li><a href="#"><strong>CONTATO</strong></a></li>
+            <li><a href="ListaAluno"><strong>DADOS PESSOAIS</strong></a></li>
         </ul>
     </nav>
 
@@ -94,7 +95,7 @@
             <input type="text" value="${sessionScope.alunoAtual.curso}" name="course" required="required" placeholder="Digite seu Curso..." /> <br/> <br/>
            </label>
            <label>
-               <input type="text" maxlength="1" value="${sessionScope.alunoAtual.ano}" name="ano" required="required" placeholder="Digite sua série..." /> <br/> <br/>
+            <input type="text" maxlength="1" value="${sessionScope.alunoAtual.ano}" name="ano" required="required" placeholder="Digite sua série..." /> <br/> <br/>
            </label>
            <label>
             <input type="text" value="${sessionScope.alunoAtual.numero}" onkeypress="mascara(this, '### #-####-####')" maxlength="15" name="numero" required="required" placeholder="Digite seu WhatsApp..." /> <br/> <br/>
@@ -108,9 +109,14 @@
            <label>
             <input type="submit" class="botao" value="Atualizar">
            </label>
-           
+         
            </fieldset>
 
+            <div id ="apagar">
+                <a href="DeletaAluno" paramId="email" paramProperty="email">
+                <p><strong> Deletar </strong></p>
+            </a>
+        </div>
 
 
     <div id = "inferior">
