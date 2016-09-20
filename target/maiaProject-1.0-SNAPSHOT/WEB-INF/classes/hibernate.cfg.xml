@@ -8,5 +8,7 @@
     <property name="hibernate.connection.username">postgres</property>
     <property name="hibernate.connection.password">postgres</property>
     <mapping class="Entidade.Admin"></mapping>
+    <mapping class="Entidade.Modalidade"></mapping>
+
   </session-factory>
 </hibernate-configuration>

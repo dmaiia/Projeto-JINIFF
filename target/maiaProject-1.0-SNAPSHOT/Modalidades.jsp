@@ -1,4 +1,12 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@taglib uri="http://displaytag.sf.net" prefix="display"%>
+<%@page import="org.displaytag.*" %>
+<%@page import="java.util.*" %>
+<%@page import="Entidade.*"%>
 <!DOCTYPE html>
+
+
+
 <html>
 <head>
 
@@ -51,7 +59,16 @@
             <h1> Molidades </h1>
             
         </div>
-
+    <display:table name="${sessionScope.modalidade}" class="dataTable">
+        <display:column property="nome" />
+        <display:column property="categoria" />
+        <display:column property="classificacao" />
+        <display:column property="hora" />
+        <display:column property="data" />
+        <display:column property="local" />
+        <display:column title="Editar" href="CarregaAluno" paramId="nome" paramProperty="nome"><img src="edit.png"  title="Atualizar"/></display:column>
+        <display:column title="Deletar" href="DeletaAluno" paramId="nome" paramProperty="nome"><img src="delete.png" title="Apagar"/></display:column>
+    </display:table>
 
 	
 		
