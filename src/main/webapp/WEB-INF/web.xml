@@ -81,15 +81,15 @@
         <url-pattern>/LoginAdm</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-    <servlet-name>ListaAdmin</servlet-name>
+        <servlet-name>ListaAdmin</servlet-name>
         <url-pattern>/ListaAdmin</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-    <servlet-name>AtualizaAdmin</servlet-name>
+        <servlet-name>AtualizaAdmin</servlet-name>
         <url-pattern>/AtualizaAdmin</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-    <servlet-name>CarregaAdmin</servlet-name>
+        <servlet-name>CarregaAdmin</servlet-name>
         <url-pattern>/CarregaAdmin</url-pattern>
     </servlet-mapping>
     <session-config>
