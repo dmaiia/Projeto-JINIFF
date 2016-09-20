@@ -27,12 +27,9 @@ public class CarregaAluno extends HttpServlet {
             throws ServletException, IOException {
         String email = request.getParameter("email");
       
-        System.out.println("loko vei... " + email);
         AlunoDAO alunoDao = new AlunoDAO();
         Aluno aluno= alunoDao.recuperaAluno(email);
        
-        System.out.println("what?");
-        System.out.println("Só p testar: " + aluno.getEmail());
        
         request.getSession(true).setAttribute("alunoAtual", aluno);
         response.sendRedirect("Atualiza.jsp");

@@ -1,4 +1,5 @@
 package Servlet;
+
 import Entidade.Aluno;
 import Hibernate.AlunoDAO;
 import java.io.IOException;
@@ -29,19 +30,20 @@ public class DeletaAluno extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         PrintWriter out = response.getWriter();
         try {
-            /* TODO output your page here. You may use following sample code. */
-            out.println("<!DOCTYPE html>");
-            out.println("<html>");
-            out.println("<head>");
-            out.println("<title>Servlet DemiteEmpregado</title>");
-            out.println("</head>");
-            out.println("<body>");
-            out.println("<h1>Servlet DemiteEmpregado at " + request.getContextPath() + "</h1>");
-            out.println("ué... o Luiiiiiiiiiizzz não fez o servlet para Deletar a Entidade?");
-            out.println("<br/>Gente, quer moleza? Senta no pudim. Leiam os comentários no servlet para algumas instruções adicionais.");
-            out.println("</body>");
-            out.println("</html>");
 
+<<<<<<< HEAD
+            Aluno aluno = (Aluno) request.getSession(true).getAttribute("alunoAtual");
+            AlunoDAO alunodao = new AlunoDAO();
+
+            alunodao.deleteAluno(aluno.getEmail());
+
+            List<Aluno> alunos = alunodao.listaAluno();
+            request.getSession(true).setAttribute("alunos", alunos);
+            // e volta para a página da listagem
+            // TODO: Se nessa volta tiver uma mensagem falando que deu certo, ganha uma moral extra
+            response.sendRedirect("index.jsp");
+
+=======
             // seguinte, aqui vcs precisam pegar a propriedade que veio do displaytag.
             String email = request.getParameter("email");
       AlunoDAO alunodao = new AlunoDAO();
@@ -53,6 +55,7 @@ public class DeletaAluno extends HttpServlet {
            
           response.sendRedirect("index.jsp");
            
+>>>>>>> d513f273ca6dab92936ef20a34c1f6327f7ce654
         } finally {
             out.close();
         }
