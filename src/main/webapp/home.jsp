@@ -44,7 +44,11 @@ response.setHeader("Cache-Control", "no-cache"); //Forces caches to obtain a new
         <li><a href="#"><strong>COORDENADORES</strong></a></li>
         <li><a href="#"><strong>CONTATO</strong></a></li> 
         <li><a href="ListaAluno"><strong>DADOS PESSOAIS</strong></a></li>
-        
+        <li><a href="#"><strong>CADASTRO</strong></a>
+                <ul>
+                    <li><a href="#"><strong>CADASTRO MODALIDADES</strong></a></li>                    
+                </ul>
+            </li>
         
   </ul>
 </nav>

@@ -57,6 +57,11 @@
             </li>
             <li><a href="#"><strong>CORDENADORES</strong></a></li>
             <li><a href="#"><strong>CONTATO</strong></a></li>
+            <li><a href="#"><strong>CADASTRO</strong></a>
+                <ul>
+                    <li><a href="#"><strong>CADASTRO MODALIDADES</strong></a></li>                    
+                </ul>
+            </li>
         </ul>
     </nav>
 
