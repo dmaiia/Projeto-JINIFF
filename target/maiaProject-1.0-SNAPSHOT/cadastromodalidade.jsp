@@ -27,7 +27,7 @@
             }
         }
 </script>
-        <link rel="stylesheet" href=".css" type="text/css" /> 
+        <link rel="stylesheet" href="cadastromodalidade.css" type="text/css" /> 
                                         <link rel="shortcut icon" href="Imagens/j.png" >
 
 
