@@ -1,20 +1,32 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package Servlet;
 
-import Entidade.Aluno;
-import Hibernate.AlunoDAO;
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+import Entidade.Modalidade;
+import Hibernate.ModalidadeDAO;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.List;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+
+
 /**
  *
- * @author luizc
+ * @author Diego Maia
  */
-public class DeletaAluno extends HttpServlet {
+public class CadastroModalidade extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -30,32 +42,31 @@ public class DeletaAluno extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         PrintWriter out = response.getWriter();
         try {
+            /* TODO output your page here. You may use following sample code. */
+            
+            String nome = request.getParameter("nome);
+            String categoria = request.getParameter("categoria");
+            String classificacao = request.getParameter("classificacao");
+            String hora = request.getParameter("hora");
+            String data = request.getParameter("data");
+            String local = request.getParameter("local");
+            
+            
 
-<<<<<<< HEAD
-            Aluno aluno = (Aluno) request.getSession(true).getAttribute("alunoAtual");
-            AlunoDAO alunodao = new AlunoDAO();
-
-            alunodao.deleteAluno(aluno.getEmail());
-
-            List<Aluno> alunos = alunodao.listaAluno();
-            request.getSession(true).setAttribute("alunos", alunos);
-            // e volta para a página da listagem
-            // TODO: Se nessa volta tiver uma mensagem falando que deu certo, ganha uma moral extra
-            response.sendRedirect("index.jsp");
-
-=======
-            // seguinte, aqui vcs precisam pegar a propriedade que veio do displaytag.
-            String email = request.getParameter("email");
-      AlunoDAO alunodao = new AlunoDAO();
-
-      alunodao.deleteAluno(email);
-        
-        List<Aluno> alunos = alunodao.listaAluno();
-  request.getSession(true).setAttribute("alunos", alunos);
-           
-          response.sendRedirect("index.jsp");
-           
->>>>>>> d513f273ca6dab92936ef20a34c1f6327f7ce654
+            Modalidade modalidade = new Modalidade();
+            
+            modalidade.setNome(nome);
+            modalidade.setCategoria(categoria);
+            modalidade.setClassificacao(classificacao);
+            modalidade.setHora(hora);
+            modalidade.setData(data );
+            modalidade.setLocal(local);
+            
+            
+            ModalidadeDAO moDAO = new ModalidadeDAO();
+            moDAO.addModalidade(modalidade);
+            response.sendRedirect("Modalidades.jsp");
+            
         } finally {
             out.close();
         }
