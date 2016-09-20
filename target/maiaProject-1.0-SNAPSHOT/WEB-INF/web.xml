@@ -29,6 +29,10 @@
         <servlet-class>Servlet.CadastroAdm</servlet-class>
     </servlet>
     <servlet>
+        <servlet-name>CadastroModalidade</servlet-name>
+        <servlet-class>Servlet.CadastroModalidade</servlet-class>
+    </servlet>
+    <servlet>
         <servlet-name>Login</servlet-name>
         <servlet-class>Servlet.Login</servlet-class>
     </servlet>
@@ -39,6 +43,10 @@
     <servlet>
         <servlet-name>ListaAdmin</servlet-name>
         <servlet-class>Servlet.ListaAdmin</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ListaModalidade</servlet-name>
+        <servlet-class>Servlet.ListaModalidade</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>AtualizaAdmin</servlet-name>
@@ -57,12 +65,20 @@
         <url-pattern>/CadastroAdm</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
+        <servlet-name>CadastroModalidade</servlet-name>
+        <url-pattern>/CadastroModalidade</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
         <servlet-name>Login</servlet-name>
         <url-pattern>/Login</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>ListaAluno</servlet-name>
         <url-pattern>/ListaAluno</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ListaModalidade</servlet-name>
+        <url-pattern>/ListaModalidade</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>DeletaAluno</servlet-name>
@@ -81,15 +97,15 @@
         <url-pattern>/LoginAdm</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-    <servlet-name>ListaAdmin</servlet-name>
+        <servlet-name>ListaAdmin</servlet-name>
         <url-pattern>/ListaAdmin</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-    <servlet-name>AtualizaAdmin</servlet-name>
+        <servlet-name>AtualizaAdmin</servlet-name>
         <url-pattern>/AtualizaAdmin</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-    <servlet-name>CarregaAdmin</servlet-name>
+        <servlet-name>CarregaAdmin</servlet-name>
         <url-pattern>/CarregaAdmin</url-pattern>
     </servlet-mapping>
     <session-config>

@@ -1,6 +1,7 @@
 {
     "elements": {
-        "p": {}
+        "p": {},
+        "display:table": {}
     },
     "attributes": {
         "clear": {
