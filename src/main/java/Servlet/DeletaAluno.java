@@ -31,7 +31,7 @@ public class DeletaAluno extends HttpServlet {
         PrintWriter out = response.getWriter();
         try {
 
-<<<<<<< HEAD
+
             Aluno aluno = (Aluno) request.getSession(true).getAttribute("alunoAtual");
             AlunoDAO alunodao = new AlunoDAO();
 
@@ -43,19 +43,6 @@ public class DeletaAluno extends HttpServlet {
             // TODO: Se nessa volta tiver uma mensagem falando que deu certo, ganha uma moral extra
             response.sendRedirect("index.jsp");
 
-=======
-            // seguinte, aqui vcs precisam pegar a propriedade que veio do displaytag.
-            String email = request.getParameter("email");
-      AlunoDAO alunodao = new AlunoDAO();
-
-      alunodao.deleteAluno(email);
-        
-        List<Aluno> alunos = alunodao.listaAluno();
-  request.getSession(true).setAttribute("alunos", alunos);
-           
-          response.sendRedirect("index.jsp");
-           
->>>>>>> d513f273ca6dab92936ef20a34c1f6327f7ce654
         } finally {
             out.close();
         }
