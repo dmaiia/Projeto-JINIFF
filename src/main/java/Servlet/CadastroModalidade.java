@@ -1,19 +1,32 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package Servlet;
-import Entidade.Aluno;
-import Hibernate.AlunoDAO;
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+import Entidade.Modalidade;
+import Hibernate.ModalidadeDAO;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.List;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+
+
 /**
  *
- * @author luizc
+ * @author Diego Maia
  */
-public class DeletaAluno extends HttpServlet {
+public class CadastroModalidade extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -30,29 +43,30 @@ public class DeletaAluno extends HttpServlet {
         PrintWriter out = response.getWriter();
         try {
             /* TODO output your page here. You may use following sample code. */
-            out.println("<!DOCTYPE html>");
-            out.println("<html>");
-            out.println("<head>");
-            out.println("<title>Servlet DemiteEmpregado</title>");
-            out.println("</head>");
-            out.println("<body>");
-            out.println("<h1>Servlet DemiteEmpregado at " + request.getContextPath() + "</h1>");
-            out.println("ué... o Luiiiiiiiiiizzz não fez o servlet para Deletar a Entidade?");
-            out.println("<br/>Gente, quer moleza? Senta no pudim. Leiam os comentários no servlet para algumas instruções adicionais.");
-            out.println("</body>");
-            out.println("</html>");
+            
+            String nome = request.getParameter("nome);
+            String categoria = request.getParameter("categoria");
+            String classificacao = request.getParameter("classificacao");
+            String hora = request.getParameter("hora");
+            String data = request.getParameter("data");
+            String local = request.getParameter("local");
+            
+            
 
-            // seguinte, aqui vcs precisam pegar a propriedade que veio do displaytag.
-            String email = request.getParameter("email");
-      AlunoDAO alunodao = new AlunoDAO();
-
-      alunodao.deleteAluno(email);
-        
-        List<Aluno> alunos = alunodao.listaAluno();
-  request.getSession(true).setAttribute("alunos", alunos);
-           
-          response.sendRedirect("index.jsp");
-           
+            Modalidade modalidade = new Modalidade();
+            
+            modalidade.setNome(nome);
+            modalidade.setCategoria(categoria);
+            modalidade.setClassificacao(classificacao);
+            modalidade.setHora(hora);
+            modalidade.setData(data );
+            modalidade.setLocal(local);
+            
+            
+            ModalidadeDAO moDAO = new ModalidadeDAO();
+            moDAO.addModalidade(modalidade);
+            response.sendRedirect("Modalidades.jsp");
+            
         } finally {
             out.close();
         }
