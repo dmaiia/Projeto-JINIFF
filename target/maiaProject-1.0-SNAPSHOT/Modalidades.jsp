@@ -44,7 +44,7 @@
         <li><a href="#"><strong>SOBRE</strong></a></li>
             <li><a href="#"><strong>MENU</strong></a>
                 <ul>
-                      <li><a href="#"><strong>MODALIDADES</strong></a></li>
+                      <li><a href="ListaModalidade"><strong>MODALIDADES</strong></a></li>
                       <li><a href="#"><strong>COMISSOES</strong></a></li>
                       <li><a href="#"><strong>TABELAS</strong></a></li>                   
                 </ul>
@@ -59,7 +59,7 @@
             <h1> Molidades </h1>
             
         </div>
-    <display:table name="${sessionScope.modalidade}" class="dataTable">
+    <display:table name="${sessionScope.modalidades}" class="dataTable">
         <display:column property="nome" />
         <display:column property="categoria" />
         <display:column property="classificacao" />

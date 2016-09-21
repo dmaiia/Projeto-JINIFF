@@ -13,13 +13,13 @@ public class ModalidadeDAO {
      private static SessionFactory factory; 
    /* Method to CREATE an employee in the database */
    /**
-    * Este metodo adiciona um aluno ao Banco de Dados
-    * @param aluno um objeto ja preenchido da classe aluno
+    * Este metodo adiciona um modalidade ao Banco de Dados
+    * @param modalidade um objeto ja preenchido da classe modalidade
     * @return retorna o código gerado
     */
   
     /**
-     * Este metodo adiciona um aluno ao Banco de Dados
+     * Este metodo adiciona um modalidade ao Banco de Dados
      * @param modalidade
      * @return retorna o código gerado
      * 
@@ -76,7 +76,7 @@ public class ModalidadeDAO {
     /* Method to UPDATE salary for an empregado */
    
  
-   public void deleteModalidade(String nome /*Integer AlunoID */){
+   public void deleteModalidade(String nome /*Integer ModalidadeID */){
       Session session = HibernateUtil.abrirSessaoComBD();
       Transaction tx = null;
       try{
@@ -110,4 +110,36 @@ public class ModalidadeDAO {
         }
         return modalidades;
     } 
+   
+   /* Method to UPDATE salary for an empregado */
+    public void updateModalidade(String /* Integer ModalidadeID */nomeID, String nome, String categoria, String classificacao, String hora, String data, String local) {
+        
+        Session session = HibernateUtil.abrirSessaoComBD();
+        Transaction tx = null;
+        try {
+            tx = session.beginTransaction();
+            Modalidade modalidade
+                    = (Modalidade) session.get(Modalidade.class, nomeID);
+            // daí aqui vc vai chamar TODOS os sets do seu objeto
+            modalidade.setNome(nome);
+            modalidade.setCategoria(categoria);
+            modalidade.setClassificacao(classificacao);
+            modalidade.setHora(hora);
+            modalidade.setData(data);
+            modalidade.setLocal(local);
+            
+            
+            // e só depois chamar o update
+            session.update(modalidade);
+            tx.commit();
+        } catch (HibernateException e) {
+            if (tx != null) {
+                tx.rollback();
+            }
+            e.printStackTrace();
+            throw e;
+        } finally {
+            session.close();
+        }
+    }
 }

@@ -46,11 +46,11 @@
 
     <nav>
         <ul class="menu">
-            <li><a href="index.jsp"><strong>HOME</strong></a></li>
+            <li><a href="homeadm.jsp"><strong>HOME</strong></a></li>
             <li><a href="#"><strong>SOBRE</strong></a></li>
             <li><a href="#"><strong>MENU</strong></a>
                 <ul>
-                    <li><a href="#"><strong>MODALIDADES</strong></a></li>
+                    <li><a href="cadastromodalidade.jsp"><strong>MODALIDADES</strong></a></li>
                     <li><a href="#"><strong>COMISSOES</strong></a></li>
                     <li><a href="#"><strong>TABELAS</strong></a></li>                   
                 </ul>
