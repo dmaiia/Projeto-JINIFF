@@ -45,25 +45,33 @@
 
 
     <nav>
-        <ul class="menu">
-            <li><a href="homeadm.jsp"><strong>HOME</strong></a></li>
-            <li><a href="#"><strong>SOBRE</strong></a></li>
+    <ul class="menu">
+        <li><a href="homeadm.jsp"><strong>HOME</strong></a></li>
+        <li><a href="#"><strong>SOBRE</strong></a></li>
             <li><a href="#"><strong>MENU</strong></a>
                 <ul>
                     <li><a href="ListaModalidade"><strong>MODALIDADES</strong></a></li>
                     <li><a href="#"><strong>COMISSOES</strong></a></li>
                     <li><a href="#"><strong>TABELAS</strong></a></li>                   
+
+
+                      <li><a href="ListaModalidade"><strong>MODALIDADES</strong></a></li>
+                      <li><a href="#"><strong>COMISSOES</strong></a></li>
+                      <li><a href="#"><strong>TABELAS</strong></a></li>                   
                 </ul>
             </li>
-            <li><a href="#"><strong>COORDENADORES</strong></a></li>
-            <li><a href="#"><strong>CONTATO</strong></a></li>
+        <li><a href="#"><strong>COORDENADORES</strong></a></li>
+        <li><a href="#"><strong>CONTATO</strong></a></li> 
+        <li><a href="ListaAdmin"><strong>LISTA DE USUÁRIOS</strong></a></li>
             <li><a href="#"><strong>CADASTRO</strong></a>
                 <ul>
                     <li><a href="cadastro.jsp"><strong>CADASTRO USUÁRIOS</strong></a></li>  
                     <li><a href="cadastrarcomissao.jsp"><strong>CADASTRO COMISSÕES</strong></a></li>     
                 </ul>
             </li>
-        </ul>
+
+        
+  </ul>
     </nav>
 
 

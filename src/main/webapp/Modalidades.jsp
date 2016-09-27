@@ -45,14 +45,15 @@ response.setHeader("Cache-Control", "no-cache"); //Forces caches to obtain a new
         <li><a href="#"><strong>SOBRE</strong></a></li>
             <li><a href="#"><strong>MENU</strong></a>
                 <ul>
-                      <li><a href="#"><strong>MODALIDADES</strong></a></li>
+
+                      <li><a href="ListaModalidade"><strong>MODALIDADES</strong></a></li>
                       <li><a href="#"><strong>COMISSOES</strong></a></li>
-                      <li><a href="#"><strong>TABELAS</strong></a></li>
-                      
+                      <li><a href="#"><strong>TABELAS</strong></a></li>                   
                 </ul>
             </li>
-        <li><a href=""><strong>COORDENADORES</strong></a></li>
-        <li><a href=""><strong>CONTATO</strong></a></li> 
+        <li><a href="#"><strong>COORDENADORES</strong></a></li>
+        <li><a href="#"><strong>CONTATO</strong></a></li> 
+        <li><a href="ListaAdmin"><strong>LISTA DE USUÁRIOS</strong></a></li>
         <li><a href=""><strong>CADASTROS</strong></a>
         
                 <ul>
@@ -60,6 +61,7 @@ response.setHeader("Cache-Control", "no-cache"); //Forces caches to obtain a new
                     <li><a href="cadastromodalidade.jsp"><strong>CADASTRO MODALIDADES</strong></a></li>                    
                 </ul>
             </li>
+
         
   </ul>
 </nav>
@@ -74,8 +76,8 @@ response.setHeader("Cache-Control", "no-cache"); //Forces caches to obtain a new
         <display:column property="hora" />
         <display:column property="data" />
         <display:column property="local" />
-        <display:column title="Editar" href="CarregaAluno" paramId="nome" paramProperty="nome"><img src="edit.png"  title="Atualizar"/></display:column>
-        <display:column title="Deletar" href="DeletaAluno" paramId="nome" paramProperty="nome"><img src="delete.png" title="Apagar"/></display:column>
+        <display:column title="Editar" href="CarregaModalidade" paramId="nome" paramProperty="nome"><img src="edit.png"  title="Atualizar"/></display:column>
+        <display:column title="Deletar" href="DeletaModalidade" paramId="nome" paramProperty="nome"><img src="delete.png" title="Apagar"/></display:column>
     </display:table>
 
 	

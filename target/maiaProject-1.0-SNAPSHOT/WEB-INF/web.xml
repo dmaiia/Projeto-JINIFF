@@ -70,6 +70,18 @@
         <servlet-class>Servlet.CarregaAdmin</servlet-class>
     </servlet>
     <servlet>
+        <servlet-name>CarregaModalidade</servlet-name>
+        <servlet-class>Servlet.CarregaModalidade</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AtualizaModalidade</servlet-name>
+        <servlet-class>Servlet.AtualizaModalidade</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DeletaModalidade</servlet-name>
+        <servlet-class>Servlet.DeletaModalidade</servlet-class>
+    </servlet>
+    <servlet>
         <servlet-name>CadastroComissao</servlet-name>
         <servlet-class>Servlet.CadastroComissao</servlet-class>
     </servlet>
@@ -118,6 +130,10 @@
         <url-pattern>/CarregaAluno</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
+        <servlet-name>CarregaModalidade</servlet-name>
+        <url-pattern>/CarregaModalidade</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
         <servlet-name>AtualizaAluno</servlet-name>
         <url-pattern>/AtualizaAluno</url-pattern>
     </servlet-mapping>
@@ -134,8 +150,16 @@
         <url-pattern>/AtualizaAdmin</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
+        <servlet-name>AtualizaModalidade</servlet-name>
+        <url-pattern>/AtualizaModalidade</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
         <servlet-name>CarregaAdmin</servlet-name>
         <url-pattern>/CarregaAdmin</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DeletaModalidade</servlet-name>
+        <url-pattern>/DeletaModalidade</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>CadastroComissao</servlet-name>
