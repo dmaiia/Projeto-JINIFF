@@ -50,6 +50,10 @@
         <servlet-class>Servlet.ListaModalidade</servlet-class>
     </servlet>
     <servlet>
+        <servlet-name>ListaModalidade2</servlet-name>
+        <servlet-class>Servlet.ListaModalidade2</servlet-class>
+    </servlet>
+    <servlet>
         <servlet-name>AtualizaAdmin</servlet-name>
         <servlet-class>Servlet.AtualizaAdmin</servlet-class>
     </servlet>
@@ -80,6 +84,10 @@
     <servlet-mapping>
         <servlet-name>ListaModalidade</servlet-name>
         <url-pattern>/ListaModalidade</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ListaModalidade2</servlet-name>
+        <url-pattern>/ListaModalidade2</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>DeletaAluno</servlet-name>
