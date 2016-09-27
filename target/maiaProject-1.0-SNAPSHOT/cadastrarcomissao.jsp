@@ -39,8 +39,17 @@
                     <li><a href="#"><strong>TABELAS</strong></a></li>                   
                 </ul>
             </li>
-            <li><a href="#"><strong>CORDENADORES</strong></a></li>
+            <li><a href="#"><strong>COORDENADORES</strong></a></li>
             <li><a href="#"><strong>CONTATO</strong></a></li>
+            <li><a href="ListaAdmin"><strong>LISTA DE USUÁRIOS</strong></a></li>
+            <li><a href=""><strong>CADASTROS</strong></a>
+        
+                <ul>
+                    <li><a href="cadastro.jsp"><strong>CADASTRO USUÁRIOS</strong></a>
+                    <li><a href="cadastromodalidade.jsp"><strong>CADASTRO MODALIDADES</strong></a></li>                    
+                </ul>
+            </li>
+
         </ul>
     </nav>
 
