@@ -27,7 +27,7 @@ public class ListaComissao extends HttpServlet {
         ComissaoDAO comissaodao = new ComissaoDAO();
         List<Comissao> comissoes = comissaodao.listaComissao();
         request.getSession(true).setAttribute("comissoes", comissoes);
-        response.sendRedirect("ListAdmin.jsp");
+        response.sendRedirect("comissao.jsp");
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

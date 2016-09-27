@@ -50,6 +50,14 @@
         <servlet-class>Servlet.ListaModalidade</servlet-class>
     </servlet>
     <servlet>
+        <servlet-name>ListaComissao</servlet-name>
+        <servlet-class>Servlet.ListaComissao</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ListaComissao2</servlet-name>
+        <servlet-class>Servlet.ListaComissao2</servlet-class>
+    </servlet>
+    <servlet>
         <servlet-name>ListaModalidade2</servlet-name>
         <servlet-class>Servlet.ListaModalidade2</servlet-class>
     </servlet>
@@ -88,6 +96,14 @@
     <servlet-mapping>
         <servlet-name>ListaModalidade</servlet-name>
         <url-pattern>/ListaModalidade</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ListaComissao</servlet-name>
+        <url-pattern>/ListaComissao</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ListaComissao2</servlet-name>
+        <url-pattern>/ListaComissao2</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>ListaModalidade2</servlet-name>

@@ -28,7 +28,7 @@ response.setHeader("Cache-Control", "no-cache"); //Forces caches to obtain a new
 
         <title>Lista</title>
     </head>
-    <body>
+    <fieldset>
         <form action="LogOutAdmin" method="post">
 
         <image src = "Imagens/logoiff.gif" id ="logoIFF" />
@@ -93,5 +93,5 @@ response.setHeader("Cache-Control", "no-cache"); //Forces caches to obtain a new
     
 <br/>
         </form>
-    </body>
+        </fieldset>
 </html>

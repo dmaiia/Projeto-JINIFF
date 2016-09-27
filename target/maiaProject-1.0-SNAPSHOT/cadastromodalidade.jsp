@@ -50,7 +50,7 @@
             <li><a href="#"><strong>SOBRE</strong></a></li>
             <li><a href="#"><strong>MENU</strong></a>
                 <ul>
-                    <li><a href="Modalidades.jsp"><strong>MODALIDADES</strong></a></li>
+                    <li><a href="ListaModalidade"><strong>MODALIDADES</strong></a></li>
                     <li><a href="#"><strong>COMISSOES</strong></a></li>
                     <li><a href="#"><strong>TABELAS</strong></a></li>                   
                 </ul>

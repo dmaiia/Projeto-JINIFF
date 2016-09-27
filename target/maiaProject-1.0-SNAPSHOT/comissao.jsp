@@ -1,12 +1,8 @@
-
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@taglib uri="http://displaytag.sf.net" prefix="display"%>
 <%@page import="org.displaytag.*" %>
 <%@page import="java.util.*" %>
-<%@page import="Entidade.*" %>
-
-
+<%@page import="Entidade.*"%>
 <!DOCTYPE html>
 <%
 response.setHeader("Cache-Control", "no-cache"); //Forces caches to obtain a new copy of the page from the origin server
@@ -20,21 +16,24 @@ response.setHeader("Cache-Control", "no-cache"); //Forces caches to obtain a new
         rd.forward(request, response);
     }
 %>
+
+
 <html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link rel="stylesheet" type="text/css" href="dysplaytagexemplo.css">
-                                        <link rel="shortcut icon" href="Imagens/j.png" >
+<head>
 
-        <title>Lista</title>
-    </head>
-    <fieldset>
-        <form action="LogOutAdmin" method="post">
+    <title>Comissões</title>
+	
+    <link rel="stylesheet" href="comissoes.css" type="text/css" /> 
+                                    <link rel="shortcut icon" href="Imagens/j.png" >
 
-        <image src = "Imagens/logoiff.gif" id ="logoIFF" />
+	
+</head>
+    <form action="LogOutAdmin" method="post">
+
+	<image src = "Imagens/logoiff.gif" id ="logoIFF" />
 	<image src = "Imagens/jogos_internos.png" id = "logoJogos"/>
+            <input type="submit" class="botao" value="Sair">
 
- <input type="submit" class="botao" value="Sair">
 
 	
 
@@ -43,41 +42,40 @@ response.setHeader("Cache-Control", "no-cache"); //Forces caches to obtain a new
 	<nav>
   <ul class="menu">
         <li><a href="homeadm.jsp"><strong>HOME</strong></a></li>
+        <li><a href="#"><strong>SOBRE</strong></a></li>
             <li><a href="#"><strong>MENU</strong></a>
                 <ul>
                       <li><a href="#"><strong>MODALIDADES</strong></a></li>
                       <li><a href="#"><strong>COMISSOES</strong></a></li>
-                      <li><a href="#"><strong>TABELAS</strong></a></li>                   
+                      <li><a href="#"><strong>TABELAS</strong></a></li>
+                      
                 </ul>
             </li>
-        <li><a href="#"><strong>COORDENADORES</strong></a></li>
-        <li><a href="#"><strong>CONTATO</strong></a></li> 
-        <li><a href="ListaAdmin"><strong>LISTA DE USUÁRIOS</strong></a></li>
-        <li><a href="#"><strong>CADASTRO</strong></a>
-               
+        <li><a href=""><strong>COORDENADORES</strong></a></li>
+        <li><a href=""><strong>CONTATO</strong></a></li> 
+        <li><a href=""><strong>CADASTROS</strong></a>
+        
                 <ul>
                     <li><a href="cadastro.jsp"><strong>CADASTRO USUÁRIOS</strong></a>
-                    <li><a href="cadastroadm.jsp"><strong>CADASTRO MODALIDADES</strong></a></li>                    
+                    <li><a href="cadastromodalidade.jsp"><strong>CADASTRO MODALIDADES</strong></a></li>                    
                 </ul>
             </li>
         
   </ul>
 </nav>
-		
-<display:table name="${sessionScope.alunos}" class="dataTable">
+        <div id="Modalidades">
+            <h1> Comissões </h1>
+            
+        </div>
+    <display:table name="${sessionScope.comissoes}" class="dataTable">
         <display:column property="nome" />
-        <display:column property="sobrenome" />
-        <display:column property="email" />
-        <display:column property="dataNascimento" />
-        <display:column property="sexo" />
-        <display:column property="curso" />
-        <display:column property="ano" />
-        <display:column property="numero" />
-        <display:column property="senha" />
-        <display:column title="Editar" href="CarregaAdmin" paramId="email" paramProperty="email"><img src="edit.png"  title="Atualizar"/></display:column>
-        <display:column title="Deletar" href="DeletaAdmin" paramId="email" paramProperty="email"><img src="delete.png" title="Apagar"/></display:column>
+        <display:column property="descricao" />
+        <display:column property="responsabilidades" />
+        <display:column title="Editar" href="CarregaComissao" paramId="nome" paramProperty="nome"><img src="edit.png"  title="Atualizar"/></display:column>
+        <display:column title="Deletar" href="DeletaComissao" paramId="nome" paramProperty="nome"><img src="delete.png" title="Apagar"/></display:column>
     </display:table>
 
+	
 		
 	
 	<div id = "inferior">
@@ -90,8 +88,11 @@ response.setHeader("Cache-Control", "no-cache"); //Forces caches to obtain a new
 	<br>
 	
 
-    
-<br/>
-        </form>
-        </fieldset>
+        <footer> </footer>
+
+	</div>
+    </form>
 </html>
+
+
+

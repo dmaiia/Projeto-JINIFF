@@ -6,32 +6,20 @@
 package Hibernate;
 
 import Entidade.Comissao;
-import java.io.IOException;
-import java.io.PrintWriter;
 import java.util.List;
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import org.hibernate.HibernateException;
-import org.hibernate.Session;
+import org.hibernate.HibernateException; 
+import org.hibernate.Session; 
 import org.hibernate.Transaction;
-
+import org.hibernate.SessionFactory;
 /**
  *
  * @author aluno
  */
-public class ComissaoDAO extends HttpServlet {
+public class ComissaoDAO  {
+    
+         private static SessionFactory factory; 
 
-    /**
-     * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
-     * methods.
-     *
-     * @param request servlet request
-     * @param response servlet response
-     * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an I/O error occurs
-     */
+   
      public boolean ADDComissao(Comissao comissao){
       Session session = HibernateUtil.abrirSessaoComBD();
       Transaction tx = null;
@@ -64,10 +52,10 @@ public class ComissaoDAO extends HttpServlet {
    public List<Comissao> listaComissao( ){
       Session session = HibernateUtil.abrirSessaoComBD();
       Transaction tx = null;
-      List <Comissao> comissao = null;
+      List <Comissao> comissoes = null;
       try{
          tx = session.beginTransaction();
-         comissao = session.createQuery("FROM Comissao").list(); 
+         comissoes = session.createQuery("FROM Comissao").list(); 
         
          tx.commit();
          
@@ -78,7 +66,7 @@ public class ComissaoDAO extends HttpServlet {
       }finally {
          session.close(); 
       }
-      return comissao;
+      return comissoes;
    }
    
     /* Method to UPDATE salary for an empregado */

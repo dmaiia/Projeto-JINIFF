@@ -37,7 +37,7 @@
             <li><a href="#"><strong>MENU</strong></a>
                 <ul>
                       <li><a href="ListaModalidade2"><strong>MODALIDADES</strong></a></li>
-                      <li><a href="#"><strong>COMISSOES</strong></a></li>
+                      <li><a href="ListaComissao2"><strong>COMISSOES</strong></a></li>
                       <li><a href="#"><strong>TABELAS</strong></a></li>                   
                 </ul>
             </li>
