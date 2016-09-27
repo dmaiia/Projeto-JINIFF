@@ -44,7 +44,7 @@
         <image src = "Imagens/jogos_internos.png" id = "logoJogos"/>
 
     </div>
-
+            
 
 
     <nav>
@@ -64,6 +64,12 @@
         </ul>
     </nav>
 
+            
+            <div id ="apagar">
+                <a href="DeletaAluno" paramId="email" paramProperty="email">
+                <p><strong> Deletar </strong></p>
+            </a>
+                       </div>
 
     <fieldset>
 
@@ -110,14 +116,11 @@
             <input type="submit" class="botao" value="Atualizar">
            </label>
          
+           
+
            </fieldset>
 
-            <div id ="apagar">
-                <a href="DeletaAluno" paramId="email" paramProperty="email">
-                <p><strong> Deletar </strong></p>
-            </a>
-        </div>
-
+           
 
     <div id = "inferior">
 

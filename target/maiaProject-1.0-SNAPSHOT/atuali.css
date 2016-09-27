@@ -130,7 +130,7 @@ fieldset{
     position: relative;
     float:right;
     width: 30%;
-    height: 82%;
+    height: 85%;
     background-color: white;
     border-radius: 20px 20px 20px 20px;
     border: solid 5px black;
@@ -234,6 +234,30 @@ footer{
 	margin-top: 2%;
 }
 
-.botao{
-        
+#apagar{
+        position:relative;
+        top:-270px;
+        width:10%;
+        right:-1050px;
+        height:5%;
+        margin-top: 3%;
+        margin-right: 5%;
+        border: #A9A9A9 solid 3px; 
+        cursor: pointer;
+        border-radius: 2px 2px 2px 2px;
+}
+#apagar:hover{background-color:  #333;}
+
+#apagar p:hover{color: white;}
+
+#apagar a{color: white;}
+
+#apagar a:hover{color: transparent;}
+
+#apagar p{
+        text-align: center;
+        font-family: Cursive;
+        font-size: 150%;
+        color: #A9A9A9;
+        padding: 10px;
 }
