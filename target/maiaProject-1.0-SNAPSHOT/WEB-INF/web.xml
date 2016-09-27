@@ -50,12 +50,20 @@
         <servlet-class>Servlet.ListaModalidade</servlet-class>
     </servlet>
     <servlet>
+        <servlet-name>ListaModalidade2</servlet-name>
+        <servlet-class>Servlet.ListaModalidade2</servlet-class>
+    </servlet>
+    <servlet>
         <servlet-name>AtualizaAdmin</servlet-name>
         <servlet-class>Servlet.AtualizaAdmin</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>CarregaAdmin</servlet-name>
         <servlet-class>Servlet.CarregaAdmin</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CadastroComissao</servlet-name>
+        <servlet-class>Servlet.CadastroComissao</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>CadastroAluno</servlet-name>
@@ -80,6 +88,10 @@
     <servlet-mapping>
         <servlet-name>ListaModalidade</servlet-name>
         <url-pattern>/ListaModalidade</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ListaModalidade2</servlet-name>
+        <url-pattern>/ListaModalidade2</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>DeletaAluno</servlet-name>
@@ -108,6 +120,10 @@
     <servlet-mapping>
         <servlet-name>CarregaAdmin</servlet-name>
         <url-pattern>/CarregaAdmin</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CadastroComissao</servlet-name>
+        <url-pattern>/CadastroComissao</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

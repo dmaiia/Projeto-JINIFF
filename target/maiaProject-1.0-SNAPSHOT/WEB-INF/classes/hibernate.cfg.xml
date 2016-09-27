@@ -9,6 +9,7 @@
     <property name="hibernate.connection.password">postgres</property>
     <mapping class="Entidade.Admin"></mapping>
     <mapping class="Entidade.Modalidade"></mapping>
+    <mapping class="Entidade.Comissao"></mapping>
 
   </session-factory>
 </hibernate-configuration>
