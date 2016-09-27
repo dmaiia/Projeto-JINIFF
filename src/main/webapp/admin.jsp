@@ -44,7 +44,7 @@ response.setHeader("Cache-Control", "no-cache"); //Forces caches to obtain a new
                 <ul>
 
                       <li><a href="ListaModalidade"><strong>MODALIDADES</strong></a></li>
-                      <li><a href="comissao.jsp"><strong>COMISSOES</strong></a></li>   
+                      <li><a href="ListaComissao"><strong>COMISSOES</strong></a></li>   
                       <li><a href="#"><strong>TABELAS</strong></a></li>                   
                 </ul>
             </li>

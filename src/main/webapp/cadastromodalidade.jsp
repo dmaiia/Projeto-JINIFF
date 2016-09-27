@@ -51,13 +51,8 @@
             <li><a href="#"><strong>MENU</strong></a>
                 <ul>
                     <li><a href="ListaModalidade"><strong>MODALIDADES</strong></a></li>
-                    <li><a href="#"><strong>COMISSOES</strong></a></li>
+                    <li><a href="ListaComissao"><strong>COMISSOES</strong></a></li>
                     <li><a href="#"><strong>TABELAS</strong></a></li>                   
-
-
-                      <li><a href="ListaModalidade"><strong>MODALIDADES</strong></a></li>
-                      <li><a href="#"><strong>COMISSOES</strong></a></li>
-                      <li><a href="#"><strong>TABELAS</strong></a></li>                   
                 </ul>
             </li>
         <li><a href="#"><strong>COORDENADORES</strong></a></li>

@@ -1,8 +1,4 @@
-<%-- 
-    Document   : cadastrarcomissao
-    Created on : 20/09/2016, 11:29:42
-    Author     : aluno
---%>
+
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -34,8 +30,8 @@
             <li><a href="#"><strong>SOBRE</strong></a></li>
             <li><a href="#"><strong>MENU</strong></a>
                 <ul>
-                    <li><a href="#"><strong>MODALIDADES</strong></a></li>
-                    <li><a href="#"><strong>COMISSOES</strong></a></li>
+                    <li><a href="ListaModalidade"><strong>MODALIDADES</strong></a></li>
+                    <li><a href="ListaComissao"><strong>COMISSOES</strong></a></li>
                     <li><a href="#"><strong>TABELAS</strong></a></li>                   
                 </ul>
             </li>
