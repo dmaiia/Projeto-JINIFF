@@ -41,8 +41,13 @@ response.setHeader("Cache-Control", "no-cache"); //Forces caches to obtain a new
         <li><a href="homeadm.jsp"><strong>HOME</strong></a></li>
             <li><a href="#"><strong>MENU</strong></a>
                 <ul>
+<<<<<<< HEAD
+                      <li><a href="cadastromodalidade.jsp"><strong>MODALIDADES</strong></a></li>
+                      <li><a href="cadastrarcomissao.jsp"><strong>COMISSOES</strong></a></li>
+=======
                     <li><a href="ListaModalidade"><strong>MODALIDADES</strong></a></li>
                       <li><a href="#"><strong>COMISSOES</strong></a></li>
+>>>>>>> 96ef8af48f77fe460b512b37c36c6edc0bf4f823
                       <li><a href="#"><strong>TABELAS</strong></a></li>                   
                 </ul>
             </li>
