@@ -36,15 +36,19 @@
         <li><a href="#"><strong>SOBRE</strong></a></li>
             <li><a href="#"><strong>MENU</strong></a>
                 <ul>
-                      <li><a href="Modalidades"><strong>MODALIDADES</strong></a></li>
+                      <li><a href="ListaModalidade"><strong>MODALIDADES</strong></a></li>
                       <li><a href="#"><strong>COMISSOES</strong></a></li>
                       <li><a href="#"><strong>TABELAS</strong></a></li>                   
                 </ul>
             </li>
         <li><a href="#"><strong>COORDENADORES</strong></a></li>
         <li><a href=""><strong>CONTATO</strong></a></li> 
-        <li><a href="cadastro.jsp"><strong>CADASTRO</strong></a></li>
+        <li><a href="#"><strong>CADASTROS</strong></a>
         
+                <ul>
+                    <li><a href="cadastro.jsp"><strong>CADASTRO USUÁRIO</strong></a></li>                    
+                </ul>
+            </li>
   </ul>
 </nav>
 		

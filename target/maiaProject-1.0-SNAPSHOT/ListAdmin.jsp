@@ -53,6 +53,13 @@ response.setHeader("Cache-Control", "no-cache"); //Forces caches to obtain a new
         <li><a href="#"><strong>COORDENADORES</strong></a></li>
         <li><a href="#"><strong>CONTATO</strong></a></li> 
         <li><a href="ListaAdmin"><strong>LISTA DE USUÁRIOS</strong></a></li>
+        <li><a href="#"><strong>CADASTRO</strong></a>
+               
+                <ul>
+                    <li><a href="cadastro.jsp"><strong>CADASTRO USUÁRIOS</strong></a>
+                    <li><a href="cadastroadm.jsp"><strong>CADASTRO MODALIDADES</strong></a></li>                    
+                </ul>
+            </li>
         
   </ul>
 </nav>

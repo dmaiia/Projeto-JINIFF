@@ -12,7 +12,7 @@
 
     <title>Modalidades</title>
 	
-    <link rel="stylesheet" href="Modalidades.css" type="text/css" /> 
+    <link rel="stylesheet" href="modalidade.css" type="text/css" /> 
                                     <link rel="shortcut icon" href="Imagens/j.png" >
 
 	
@@ -24,7 +24,18 @@
 
 
 
-	
+	<div id = "login">
+            <a href="login.jsp">
+                <p><strong> Login </strong></p>
+            </a>
+        </div>
+        
+        <div id = "logi">
+            <a href="adminlogin.jsp">
+                <p><strong> Login Admin</strong></p>
+            </a>
+        </div>
+
 
 		
 
@@ -34,7 +45,7 @@
         <li><a href="#"><strong>SOBRE</strong></a></li>
             <li><a href="#"><strong>MENU</strong></a>
                 <ul>
-                      <li><a href="#"><strong>MODALIDADES</strong></a></li>
+                      <li><a href="ListaModalidade"><strong>MODALIDADES</strong></a></li>
                       <li><a href="#"><strong>COMISSOES</strong></a></li>
                       <li><a href="#"><strong>TABELAS</strong></a></li>
                       
@@ -62,9 +73,7 @@
         <display:column property="classificacao" />
         <display:column property="hora" />
         <display:column property="data" />
-        <display:column property="local" />
-        <display:column title="Editar" href="CarregaAluno" paramId="nome" paramProperty="nome"><img src="edit.png"  title="Atualizar"/></display:column>
-        <display:column title="Deletar" href="DeletaAluno" paramId="nome" paramProperty="nome"><img src="delete.png" title="Apagar"/></display:column>
+        <display:column property="local" />     
     </display:table>
 
 	
