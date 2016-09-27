@@ -24,7 +24,7 @@ body:hover{
 
 h1{
     text-align:center;
-    font-size:72px;
+    font-size:56px;
     color: black;
 }
 
@@ -43,63 +43,29 @@ h1{
 	background: -moz-linear-gradient(right, black, white);
 }
 
+.botao{
+        float: right;
+        width:10%;
+        height:40px;
+        margin-top: 3%;
+        margin-right: 5%;
+        border: #A9A9A9 solid 3px; 
+        cursor: pointer;
+        border-radius: 2px 2px 2px 2px;
+        
+}
+.botao:hover{background-color:  #333; color: white;}
 
+
+.botao p{
+        text-align: center;
+        font-family: Cursive;
+        font-size: 150%;
+        color: #A9A9A9;
+        padding: 10px;
+}
 				/* BOTÃO DE LOGIN */
-#login{
-        float: right;
-        width:10%;
-        height:4%;
-        margin-top: 3%;
-        margin-right: 5%;
-        border: #A9A9A9 solid 3px; 
-        cursor: pointer;
-        border-radius: 2px 2px 2px 2px;
-}
-#login:hover{background-color:  #333;}
-
-#login p:hover{color: white;}
-
-#login a{color: white;}
-
-#login a:hover{color: transparent;}
-
-#login p{
-        text-align: center;
-        font-family: Cursive;
-        font-size: 150%;
-        color: #A9A9A9;
-        padding: 10px;
-}
-
-#logi{
-        float: right;
-        width:10%;
-        height:7%;
-        margin-top: 3%;
-        margin-right: 5%;
-        border: #A9A9A9 solid 3px; 
-        cursor: pointer;
-        border-radius: 2px 2px 2px 2px;
-}
-#logi:hover{background-color:  #333;}
-
-#logi p:hover{color: white;}
-
-#logi a{color: white;}
-
-#logi a:hover{color: transparent;}
-
-#logi p{
-        text-align: center;
-        font-family: Cursive;
-        font-size: 150%;
-        color: #A9A9A9;
-        padding: 10px;
-}
-
-
-
-				/* MENU */
+		/* MENU */
 
 
 

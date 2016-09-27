@@ -12,12 +12,12 @@
 
     <title>Modalidades</title>
 	
-    <link rel="stylesheet" href="modalidade.css" type="text/css" /> 
+    <link rel="stylesheet" href="modalidade2.css" type="text/css" /> 
                                     <link rel="shortcut icon" href="Imagens/j.png" >
 
 	
 </head>
-<body>
+<fieldset>
 
 	<image src = "Imagens/logoiff.gif" id ="logoIFF" />
 	<image src = "Imagens/jogos_internos.png" id = "logoJogos"/>
@@ -73,7 +73,7 @@
         <display:column property="classificacao" />
         <display:column property="hora" />
         <display:column property="data" />
-        <display:column property="local" />     
+        <display:column property="local" />  
     </display:table>
 
 	
@@ -92,7 +92,7 @@
         <footer> </footer>
 
 	</div>
-</body>
+</fieldset>
 </html>
 
 
