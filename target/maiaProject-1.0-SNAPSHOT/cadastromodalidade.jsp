@@ -55,11 +55,12 @@
                     <li><a href="#"><strong>TABELAS</strong></a></li>                   
                 </ul>
             </li>
-            <li><a href="#"><strong>CORDENADORES</strong></a></li>
+            <li><a href="#"><strong>COORDENADORES</strong></a></li>
             <li><a href="#"><strong>CONTATO</strong></a></li>
             <li><a href="#"><strong>CADASTRO</strong></a>
                 <ul>
-                    <li><a href="cadastro.jsp"><strong>CADASTRO USUÁRIOS</strong></a></li>                    
+                    <li><a href="cadastro.jsp"><strong>CADASTRO USUÁRIOS</strong></a></li>  
+                    <li><a href="cadastrarcomissao.jsp"><strong>CADASTRO COMISSÕES</strong></a></li>     
                 </ul>
             </li>
         </ul>
