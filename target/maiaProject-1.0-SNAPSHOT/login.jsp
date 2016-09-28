@@ -11,7 +11,7 @@
 </head>
     <body>
         <fieldset>
-        <video autoplay loop class="video">
+        <video autoplay loop class="video" controls muted>
             <source src="Videos/esportes.webm" type="video/webm"> 
             <source src="Videos/videoplayback.mp4" type="video/mp4"> 
         </video> 

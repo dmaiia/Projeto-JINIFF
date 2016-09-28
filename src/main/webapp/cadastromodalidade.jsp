@@ -94,7 +94,7 @@
                     <input type="text" value="" name="classificacao" required="required" placeholder= "Digite a classificacao da molidade..." />
                 </label>
                 <label>
-                    <input type="text" value="" name="hora" required="required" placeholder= "Digite a hora da modalidade ..." />
+                    <input type="text" value="" name="hora" required="required" onkeypress="mascara(this, '##:##')" placeholder= "Digite a hora da modalidade ..." />
                 </label>
                 <label>
                     <input type="text" id="data" value="" name="data" OnKeyUp="mascaraData(this);" maxlength="10" required="required" placeholder= "dia / mes / ano" />

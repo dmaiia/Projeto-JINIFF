@@ -1,8 +1,12 @@
 package Servlet;
+
+import Entidade.Aluno;
 import Entidade.Comissao;
+import Hibernate.AlunoDAO;
 import Hibernate.ComissaoDAO;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.List;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -12,7 +16,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author luizc
  */
-public class CarregaComissao extends HttpServlet {
+public class AtualizaComissao extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -25,14 +29,29 @@ public class CarregaComissao extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        String nome = request.getParameter("nome");
-      
-        ComissaoDAO comissaoDao = new ComissaoDAO();
-        Comissao comissao= comissaoDao.recuperaComissao(nome);
-       
-       
-        request.getSession(true).setAttribute("comissaoAtual", comissao);
-        response.sendRedirect("AtualizaComissao.jsp");
+        //esse servlet vai ser bem parecido com o do cadastro.
+        // vc pega todas as propriedades que vem do form
+        // só que aí vc joga essas informações no método de update do DAO.
+//
+    Comissao comissao = (Comissao) request.getSession(true).getAttribute("comissaoAtual");
+        ComissaoDAO comissaodao = new ComissaoDAO();
+
+            String nome = request.getParameter("nome");
+            String descricao = request.getParameter("descricao");
+            String responsabilidade = request.getParameter("responsabilidades");
+            
+            
+//     ESSE METODO VCS VAO PRECISAR MUDAR PARA QUE TENHA
+//      TODOS OS PARAMETROS DA SUA ENTIDADE!
+            comissaodao.updateComissao(comissao.getNome(), nome, descricao, responsabilidade);
+
+
+            // aí, depois de atualizar, vc recarrega a list na sessão http:
+            List<Comissao> comissoes = comissaodao.listaComissao();
+            request.getSession(true).setAttribute("comissoes", comissoes);
+            // e volta para a página da listagem
+            // TODO: Se nessa volta tiver uma mensagem falando que deu certo, ganha uma moral extra
+            response.sendRedirect("comissao.jsp");
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

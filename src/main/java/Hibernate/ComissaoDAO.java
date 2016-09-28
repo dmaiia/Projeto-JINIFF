@@ -96,6 +96,35 @@ public class ComissaoDAO extends HttpServlet {
          session.close();
       }
    }
+   
+   public void updateComissao(String /* Integer AlunoID */nomeID, String nome, String descricao, String responsabilidade) {
+        
+        Session session = HibernateUtil.abrirSessaoComBD();
+        Transaction tx = null;
+        try {
+            tx = session.beginTransaction();
+            Comissao Comissao
+                    = (Comissao) session.get(Comissao.class, nomeID);
+            // daí aqui vc vai chamar TODOS os sets do seu objeto
+            Comissao.setNome(nome);
+            Comissao.setDescricao(descricao);
+            Comissao.setResponsabilidades(responsabilidade);
+            
+            
+            
+            // e só depois chamar o update
+            session.update(Comissao);
+            tx.commit();
+        } catch (HibernateException e) {
+            if (tx != null) {
+                tx.rollback();
+            }
+            e.printStackTrace();
+            throw e;
+        } finally {
+            session.close();
+        }
+    }
   
    public Comissao recuperaComissao(String nome) {
         Session session = HibernateUtil.abrirSessaoComBD();
