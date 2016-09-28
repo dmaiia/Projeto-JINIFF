@@ -10,9 +10,9 @@
 <html>
 <head>
 
-    <title>Modalidades</title>
+    <title>Comissões</title>
 	
-    <link rel="stylesheet" href="modalidade2.css" type="text/css" /> 
+    <link rel="stylesheet" href="comi2.css" type="text/css" /> 
                                     <link rel="shortcut icon" href="Imagens/j.png" >
 
 	
@@ -21,10 +21,8 @@
 
 	<image src = "Imagens/logoiff.gif" id ="logoIFF" />
 	<image src = "Imagens/jogos_internos.png" id = "logoJogos"/>
-
-
-
-	<div id = "login">
+            
+        <div id = "login">
             <a href="login.jsp">
                 <p><strong> Login </strong></p>
             </a>
@@ -36,6 +34,8 @@
             </a>
         </div>
 
+
+	
 
 		
 
@@ -57,23 +57,20 @@
         
                 <ul>
                     <li><a href="cadastro.jsp"><strong>CADASTRO USUÁRIOS</strong></a>
-                     
+                      
                 </ul>
             </li>
         
   </ul>
 </nav>
         <div id="Modalidades">
-            <h1> Molidades </h1>
+            <h1> Comissões </h1>
             
         </div>
-    <display:table name="${sessionScope.modalidades}" class="dataTable">
+    <display:table name="${sessionScope.comissoes}" class="dataTable">
         <display:column property="nome" />
-        <display:column property="categoria" />
-        <display:column property="classificacao" />
-        <display:column property="hora" />
-        <display:column property="data" />
-        <display:column property="local" />  
+        <display:column property="descricao" />
+        <display:column property="responsabilidades" />
     </display:table>
 
 	
@@ -92,7 +89,8 @@
         <footer> </footer>
 
 	</div>
-</fieldset>
+        </fieldset>
 </html>
+
 
 

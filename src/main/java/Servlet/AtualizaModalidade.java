@@ -1,14 +1,12 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Servlet;
 
-import Entidade.Comissao;
-import Hibernate.ComissaoDAO;
+import Entidade.Aluno;
+import Entidade.Modalidade;
+import Hibernate.AlunoDAO;
+import Hibernate.ModalidadeDAO;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.List;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -16,9 +14,9 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  *
- * @author aluno
+ * @author luizc
  */
-public class CadastroComissao extends HttpServlet {
+public class AtualizaModalidade extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -31,34 +29,35 @@ public class CadastroComissao extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        response.setContentType("text/html;charset=UTF-8");
-        PrintWriter out = response.getWriter();
-        try {
-            /* TODO output your page here. You may use following sample code. */
+        //esse servlet vai ser bem parecido com o do cadastro.
+        // vc pega todas as propriedades que vem do form
+        // só que aí vc joga essas informações no método de update do DAO.
+//
+    Modalidade modalidade = (Modalidade) request.getSession(true).getAttribute("modalidadeAtual");
+        ModalidadeDAO moddao = new ModalidadeDAO();
+
             
             String nome = request.getParameter("nome");
-            String descricao = request.getParameter("descricao");
-            String responsabilidades = request.getParameter("responsabilidades");
+            String categoria = request.getParameter("categoria");
+            String classificacao = request.getParameter("classificacao");
+            String hora = request.getParameter("hora");
+            String data = request.getParameter("data");
+            String local = request.getParameter("local");
             
-         
             
 
-            Comissao comissao = new Comissao();
             
-            comissao.setNome(nome);
-            comissao.setDescricao(descricao);
-            comissao.setResponsabilidades(responsabilidades);
-            
-           
-            
-            
-            ComissaoDAO com = new ComissaoDAO();
-            com.ADDComissao(comissao);
-            response.sendRedirect("ListaComissao");
-            
-        } finally {
-            out.close();
-        }
+//     ESSE METODO VCS VAO PRECISAR MUDAR PARA QUE TENHA
+//      TODOS OS PARAMETROS DA SUA ENTIDADE!
+            moddao.updateModalidade(modalidade.getNome(), nome, categoria, classificacao, hora, data, local);
+
+
+            // aí, depois de atualizar, vc recarrega a list na sessão http:
+            List<Modalidade> modalidades = moddao.listaModalidade();
+            request.getSession(true).setAttribute("modalidades", modalidades);
+            // e volta para a página da listagem
+            // TODO: Se nessa volta tiver uma mensagem falando que deu certo, ganha uma moral extra
+            response.sendRedirect("Modalidades.jsp");
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

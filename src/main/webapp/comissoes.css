@@ -1,3 +1,11 @@
+body{
+    
+}
+
+body:hover{
+    
+}
+				/* ID DAS LOGOS */
 #logoIFF{
 	float:left;
 	margin-left: 1%;
@@ -14,20 +22,18 @@
         position: relative;
 }
 
-
-
-#logoCentral{
-	margin-top:1%;
-	width: 100%;
-	margin-top: -0.01%;
-         
+h1{
+    text-align:center;
+    font-size:56px;
+    color: black;
 }
 
+
+
 #inferior{
-    
-        position:relative;
+	 position:relative;
         right:240px;
-        bottom:-135px;
+        bottom:-60px;
 	margin-top: 10%;
 	margin-left: 20%;
 	width: 100%;
@@ -37,8 +43,6 @@
 	background: -moz-linear-gradient(right, black, white);
 }
 
-
-				/* BOTÃO DE LOGIN */
 .botao{
         float: right;
         width:10%;
@@ -60,9 +64,8 @@
         color: #A9A9A9;
         padding: 10px;
 }
-
-
-				/* MENU */
+				/* BOTÃO DE LOGIN */
+		/* MENU */
 
 
 
@@ -71,8 +74,7 @@
 body{
 font-family: bold, arial, helvetica;
 font-size: 80%;
-color: black;
-
+color: gray;
 }
  
 .menu{
@@ -83,7 +85,6 @@ float: left;
 background-color: #333;
 width: 99.5%;
 margin-left: 0.2%;
-
 }
 
 
@@ -91,7 +92,6 @@ margin-left: 0.2%;
 position:relative;
 float:left;
 border-right:1px solid #333;
-text-align: center;
 }
 
 .menu li a{
@@ -102,7 +102,13 @@ display:block;   /* exibição em bloco */
 border-radius: 20px 20px 20px 20px;
 }
  
-
+.menu li a:hover{
+background:#333;
+color:#fff;
+-moz-box-shadow:0 3px 10px 0 #CCC;
+-webkit-box-shadow:0 3px 10px 0 #ccc;
+text-shadow:0px 0px 5px #fff;
+}
 
 /* submenu */
 
@@ -145,7 +151,7 @@ width:150px;
 
 #twitter{
         position: relative;
-        margin-top: 0.7%;
+	margin-top: 0.7%;
 	margin-left: 2%;
 	cursor: pointer;
 }
@@ -172,7 +178,6 @@ width:150px;
         margin-left: 15%;
         width: 70%;
 }
-
 .dataTable {
     text-align:center;
     background-color: white;
@@ -200,6 +205,7 @@ width:150px;
 .dataTable  td {
     font-family: verdana, arial, helvetica, sans-serif;
     padding-left: 2px;
+    color:black;
 }
 
 .dataTable tr.total td {
@@ -229,6 +235,7 @@ width:150px;
 
 .dataTable th.c {
     text-align: center;
+    color:black;
 }
 
 .dataTable td.r {
@@ -351,7 +358,8 @@ html,body {
     height: 100%;
     background-color: #d6cfe6;
     font-family: verdana, arial, helvetica, sans-serif;
-     text-align: center;
+    text-align: center;
+    
 
 }
 
@@ -435,4 +443,3 @@ a:hover {
 img {
     border: 0px;
 }
-

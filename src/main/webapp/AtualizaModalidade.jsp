@@ -37,7 +37,7 @@
         <title>Atualizar</title>
     </head>
     <body>
-        <form action="AtualizaAdmin" method="post">
+        <form action="AtualizaModalidade" method="post">
         <div id="superior" />
 
         <image src = "Imagens/logoiff.gif" id ="logoIFF" />
@@ -60,14 +60,6 @@
             </li>
             <li><a href="#"><strong>COORDENADORES</strong></a></li>
             <li><a href="#"><strong>CONTATO</strong></a></li>
-            <li><a href=""><strong>CADASTROS</strong></a>
-        
-                <ul>
-                    <li><a href="cadastro.jsp"><strong>CADASTRO USUÁRIOS</strong></a>
-                    <li><a href="cadastromodalidade.jsp"><strong>CADASTRO MODALIDADES</strong></a></li>                    
-                </ul>
-            </li>
-        
         </ul>
     </nav>
 
@@ -84,36 +76,24 @@
        
            
            <label>
-            <input type="text" value="${sessionScope.alunoAtual.nome}" name="firstname" required="required" placeholder="Digite seu nome..." /> <br/> <br/>
+            <input type="text" value="${sessionScope.modalidadeAtual.nome}" readonly="true" name="nome" required="required" placeholder="Digite o nome da modalidade..." /> <br/> <br/>
            </label>
            <label>
-            <input type="text" value="${sessionScope.alunoAtual.sobrenome}" name="lastname" required="required" placeholder="Digite seu sobrenome..." /> <br/> <br/>
+            <input type="text" value="${sessionScope.modalidadeAtual.categoria}" name="categoria" required="required" placeholder="Digite seu categoria..." /> <br/> <br/>
            </label>
            <label>
-            <input type="radio" value="${sessionScope.alunoAtual.sexo}" name="gender" required="required" /> <p> Masculino </p> <br/> <br/>
+            <input type="text" value="${sessionScope.modalidadeAtual.classificacao}" name="classificacao" required="required" placeholder="Digite a classificação..." /> <br/> <br/>
            </label>
            <label>
-            <input type="radio" value="${sessionScope.alunoAtual.sexo}" name="gender" required="required" /> <p> Feminino</p> <br/> <br/>
+            <input type="text" value="${sessionScope.modalidadeAtual.hora}" name="hora" required="required" placeholder="Digite a hora..." /> <br/> <br/>
            </label>
            <label>
-            <input type="date" value="${sessionScope.alunoAtual.dataNascimento}" id="data" OnKeyUp="mascaraData(this);" maxlength="10" name="bday" required="required" placeholder="Data de Nascimento..." /> <br/> <br/>
+            <input type="text" value="${sessionScope.modalidadeAtual.data}" name="data" required="required" placeholder="Digite a data..." /> <br/> <br/>
            </label>
            <label>
-            <input type="text" value="${sessionScope.alunoAtual.curso}" name="course" required="required" placeholder="Digite seu Curso..." /> <br/> <br/>
+            <input type="text" value="${sessionScope.modalidadeAtual.local}" name="local" required="required" placeholder="Digite o local..." /> <br/> <br/>
            </label>
-           <label>
-               <input type="text" maxlength="1" value="${sessionScope.alunoAtual.ano}" name="ano" required="required" placeholder="Digite sua série..." /> <br/> <br/>
-           </label>
-           <label>
-            <input type="text" value="${sessionScope.alunoAtual.numero}" onkeypress="mascara(this, '### #-####-####')" maxlength="15" name="numero" required="required" placeholder="Digite seu WhatsApp..." /> <br/> <br/>
-           </label> 
-           <label>
-            <input type="email" value="${sessionScope.alunoAtual.email}" name="email" required="required" placeholder="Digite seu e-mail..." /> <br/> <br/>
-           </label> 
-           <label> 
-            <input type="password" value="${sessionScope.alunoAtual.senha}" name="password" required="required" placeholder="Digite sua Senha..."/> <br/> <br/>
-           </label>
-           <label>
+           
             <input type="submit" class="botao" value="Atualizar">
            </label>
            

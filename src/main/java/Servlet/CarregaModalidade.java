@@ -1,12 +1,6 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Servlet;
-
-import Entidade.Comissao;
-import Hibernate.ComissaoDAO;
+import Entidade.Modalidade;
+import Hibernate.ModalidadeDAO;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
@@ -16,9 +10,9 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  *
- * @author aluno
+ * @author luizc
  */
-public class CadastroComissao extends HttpServlet {
+public class CarregaModalidade extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -31,34 +25,14 @@ public class CadastroComissao extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        response.setContentType("text/html;charset=UTF-8");
-        PrintWriter out = response.getWriter();
-        try {
-            /* TODO output your page here. You may use following sample code. */
-            
-            String nome = request.getParameter("nome");
-            String descricao = request.getParameter("descricao");
-            String responsabilidades = request.getParameter("responsabilidades");
-            
-         
-            
-
-            Comissao comissao = new Comissao();
-            
-            comissao.setNome(nome);
-            comissao.setDescricao(descricao);
-            comissao.setResponsabilidades(responsabilidades);
-            
-           
-            
-            
-            ComissaoDAO com = new ComissaoDAO();
-            com.ADDComissao(comissao);
-            response.sendRedirect("ListaComissao");
-            
-        } finally {
-            out.close();
-        }
+        String nome = request.getParameter("nome");
+      
+       
+        ModalidadeDAO modDao = new ModalidadeDAO();
+        Modalidade modalidade= modDao.recuperaModalidade(nome);
+       
+        request.getSession(true).setAttribute("modalidadeAtual", modalidade);
+        response.sendRedirect("AtualizaModalidade.jsp");
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

@@ -50,6 +50,14 @@
         <servlet-class>Servlet.ListaModalidade</servlet-class>
     </servlet>
     <servlet>
+        <servlet-name>ListaComissao</servlet-name>
+        <servlet-class>Servlet.ListaComissao</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ListaComissao2</servlet-name>
+        <servlet-class>Servlet.ListaComissao2</servlet-class>
+    </servlet>
+    <servlet>
         <servlet-name>ListaModalidade2</servlet-name>
         <servlet-class>Servlet.ListaModalidade2</servlet-class>
     </servlet>
@@ -60,6 +68,18 @@
     <servlet>
         <servlet-name>CarregaAdmin</servlet-name>
         <servlet-class>Servlet.CarregaAdmin</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CarregaModalidade</servlet-name>
+        <servlet-class>Servlet.CarregaModalidade</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AtualizaModalidade</servlet-name>
+        <servlet-class>Servlet.AtualizaModalidade</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DeletaModalidade</servlet-name>
+        <servlet-class>Servlet.DeletaModalidade</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>CadastroComissao</servlet-name>
@@ -90,6 +110,14 @@
         <url-pattern>/ListaModalidade</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
+        <servlet-name>ListaComissao</servlet-name>
+        <url-pattern>/ListaComissao</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ListaComissao2</servlet-name>
+        <url-pattern>/ListaComissao2</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
         <servlet-name>ListaModalidade2</servlet-name>
         <url-pattern>/ListaModalidade2</url-pattern>
     </servlet-mapping>
@@ -100,6 +128,10 @@
     <servlet-mapping>
         <servlet-name>CarregaAluno</servlet-name>
         <url-pattern>/CarregaAluno</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CarregaModalidade</servlet-name>
+        <url-pattern>/CarregaModalidade</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>AtualizaAluno</servlet-name>
@@ -118,8 +150,16 @@
         <url-pattern>/AtualizaAdmin</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
+        <servlet-name>AtualizaModalidade</servlet-name>
+        <url-pattern>/AtualizaModalidade</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
         <servlet-name>CarregaAdmin</servlet-name>
         <url-pattern>/CarregaAdmin</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DeletaModalidade</servlet-name>
+        <url-pattern>/DeletaModalidade</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>CadastroComissao</servlet-name>

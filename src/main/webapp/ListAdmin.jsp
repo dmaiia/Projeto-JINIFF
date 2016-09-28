@@ -28,7 +28,7 @@ response.setHeader("Cache-Control", "no-cache"); //Forces caches to obtain a new
 
         <title>Lista</title>
     </head>
-    <body>
+    <fieldset>
         <form action="LogOutAdmin" method="post">
 
         <image src = "Imagens/logoiff.gif" id ="logoIFF" />
@@ -43,9 +43,11 @@ response.setHeader("Cache-Control", "no-cache"); //Forces caches to obtain a new
 	<nav>
   <ul class="menu">
         <li><a href="homeadm.jsp"><strong>HOME</strong></a></li>
+        <li><a href="#"><strong>SOBRE</strong></a></li>
             <li><a href="#"><strong>MENU</strong></a>
                 <ul>
-                      <li><a href="#"><strong>MODALIDADES</strong></a></li>
+
+                      <li><a href="ListaModalidade"><strong>MODALIDADES</strong></a></li>
                       <li><a href="#"><strong>COMISSOES</strong></a></li>
                       <li><a href="#"><strong>TABELAS</strong></a></li>                   
                 </ul>
@@ -53,13 +55,14 @@ response.setHeader("Cache-Control", "no-cache"); //Forces caches to obtain a new
         <li><a href="#"><strong>COORDENADORES</strong></a></li>
         <li><a href="#"><strong>CONTATO</strong></a></li> 
         <li><a href="ListaAdmin"><strong>LISTA DE USUÁRIOS</strong></a></li>
-        <li><a href="#"><strong>CADASTRO</strong></a>
-               
+        <li><a href=""><strong>CADASTROS</strong></a>
+        
                 <ul>
                     <li><a href="cadastro.jsp"><strong>CADASTRO USUÁRIOS</strong></a>
-                    <li><a href="cadastroadm.jsp"><strong>CADASTRO MODALIDADES</strong></a></li>                    
+                    <li><a href="cadastromodalidade.jsp"><strong>CADASTRO MODALIDADES</strong></a></li>                    
                 </ul>
             </li>
+
         
   </ul>
 </nav>
@@ -93,5 +96,5 @@ response.setHeader("Cache-Control", "no-cache"); //Forces caches to obtain a new
     
 <br/>
         </form>
-    </body>
+        </fieldset>
 </html>

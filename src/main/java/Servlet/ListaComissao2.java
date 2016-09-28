@@ -1,24 +1,16 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Servlet;
 
 import Entidade.Comissao;
 import Hibernate.ComissaoDAO;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.List;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-/**
- *
- * @author aluno
- */
-public class CadastroComissao extends HttpServlet {
+public class ListaComissao2 extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -31,34 +23,11 @@ public class CadastroComissao extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        response.setContentType("text/html;charset=UTF-8");
-        PrintWriter out = response.getWriter();
-        try {
-            /* TODO output your page here. You may use following sample code. */
-            
-            String nome = request.getParameter("nome");
-            String descricao = request.getParameter("descricao");
-            String responsabilidades = request.getParameter("responsabilidades");
-            
-         
-            
-
-            Comissao comissao = new Comissao();
-            
-            comissao.setNome(nome);
-            comissao.setDescricao(descricao);
-            comissao.setResponsabilidades(responsabilidades);
-            
-           
-            
-            
-            ComissaoDAO com = new ComissaoDAO();
-            com.ADDComissao(comissao);
-            response.sendRedirect("ListaComissao");
-            
-        } finally {
-            out.close();
-        }
+       
+        ComissaoDAO comissaodao = new ComissaoDAO();
+        List<Comissao> comissoes = comissaodao.listaComissao();
+        request.getSession(true).setAttribute("comissoes", comissoes);
+        response.sendRedirect("comi.jsp");
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
@@ -99,5 +68,4 @@ public class CadastroComissao extends HttpServlet {
     public String getServletInfo() {
         return "Short description";
     }// </editor-fold>
-
 }

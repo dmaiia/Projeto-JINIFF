@@ -44,7 +44,7 @@
         <image src = "Imagens/jogos_internos.png" id = "logoJogos"/>
 
     </div>
-
+            
 
 
     <nav>
@@ -53,8 +53,8 @@
             <li><a href="#"><strong>SOBRE</strong></a></li>
             <li><a href="#"><strong>MENU</strong></a>
                 <ul>
-                    <li><a href="#"><strong>MODALIDADES</strong></a></li>
-                    <li><a href="#"><strong>COMISSOES</strong></a></li>
+                    <li><a href="ListaModalidade2"><strong>MODALIDADES</strong></a></li>
+                    <li><a href="ListaComissao2"><strong>COMISSOES</strong></a></li>
                     <li><a href="#"><strong>TABELAS</strong></a></li>                   
                 </ul>
             </li>
@@ -64,6 +64,12 @@
         </ul>
     </nav>
 
+            
+            <div id ="apagar">
+                <a href="DeletaAluno" paramId="email" paramProperty="email">
+                <p><strong> Deletar </strong></p>
+            </a>
+                       </div>
 
     <fieldset>
 
@@ -110,14 +116,11 @@
             <input type="submit" class="botao" value="Atualizar">
            </label>
          
+           
+
            </fieldset>
 
-            <div id ="apagar">
-                <a href="DeletaAluno" paramId="email" paramProperty="email">
-                <p><strong> Deletar </strong></p>
-            </a>
-        </div>
-
+           
 
     <div id = "inferior">
 
