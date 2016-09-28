@@ -130,7 +130,7 @@ fieldset{
     position: relative;
     float:right;
     width: 30%;
-    height: 85%;
+    height: 65%;
     background-color: white;
     border-radius: 20px 20px 20px 20px;
     border: solid 5px black;
@@ -144,6 +144,7 @@ fieldset img{
     position: relative;
     margin-top: 8%;
     margin-left: 7%;
+    right:-10%;
     
 }
 
@@ -174,8 +175,8 @@ fieldset input[type=submit]{
     border: none;
     cursor: pointer;
     padding: 10px;
-    right:-10%;
-    top:-40px;
+    right:38%;
+    top:480px;
 }
 
 fieldset label input[type=radio]{

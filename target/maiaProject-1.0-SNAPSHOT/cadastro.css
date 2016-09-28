@@ -137,12 +137,16 @@ fieldset{
     margin-right: 32%;	
     margin-top: 4%;
     padding: 0.5%;
+    text-align:center;
+    
 }
 
 fieldset img{
     position: relative;
     margin-top: 8%;
     margin-left: 7%;
+    right:3%;
+
     
 }
 
@@ -162,7 +166,7 @@ fieldset label input{
 }
 
 fieldset input[type=submit]{
-    float: right;
+    position:relative;
     clear: both;
     margin-top: 5%;
     color: white;
@@ -172,6 +176,8 @@ fieldset input[type=submit]{
     border: none;
     cursor: pointer;
     padding: 10px;
+    top:0px;
+    right:0%;
 }
 
 fieldset label input[type=radio]{
