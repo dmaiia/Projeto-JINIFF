@@ -57,6 +57,7 @@ response.setHeader("Cache-Control", "no-cache"); //Forces caches to obtain a new
         
                 <ul>
                     <li><a href="cadastromodalidade.jsp"><strong>CADASTRO MODALIDADES</strong></a></li>                    
+                    <li><a href="cadastrarcomissao.jsp"><strong>CADASTRO COMISSÃO</strong></a></li>                    
                 </ul>
             </li>
         
