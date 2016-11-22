@@ -38,6 +38,8 @@ public class AtualizaModalidade extends HttpServlet {
 
             
             String nome = request.getParameter("nome");
+            String especificacao = request.getParameter("especificacao");
+ 
             String categoria = request.getParameter("categoria");
             String classificacao = request.getParameter("classificacao");
             String hora = request.getParameter("hora");
@@ -49,7 +51,7 @@ public class AtualizaModalidade extends HttpServlet {
             
 //     ESSE METODO VCS VAO PRECISAR MUDAR PARA QUE TENHA
 //      TODOS OS PARAMETROS DA SUA ENTIDADE!
-            moddao.updateModalidade(modalidade.getNome(), nome, categoria, classificacao, hora, data, local);
+            moddao.updateModalidade(modalidade.getNome(), nome, especificacao,  categoria, classificacao, hora, data, local);
 
 
             // aí, depois de atualizar, vc recarrega a list na sessão http:

@@ -56,7 +56,7 @@
                 </ul>
             </li>
         <li><a href="#"><strong>COORDENADORES</strong></a></li>
-        <li><a href="#"><strong>CONTATO</strong></a></li> 
+        <li><a href="Contato.jsp"><strong>CONTATO</strong></a></li> 
         <li><a href="ListaAdmin"><strong>LISTA DE USUÁRIOS</strong></a></li>
             <li><a href="#"><strong>CADASTRO</strong></a>
                 <ul>
@@ -86,6 +86,9 @@
 
                 <label>
                     <input type="text" value="" name="nome" required="required" placeholder= "Digite o nome da modalidade..." />
+                </label>
+                <label>
+                    <input type="text" value="" name="especificacao" required="required" placeholder= "Digite o tipo de modalidade..." />
                 </label>
                 <label>	
                     <input type="text" value="" name="categoria" required="required" placeholder= "Digite a categoria da modalidade..." />

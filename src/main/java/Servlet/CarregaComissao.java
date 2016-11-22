@@ -32,7 +32,7 @@ public class CarregaComissao extends HttpServlet {
        
        
         request.getSession(true).setAttribute("comissaoAtual", comissao);
-        response.sendRedirect("Atualiza.jsp");
+        response.sendRedirect("Atualiza.");
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

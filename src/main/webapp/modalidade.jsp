@@ -52,7 +52,7 @@
                 </ul>
             </li>
         <li><a href=""><strong>COORDENADORES</strong></a></li>
-        <li><a href=""><strong>CONTATO</strong></a></li> 
+        <li><a href="Contato.jsp"><strong>CONTATO</strong></a></li> 
         <li><a href=""><strong>CADASTROS</strong></a>
         
                 <ul>
@@ -69,6 +69,7 @@
         </div>
     <display:table name="${sessionScope.modalidades}" class="dataTable">
         <display:column property="nome" />
+        <display:column property="especificacao" />
         <display:column property="categoria" />
         <display:column property="classificacao" />
         <display:column property="hora" />

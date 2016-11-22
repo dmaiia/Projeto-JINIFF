@@ -26,6 +26,8 @@ h1{
     text-align:center;
     font-size:56px;
     color: black;
+    text-shadow: 2px 1px 1px gray, 0px 1px 1px gray, 1px 2px 1px gray, 1px 0px 1px gray; 
+
 }
 
 
@@ -184,7 +186,7 @@ width:150px;
     border: 1px solid #000066;
     font-size :    9pt;
     margin:    5px;
-    width:100%;
+    width:99%;
     height:200px;
     position:relative;
     bottom:-100px;
@@ -252,7 +254,7 @@ width:150px;
 }
 
 .dataTable tr.even {
-    background-color: #d6cfe6;
+    background-color: #9C9C9C;
 }
 
 .dataTable th a   ,.dataTable th a:visited {

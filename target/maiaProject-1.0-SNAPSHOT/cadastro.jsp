@@ -50,13 +50,13 @@
             <li><a href="#"><strong>SOBRE</strong></a></li>
             <li><a href="#"><strong>MENU</strong></a>
                 <ul>
-                    <li><a href="ListaModalidade"><strong>MODALIDADES</strong></a></li>
-                    <li><a href="ListaComissao"><strong>COMISSOES</strong></a></li>
+                    <li><a href="ListaModalidade2"><strong>MODALIDADES</strong></a></li>
+                    <li><a href="ListaComissao2"><strong>COMISSOES</strong></a></li>
                     <li><a href="#"><strong>TABELAS</strong></a></li>                   
                 </ul>
             </li>
-            <li><a href="#"><strong>CORDENADORES</strong></a></li>
-            <li><a href="#"><strong>CONTATO</strong></a></li>
+            <li><a href="#"><strong>COORDENADORES</strong></a></li>
+            <li><a href="Contato.jsp"><strong>CONTATO</strong></a></li>
             <li><a href="#"><strong>CADASTRO</strong></a>
                
         </ul>

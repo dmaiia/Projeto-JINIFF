@@ -45,6 +45,7 @@ public class CadastroModalidade extends HttpServlet {
             /* TODO output your page here. You may use following sample code. */
             
             String nome = request.getParameter("nome");
+            String especificacao = request.getParameter("especificacao");
             String categoria = request.getParameter("categoria");
             String classificacao = request.getParameter("classificacao");
             String hora = request.getParameter("hora");
@@ -56,6 +57,7 @@ public class CadastroModalidade extends HttpServlet {
             Modalidade modalidade = new Modalidade();
             
             modalidade.setNome(nome);
+            modalidade.setEspecificacao(especificacao);
             modalidade.setCategoria(categoria);
             modalidade.setClassificacao(classificacao);
             modalidade.setHora(hora);
