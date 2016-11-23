@@ -28,6 +28,8 @@ response.setHeader("Cache-Control", "no-cache"); //Forces caches to obtain a new
 
 	
 </head>
+            <fieldset>	
+
     <form action="LogOutAdmin" method="post">
 
 	<image src = "Imagens/logoiff.gif" id ="logoIFF" />
@@ -37,7 +39,6 @@ response.setHeader("Cache-Control", "no-cache"); //Forces caches to obtain a new
 
 	
 
-		
 
 	<nav>
   <ul class="menu">
@@ -65,7 +66,7 @@ response.setHeader("Cache-Control", "no-cache"); //Forces caches to obtain a new
   </ul>
 </nav>
         <div id="Modalidades">
-            <h1> Molidades </h1>
+            <h1> Modalidades </h1>
             
         </div>
     <display:table name="${sessionScope.modalidades}" class="dataTable">
@@ -96,7 +97,9 @@ response.setHeader("Cache-Control", "no-cache"); //Forces caches to obtain a new
         <footer> </footer>
 
 	</div>
+        
     </form>
+</fieldset>
 </html>
 
 
