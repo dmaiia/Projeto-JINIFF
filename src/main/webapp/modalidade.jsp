@@ -64,7 +64,7 @@
   </ul>
 </nav>
         <div id="Modalidades">
-            <h1> Molidades </h1>
+            <h1> Modalidades </h1>
             
         </div>
     <display:table name="${sessionScope.modalidades}" class="dataTable">
