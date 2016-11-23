@@ -31,7 +31,7 @@
         }
 </script>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-                <link rel="stylesheet" href="atuali.css" type="text/css" /> 
+                <link rel="stylesheet" href="Atuali.css" type="text/css" /> 
                                                 <link rel="shortcut icon" href="Imagens/j.png" >
 
         <title>Atualizar</title>
@@ -59,7 +59,7 @@
                 </ul>
             </li>
             <li><a href="#"><strong>COORDENADORES</strong></a></li>
-            <li><a href="#"><strong>CONTATO</strong></a></li>
+            <li><a href="Contato.jsp"><strong>CONTATO</strong></a></li>
         </ul>
     </nav>
 
@@ -79,6 +79,9 @@
             <input type="text" value="${sessionScope.modalidadeAtual.nome}" readonly="true" name="nome" required="required" placeholder="Digite o nome da modalidade..." /> <br/> <br/>
            </label>
            <label>
+            <input type="text" value="${sessionScope.modalidadeAtual.especificacao}" name="especificacao" required="required" placeholder="Digite o tipo..." /> <br/> <br/>
+           </label>
+           <label>
             <input type="text" value="${sessionScope.modalidadeAtual.categoria}" name="categoria" required="required" placeholder="Digite seu categoria..." /> <br/> <br/>
            </label>
            <label>
@@ -95,7 +98,6 @@
            </label>
            
             <input type="submit" class="botao" value="Atualizar">
-           </label>
            
            </fieldset>
 

@@ -32,6 +32,8 @@ public class CarregaComissao extends HttpServlet {
        
        
         request.getSession(true).setAttribute("comissaoAtual", comissao);
+        response.sendRedirect("Atualiza.");
+
         response.sendRedirect("AtualizaComissao.jsp");
     }
 

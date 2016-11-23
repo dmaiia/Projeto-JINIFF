@@ -52,7 +52,7 @@
                 </ul>
             </li>
         <li><a href=""><strong>COORDENADORES</strong></a></li>
-        <li><a href=""><strong>CONTATO</strong></a></li> 
+        <li><a href="Contato.jsp"><strong>CONTATO</strong></a></li> 
         <li><a href=""><strong>CADASTROS</strong></a>
         
                 <ul>

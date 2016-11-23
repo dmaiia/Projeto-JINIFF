@@ -137,6 +137,7 @@ fieldset{
     margin-right: 32%;	
     margin-top: 4%;
     padding: 0.5%;
+    text-align:center;
 }
 
 fieldset img{
@@ -173,7 +174,7 @@ fieldset input[type=submit]{
     border: none;
     cursor: pointer;
     padding: 10px;
-    right:-10%;
+    right:-0%;
     top:-40px;
 }
 

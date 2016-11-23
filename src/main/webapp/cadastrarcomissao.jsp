@@ -19,14 +19,14 @@
 
         <image src = "Imagens/logoiff.gif" id ="logoIFF" />
         <image src = "Imagens/jogos_internos.png" id = "logoJogos"/>
-
+            
     </div>
 
 
 
     <nav>
         <ul class="menu">
-            <li><a href="index.jsp"><strong>HOME</strong></a></li>
+            <li><a href="homeadm.jsp"><strong>HOME</strong></a></li>
             <li><a href="#"><strong>SOBRE</strong></a></li>
             <li><a href="#"><strong>MENU</strong></a>
                 <ul>
@@ -36,12 +36,11 @@
                 </ul>
             </li>
             <li><a href="#"><strong>COORDENADORES</strong></a></li>
-            <li><a href="#"><strong>CONTATO</strong></a></li>
+            <li><a href="Contato.jsp"><strong>CONTATO</strong></a></li>
             <li><a href="ListaAdmin"><strong>LISTA DE USUÁRIOS</strong></a></li>
             <li><a href=""><strong>CADASTROS</strong></a>
         
                 <ul>
-                    <li><a href="cadastro.jsp"><strong>CADASTRO USUÁRIOS</strong></a>
                     <li><a href="cadastromodalidade.jsp"><strong>CADASTRO MODALIDADES</strong></a></li>                    
                 </ul>
             </li>

@@ -53,6 +53,7 @@ body:hover{
         border: #A9A9A9 solid 3px; 
         cursor: pointer;
         border-radius: 2px 2px 2px 2px;
+       
 }
 #login:hover{background-color:  #333;}
 

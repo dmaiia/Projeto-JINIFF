@@ -1,0 +1,257 @@
+body{
+    
+}
+
+body:hover{
+    
+}
+				/* ID DAS LOGOS */
+#logoIFF{
+	float:left;
+	margin-left: 1%;
+	margin-top: 0.7%;
+        position: relative;
+}
+
+#logoJogos{
+	float: top;
+	margin-left: 16%;
+	height:40%;
+	width: 30%;	
+        position: relative;
+}
+
+#Adrielly{
+	margin-left: 16%;
+        position: relative;
+	height: 420px; 
+        right: 15%;
+        top:20px;
+
+        
+}
+#Wandinho{
+	margin-left: 16%;
+        position: relative;
+        height: 420px; 
+        right: 15%;
+        top:50px;
+
+                        
+
+}
+#Diego{
+	margin-left: 16%;	
+        position: relative;
+        height: 420px; 
+        right: 9%;
+        top:50px;
+
+}
+
+#Ramon{
+	margin-left: 16%;	
+        position: relative;
+        right: 9%;
+        height: 420px; 
+        top:20px;
+
+}
+#logoCentral{
+	margin-top:1%;
+	width: 100%;
+	margin-top: -0.01%;
+         
+}
+
+
+#inferior{
+	float:right;
+	margin-top: 10%;
+	margin-left: 20%;
+	width: 100%;
+	height:20%;;
+	border-radius:10px 10px 10px 10px;
+	background: linear-gradient(to right, white , black);
+	background: -moz-linear-gradient(right, black, white);
+}
+#EA
+
+				/* BOTÃO DE LOGIN */
+#login{
+        float: right;
+        width:10%;
+        height:10%;
+        margin-top: 3%;
+        margin-right: 5%;
+        border: #A9A9A9 solid 3px; 
+        cursor: pointer;
+        border-radius: 2px 2px 2px 2px;
+}
+#login:hover{background-color:  #333;}
+
+#login p:hover{color: white;}
+
+#login a{color: white;}
+
+#login a:hover{color: transparent;}
+
+#login p{
+        text-align: center;
+        font-family: Cursive;
+        font-size: 150%;
+        color: #A9A9A9;
+        padding: 10px;
+}
+
+#logi{
+        float: right;
+        width:10%;
+        height:10%;
+        margin-top: 3%;
+        margin-right: 5%;
+        border: #A9A9A9 solid 3px; 
+        cursor: pointer;
+        border-radius: 2px 2px 2px 2px;
+}
+#logi:hover{background-color:  #333;}
+
+#logi p:hover{color: white;}
+
+#logi a{color: white;}
+
+#logi a:hover{color: transparent;}
+
+#logi p{
+        text-align: center;
+        font-family: Cursive;
+        font-size: 150%;
+        color: #A9A9A9;
+        padding: 10px;
+}
+
+
+
+				/* MENU */
+
+
+
+*{margin: 0; padding: 0;} /* todos os navegadores */
+ 
+body{
+font-family: bold, arial, helvetica;
+font-size: 80%;
+color: gray;
+}
+ 
+.menu{
+list-style:none;
+border:3px solid #333;
+border-radius: 20px 20px 20px 20px;
+float: left;
+background-color: #333;
+width: 99.5%;
+margin-left: 0.2%;
+}
+
+
+.menu li{
+position:relative;
+float:left;
+border-right:1px solid #333;
+}
+
+.menu li a{
+color:#A9A9A9; 
+text-decoration:none;
+padding:15px 15px; 
+display:block;   /* exibição em bloco */
+border-radius: 20px 20px 20px 20px;
+}
+ 
+.menu li a:hover{
+background:#333;
+color:#fff;
+-moz-box-shadow:0 3px 10px 0 #CCC;
+-webkit-box-shadow:0 3px 10px 0 #ccc;
+text-shadow:0px 0px 5px #fff;
+}
+
+/* submenu */
+
+.menu li  ul{
+background:blue;
+position:absolute; 
+top:41.5px; 
+left:0;
+background-color:#333;
+border-radius: 10px 10px 10px 10px; 
+display:none; /* display é o bloco escondido, a exibição */
+}
+ 
+
+.menu ul a:hover{background: -moz-linear-gradient(right, black, white); border-radius: 6px 6px 6px 6px; color:black;}
+
+/* exibindo o submenu */
+.menu li:hover ul, .menu li.over ul{display:block;}
+
+
+/* ajustes finais */
+
+.menu li ul li{
+border-bottom:1px solid #c0c0c0; 
+border-radius: 6px 6px 6px 6px;
+display:block; 
+width:150px;
+}
+
+
+
+		/* MINIATURA REDES SOCIAIS */
+
+#facebook{
+        position: relative;
+	margin-top: 3.5%;
+	margin-left: 2%;
+	cursor: pointer;
+}
+
+#twitter{
+        position: relative;
+	margin-top: 0.7%;
+	margin-left: 2%;
+	cursor: pointer;
+}
+
+#instagram{
+        position: relative;
+	margin-top: 0.7%;
+	margin-left: 2%;
+	cursor: pointer;
+}
+
+#google{
+        position: relative;
+	margin-top: 0.7%;
+	margin-left: 2%;
+	cursor: pointer;
+}
+
+
+		/* RODAPÉ */
+ footer{
+	border-bottom: 1px solid white;
+        margin-bottom: 3%;
+        margin-left: 15%;
+        width: 70%;
+}
+img {
+    border: 0px;
+}
+#Workers{
+    position: relative;
+    margin-top: 8%;
+    margin-left: 7%;
+    right:3%;
+    
+}

@@ -112,7 +112,7 @@ public class ModalidadeDAO {
     } 
    
    /* Method to UPDATE salary for an empregado */
-    public void updateModalidade(String /* Integer ModalidadeID */nomeID, String nome, String categoria, String classificacao, String hora, String data, String local) {
+    public void updateModalidade(String /* Integer ModalidadeID */nomeID, String nome, String especificacao, String categoria, String classificacao, String hora, String data, String local) {
         
         Session session = HibernateUtil.abrirSessaoComBD();
         Transaction tx = null;
@@ -122,6 +122,7 @@ public class ModalidadeDAO {
                     = (Modalidade) session.get(Modalidade.class, nomeID);
             // daí aqui vc vai chamar TODOS os sets do seu objeto
             modalidade.setNome(nome);
+            modalidade.setEspecificacao(especificacao);
             modalidade.setCategoria(categoria);
             modalidade.setClassificacao(classificacao);
             modalidade.setHora(hora);

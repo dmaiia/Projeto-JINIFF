@@ -41,12 +41,11 @@ response.setHeader("Cache-Control", "no-cache"); //Forces caches to obtain a new
                 </ul>
             </li>
         <li><a href="#"><strong>COORDENADORES</strong></a></li>
-        <li><a href="#"><strong>CONTATO</strong></a></li> 
+        <li><a href="Contato.jsp"><strong>CONTATO</strong></a></li> 
         <li><a href="ListaAdmin"><strong>LISTA DE USUÁRIOS</strong></a></li>
         <li><a href=""><strong>CADASTROS</strong></a>
         
                 <ul>
-                    <li><a href="cadastro.jsp"><strong>CADASTRO USUÁRIOS</strong></a>
                     <li><a href="cadastromodalidade.jsp"><strong>CADASTRO MODALIDADES</strong></a></li>                    
                     <li><a href="cadastrarcomissao.jsp"><strong>CADASTRO COMISSÕES</strong></a></li>            
 

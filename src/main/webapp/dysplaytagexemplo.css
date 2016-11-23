@@ -179,7 +179,7 @@ width:150px;
     border: 1px solid #000066;
     font-size :    9pt;
     margin:    5px;
-    width:100%;
+    width:99%;
     height:200px;
     position:relative;
     bottom:-100px;
@@ -245,7 +245,7 @@ width:150px;
 }
 
 .dataTable tr.even {
-    background-color: #d6cfe6;
+    background-color: #9C9C9C;
 }
 
 .dataTable th a   ,.dataTable th a:visited {

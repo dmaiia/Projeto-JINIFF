@@ -15,6 +15,9 @@ public class Modalidade implements Serializable {
    @Column(name = "nome")
    private String nome;
    
+   @Column(name = "especificacao")
+   private String especificacao; 
+   
    @Column(name = "categoria")
    private String categoria; 
    
@@ -39,6 +42,12 @@ public class Modalidade implements Serializable {
    }
    public void setNome(String nome) {
       this.nome = nome;
+   }
+    public String getEspecificacao() {
+      return especificacao;
+   }
+    public void setEspecificacao(String especificacao) {
+      this.especificacao = especificacao;
    }
  
     public String getCategoria(){

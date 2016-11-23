@@ -31,7 +31,7 @@
         }
 </script>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-                <link rel="stylesheet" href="atuali.css" type="text/css" /> 
+                <link rel="stylesheet" href="atualiadm.css" type="text/css" /> 
                                                 <link rel="shortcut icon" href="Imagens/j.png" >
 
         <title>Atualizar</title>
@@ -59,7 +59,7 @@
                 </ul>
             </li>
             <li><a href="#"><strong>COORDENADORES</strong></a></li>
-            <li><a href="#"><strong>CONTATO</strong></a></li>
+            <li><a href="Contato.jsp"><strong>CONTATO</strong></a></li>
             <li><a href=""><strong>CADASTROS</strong></a>
         
                 <ul>
