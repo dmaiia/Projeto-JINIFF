@@ -9,6 +9,8 @@
 
    
 </head>
+<body>
+    
 <fieldset>
 
     <image src = "Imagens/logoiff.gif" id ="logoIFF" />
@@ -60,7 +62,10 @@
             <image src = "Imagens/Diego.png" id ="Diego" />
 
        <div id= "Wan">
-           <h1> Wanderson </h1>
+           <h1> Wanderson S. Tinoco </h1>
+           <a>  Idade:18 anos </a>
+           <a>  Sexo: Masculino </a>
+           <a>  Função: Web Designer/Progamador </a>
            
        </div>
    
@@ -78,4 +83,6 @@
 
     </div>
 </fieldset>
+    
+</body>
 </html>

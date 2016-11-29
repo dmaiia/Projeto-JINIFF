@@ -58,8 +58,16 @@
         <servlet-class>Servlet.ListaComissao2</servlet-class>
     </servlet>
     <servlet>
+        <servlet-name>ListaComissao3</servlet-name>
+        <servlet-class>Servlet.ListaComissao3</servlet-class>
+    </servlet>
+    <servlet>
         <servlet-name>ListaModalidade2</servlet-name>
         <servlet-class>Servlet.ListaModalidade2</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ListaModalidade3</servlet-name>
+        <servlet-class>Servlet.ListaModalidade3</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>AtualizaAdmin</servlet-name>
@@ -120,6 +128,10 @@
     <servlet-mapping>
         <servlet-name>ListaModalidade2</servlet-name>
         <url-pattern>/ListaModalidade2</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ListaModalidade3</servlet-name>
+        <url-pattern>/ListaModalidade3</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>DeletaAluno</servlet-name>

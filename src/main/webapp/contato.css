@@ -75,7 +75,6 @@ body:hover{
 	background: linear-gradient(to right, white , black);
 	background: -moz-linear-gradient(right, black, white);
 }
-#EA
 
 				/* BOTÃO DE LOGIN */
 #login{
@@ -254,4 +253,24 @@ img {
     margin-left: 7%;
     right:3%;
     
+}
+
+h1{
+    font-size:20px;
+    color:black;
+    position:relative;
+    top:-371px;
+    right:-360px;
+    border: 1px solid black;
+    text-align:center;
+}
+
+a{
+    color:black;
+    padding: 5px;
+    text-align:center;
+    position:relative;
+    top:-681px;
+    right:-360px;
+
 }
