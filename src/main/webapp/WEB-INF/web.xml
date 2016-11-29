@@ -126,6 +126,10 @@
         <url-pattern>/ListaComissao2</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
+        <servlet-name>ListaComissao3</servlet-name>
+        <url-pattern>/ListaComissao3</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
         <servlet-name>ListaModalidade2</servlet-name>
         <url-pattern>/ListaModalidade2</url-pattern>
     </servlet-mapping>

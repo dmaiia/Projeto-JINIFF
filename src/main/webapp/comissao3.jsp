@@ -2,17 +2,17 @@
 <%@taglib uri="http://displaytag.sf.net" prefix="display"%>
 <%@page import="org.displaytag.*" %>
 <%@page import="java.util.*" %>
-<%@page import="Entidade.*"%>
+<%@page import="Entidade.Aluno"%>
 <!DOCTYPE html>
 <%
 response.setHeader("Cache-Control", "no-cache"); //Forces caches to obtain a new copy of the page from the origin server
     response.setHeader("Cache-Control", "no-store"); //Directs caches not to store the page under any circumstance
     response.setDateHeader("Expires", 0); //Causes the proxy cache to see the page as "stale"
     response.setHeader("Pragma", "no-cache"); //HTTP 1.0 backward compatibility
-    Admin admin = (Admin) session.getAttribute("currentSessionUser");
-    if (null == admin) {
+    Aluno aluno = (Aluno) session.getAttribute("currentSessionUser");
+    if (null == aluno) {
         request.setAttribute("Error", "Sessao finalizada. Por favor, faça seu login.");
-        RequestDispatcher rd = request.getRequestDispatcher("adminlogin.jsp");
+        RequestDispatcher rd = request.getRequestDispatcher("login.jsp");
         rd.forward(request, response);
     }
 %>
@@ -28,7 +28,7 @@ response.setHeader("Cache-Control", "no-cache"); //Forces caches to obtain a new
 
 	
 </head>
-    <form action="LogOutAdmin" method="post">
+    <form action="LogOut" method="post">
 
 	<image src = "Imagens/logoiff.gif" id ="logoIFF" />
 	<image src = "Imagens/jogos_internos.png" id = "logoJogos"/>
@@ -63,8 +63,6 @@ response.setHeader("Cache-Control", "no-cache"); //Forces caches to obtain a new
         <display:column property="nome" />
         <display:column property="descricao" />
         <display:column property="responsabilidades" />
-        <display:column title="Editar" href="CarregaComissao" paramId="nome" paramProperty="nome"><img src="edit.png"  title="Atualizar"/></display:column>
-        <display:column title="Deletar" href="DeletaComissao" paramId="nome" paramProperty="nome"><img src="delete.png" title="Apagar"/></display:column>
     </display:table>
 
 	
