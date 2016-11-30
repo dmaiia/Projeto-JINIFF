@@ -254,14 +254,21 @@ img {
     right:3%;
     
 }
+#Wan{
+    width:250px;
+    border: 1px solid black;
+    height: 420px; 
+    position:relative;
+    top:-171px;
+    right:-360px;
+}
 
 h1{
     font-size:20px;
     color:black;
     position:relative;
     top:-371px;
-    right:-360px;
-    border: 1px solid black;
+    right:-160px;
     text-align:center;
 }
 

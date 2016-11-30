@@ -35,7 +35,8 @@ response.setHeader("Cache-Control", "no-cache"); //Forces caches to obtain a new
 
 
        
-            <form action="LogOut" method="post">
+            <form action="LogOut
+                  " method="post">
 
 	<image src = "Imagens/logoiff.gif" id ="logoIFF" />
 	<image src = "Imagens/jogos_internos.png" id = "logoJogos"/>
@@ -46,7 +47,7 @@ response.setHeader("Cache-Control", "no-cache"); //Forces caches to obtain a new
 
 	<nav>
   <ul class="menu">
-        <li><a href="index.jsp"><strong>HOME</strong></a></li>
+        <li><a href="home.jsp"><strong>HOME</strong></a></li>
         <li><a href="#"><strong>SOBRE</strong></a></li>
             <li><a href="#"><strong>MENU</strong></a>
                 <ul>
