@@ -29,13 +29,11 @@ public class CarregaAdmin extends HttpServlet {
             throws ServletException, IOException {
         String email = request.getParameter("email");
       
-        System.out.println("loko vei... " + email);
+        
         AdminDAO adminDao = new AdminDAO();
         Aluno admin= adminDao.recuperaAluno(email);
        
-        System.out.println("what?");
-        System.out.println("Só p testar: " + admin.getEmail());
-       
+        
         request.getSession(true).setAttribute("alunoAtual", admin);
         response.sendRedirect("AtualizaAdmin.jsp");
     }

@@ -83,34 +83,34 @@
        
            
            <label>
-            <input type="text" value="${sessionScope.alunoAtual.nome}" name="firstname" required="required" placeholder="Digite seu nome..." /> <br/> <br/>
+            <input type="text" value="${sessionScope.currentSessionUser.nome}" name="firstname" required="required" placeholder="Digite seu nome..." /> <br/> <br/>
            </label>
            <label>
-            <input type="text" value="${sessionScope.alunoAtual.sobrenome}" name="lastname" required="required" placeholder="Digite seu sobrenome..." /> <br/> <br/>
+            <input type="text" value="${sessionScope.currentSessionUser.sobrenome}" name="lastname" required="required" placeholder="Digite seu sobrenome..." /> <br/> <br/>
            </label>
            <label>
-            <input type="radio" value="${sessionScope.alunoAtual.sexo}" name="gender" required="required" /> <p> Masculino </p> <br/> <br/>
+            <input type="radio" value="${sessionScope.currentSessionUser.sexo}" name="gender" required="required" /> <p> Masculino </p> <br/> <br/>
            </label>
            <label>
-            <input type="radio" value="${sessionScope.alunoAtual.sexo}" name="gender" required="required" /> <p> Feminino</p> <br/> <br/>
+            <input type="radio" value="${sessionScope.currentSessionUser.sexo}" name="gender" required="required" /> <p> Feminino</p> <br/> <br/>
            </label>
            <label>
-            <input type="date" value="${sessionScope.alunoAtual.dataNascimento}" id="data" OnKeyUp="mascaraData(this);" maxlength="10" name="bday" required="required" placeholder="Data de Nascimento..." /> <br/> <br/>
+            <input type="date" value="${sessionScope.currentSessionUser.dataNascimento}" id="data" OnKeyUp="mascaraData(this);" maxlength="10" name="bday" required="required" placeholder="Data de Nascimento..." /> <br/> <br/>
            </label>
            <label>
-            <input type="text" value="${sessionScope.alunoAtual.curso}" name="course" required="required" placeholder="Digite seu Curso..." /> <br/> <br/>
+            <input type="text" value="${sessionScope.currentSessionUser.curso}" name="course" required="required" placeholder="Digite seu Curso..." /> <br/> <br/>
            </label>
            <label>
-            <input type="text" maxlength="1" value="${sessionScope.alunoAtual.ano}" name="ano" required="required" placeholder="Digite sua série..." /> <br/> <br/>
+            <input type="text" maxlength="1" value="${sessionScope.currentSessionUser.ano}" name="ano" required="required" placeholder="Digite sua série..." /> <br/> <br/>
            </label>
            <label>
-            <input type="text" value="${sessionScope.alunoAtual.numero}" onkeypress="mascara(this, '### #-####-####')" maxlength="15" name="numero" required="required" placeholder="Digite seu WhatsApp..." /> <br/> <br/>
+            <input type="text" value="${sessionScope.currentSessionUser.numero}" onkeypress="mascara(this, '### #-####-####')" maxlength="15" name="numero" required="required" placeholder="Digite seu WhatsApp..." /> <br/> <br/>
            </label> 
            <label>
-            <input type="email" value="${sessionScope.alunoAtual.email}" readonly="true" name="email" required="required" placeholder="Digite seu e-mail..." /> <br/> <br/>
+            <input type="email" value="${sessionScope.currentSessionUser.email}" readonly="true" name="email" required="required" placeholder="Digite seu e-mail..." /> <br/> <br/>
            </label>
            <label> 
-            <input type="password" value="${sessionScope.alunoAtual.senha}" name="password" required="required" placeholder="Digite sua Senha..."/> <br/> <br/>
+            <input type="password" value="${sessionScope.currentSessionUser.senha}" name="password" required="required" placeholder="Digite sua Senha..."/> <br/> <br/>
            </label>
            <label>
             <input type="submit" class="botao" value="Atualizar">

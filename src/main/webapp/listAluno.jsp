@@ -1,12 +1,8 @@
-
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@taglib uri="http://displaytag.sf.net" prefix="display"%>
 <%@page import="org.displaytag.*" %>
 <%@page import="java.util.*" %>
 <%@page import="Entidade.*" %>
-
-
 <!DOCTYPE html>
 
 <%
@@ -28,12 +24,14 @@ response.setHeader("Cache-Control", "no-cache"); //Forces caches to obtain a new
 
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link rel="stylesheet" type="text/css" href="dysplaytagexemplo.css">
+        
+        <title>Lista</title>
+        <link rel="stylesheet" type="text/css" href="modalidade3.css">
                                         <link rel="shortcut icon" href="Imagens/j.png" >
 
-        <title>Lista</title>
+        
     </head>
+            <fieldset>	
     <body>
         <form action="LogOut" method="post">
 
@@ -52,13 +50,13 @@ response.setHeader("Cache-Control", "no-cache"); //Forces caches to obtain a new
         <li><a href="#"><strong>SOBRE</strong></a></li>
             <li><a href="#"><strong>MENU</strong></a>
                 <ul>
-                      <li><a href="#"><strong>MODALIDADES</strong></a></li>
-                      <li><a href="#"><strong>COMISSOES</strong></a></li>
+                      <li><a href="ListaModalidade3"><strong>MODALIDADES</strong></a></li>
+                      <li><a href="ListaComissao3"><strong>COMISSOES</strong></a></li>
                       <li><a href="#"><strong>TABELAS</strong></a></li>                   
                 </ul>
             </li>
         <li><a href="#"><strong>CORDENADORES</strong></a></li>
-        <li><a href="#"><strong>CONTATO</strong></a></li> 
+        <li><a href="Contato"><strong>CONTATO</strong></a></li> 
         <li><a href="ListaAluno"><strong>DADOS PESSOAIS</strong></a></li>
         
         
@@ -75,8 +73,8 @@ response.setHeader("Cache-Control", "no-cache"); //Forces caches to obtain a new
         <display:column property="ano" />
         <display:column property="numero" />
         <display:column property="senha" />
-        <display:column title="Editar" href="CarregaAluno" paramId="email" paramProperty="email"><img src="edit.png"  title="Atualizar"/></display:column>
-        <display:column title="Deletar" href="DeletaAluno" paramId="email" paramProperty="email"><img src="delete.png" title="Apagar"/></display:column>
+        <display:column title="Editar" href="CarregaAluno" paramId="nome" paramProperty="nome"><img src="edit.png"  title="Atualizar"/></display:column>
+        <display:column title="Deletar" href="DeletaAluno" paramId="nome" paramProperty="nome"><img src="delete.png" title="Apagar"/></display:column>
     </display:table>
 
 		
@@ -95,4 +93,6 @@ response.setHeader("Cache-Control", "no-cache"); //Forces caches to obtain a new
 <br/>
         </form>
     </body>
+    </fieldset>
+
 </html>
