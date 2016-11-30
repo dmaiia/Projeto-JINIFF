@@ -1,6 +1,7 @@
 package Servlet;
 
 import Entidade.Aluno;
+import Servlet.Login;
 import Hibernate.AlunoDAO;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -31,7 +32,7 @@ public class AtualizaAluno extends HttpServlet {
         // vc pega todas as propriedades que vem do form
         // só que aí vc joga essas informações no método de update do DAO.
 //
-    Aluno aluno = (Aluno) request.getSession(true).getAttribute("alunoAtual");
+    Aluno aluno = (Aluno) request.getSession(true).getAttribute("currentSessionUser");
         AlunoDAO alunodao = new AlunoDAO();
 
             String nome = request.getParameter("firstname");
@@ -52,10 +53,11 @@ public class AtualizaAluno extends HttpServlet {
 
             // aí, depois de atualizar, vc recarrega a list na sessão http:
             List<Aluno> alunos = alunodao.listaAluno();
-            request.getSession(true).setAttribute("alunos", alunos);
+            
+            request.getSession(true).setAttribute("alunos" , alunos );
             // e volta para a página da listagem
             // TODO: Se nessa volta tiver uma mensagem falando que deu certo, ganha uma moral extra
-            response.sendRedirect("listAluno.jsp");
+            response.sendRedirect("home.jsp");
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
