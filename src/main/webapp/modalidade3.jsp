@@ -59,6 +59,7 @@ response.setHeader("Cache-Control", "no-cache"); //Forces caches to obtain a new
             </li>
         <li><a href=""><strong>COORDENADORES</strong></a></li>
         <li><a href="Contato.jsp"><strong>CONTATO</strong></a></li> 
+        <li><a href="ListaAluno"><strong>DADOS PESSOAIS</strong></a></li>
        
 </nav>
         <div id="Modalidades">
