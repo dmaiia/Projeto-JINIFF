@@ -188,6 +188,7 @@ width:150px;
     height:200px;
     position:relative;
     bottom:-100px;
+    z-index: -1;
 }
 
 .dataTable th {
