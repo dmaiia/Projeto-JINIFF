@@ -1,59 +1,65 @@
+<%@page import="Entidade.Admin"%>
 <!DOCTYPE html>
+<%
+response.setHeader("Cache-Control", "no-cache"); //Forces caches to obtain a new copy of the page from the origin server
+    response.setHeader("Cache-Control", "no-store"); //Directs caches not to store the page under any circumstance
+    response.setDateHeader("Expires", 0); //Causes the proxy cache to see the page as "stale"
+    response.setHeader("Pragma", "no-cache"); //HTTP 1.0 backward compatibility
+    Admin admin = (Admin) session.getAttribute("currentSessionUser");
+    if (null == admin) {
+        request.setAttribute("Error", "Sessao finalizada. Por favor, faça seu login.");
+        RequestDispatcher rd = request.getRequestDispatcher("adminlogin.jsp");
+        rd.forward(request, response);
+    }
+%>
 <html>
 <head>
 
     <title>Contato</title>
    
-    <link rel="stylesheet" href="contato.css" type="text/css" />
+    <link rel="stylesheet" href="contact.css" type="text/css" />
                                         <link rel="shortcut icon" href="Imagens/j.png" >
 
    
 </head>
 <body>
-    
+    <form action="LogOut" method="post">
 <fieldset>
 
     <image src = "Imagens/logoiff.gif" id ="logoIFF" />
     <image src = "Imagens/jogos_internos.png" id = "logoJogos"/>
 
 
-    <div id = "login">
-            <a href="login.jsp">
-                <p><strong> Login </strong></p>
-            </a>
-        </div>
-       
-        <div id = "logi">
-            <a href="adminlogin.jsp">
-                <p><strong> Login Admin</strong></p>
-            </a>
-        </div>
+   		 <input type="submit" class="botao" value="Sair">
 
 
        
 
     <nav>
   <ul class="menu">
-        <li><a href="index.jsp"><strong>HOME</strong></a></li>
+        <li><a href="homeadm.jsp"><strong>HOME</strong></a></li>
         <li><a href="#"><strong>SOBRE</strong></a></li>
             <li><a href="#"><strong>MENU</strong></a>
                 <ul>
-                      <li><a href="ListaModalidade2"><strong>MODALIDADES</strong></a></li>
-                      <li><a href="ListaComissao2"><strong>COMISSOES</strong></a></li>
+                      <li><a href="ListaModalidade"><strong>MODALIDADES</strong></a></li>
+                      <li><a href="ListaComissao"><strong>COMISSOES</strong></a></li>
                       <li><a href="#"><strong>TABELAS</strong></a></li>                                    
                 </ul>
             </li>
         <li><a href="#"><strong>COORDENADORES</strong></a></li>
 
         <li><a href=""><strong>CONTATO</strong></a></li>
-        <li><a href="#"><strong>CADASTROS</strong></a>
+               <li><a href="ListaAdmin"><strong>LISTA DE USUÁRIOS</strong></a></li>
+        <li><a href=""><strong>CADASTROS</strong></a>
         
                 <ul>
-                    <li><a href="cadastro.jsp"><strong>CADASTRO USUÁRIO</strong></a></li>                    
+                    <li><a href="cadastromodalidade.jsp"><strong>CADASTRO MODALIDADES</strong></a></li>                    
+                    <li><a href="cadastrarcomissao.jsp"><strong>CADASTRO COMISSÕES</strong></a></li>            
 
+               
                 </ul>
             </li>
-  </ul>
+
 </nav>
        
             <image src = "Imagens/Adrielly.png" id ="Adrielly" />
@@ -89,7 +95,7 @@
       <div id="menu5">
 	  <ul>
 		<li><a href="https://www.facebook.com/adrielly.maia.14?fref=ts">Adrielly C. Maia</a></li>
-		<li><a href="https://www.facebook.com/adrielly.maia.14?fref=ts">17 anos</a></li>
+		<li><a href="https://www.facebook.com/adrielly.maia.14?fref=ts">18 anos</a></li>
 		<li><a href="https://www.facebook.com/adrielly.maia.14?fref=ts">Diretora de Aplicação</a></li>
 		
 	  </ul>
@@ -109,6 +115,6 @@
 
     </div>
 </fieldset>
-    
+                </form>
 </body>
 </html>

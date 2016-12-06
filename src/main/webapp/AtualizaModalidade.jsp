@@ -59,7 +59,7 @@
                 </ul>
             </li>
             <li><a href="#"><strong>COORDENADORES</strong></a></li>
-            <li><a href="Contato.jsp"><strong>CONTATO</strong></a></li>
+            <li><a href="contatoadm.jsp"><strong>CONTATO</strong></a></li>
         </ul>
     </nav>
 

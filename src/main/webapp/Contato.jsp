@@ -90,7 +90,7 @@
 	  <ul>
 		<li><a href="https://www.facebook.com/adrielly.maia.14?fref=ts">Adrielly C. Maia</a></li>
 		<li><a href="https://www.facebook.com/adrielly.maia.14?fref=ts">17 anos</a></li>
-		<li><a href="https://www.facebook.com/adrielly.maia.14?fref=ts">Assistente Técnica</a></li>
+		<li><a href="https://www.facebook.com/adrielly.maia.14?fref=ts">Diretora de Aplicação</a></li>
 		
 	  </ul>
 	</div>
