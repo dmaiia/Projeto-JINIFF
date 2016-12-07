@@ -48,12 +48,12 @@ response.setHeader("Cache-Control", "no-cache"); //Forces caches to obtain a new
                 <ul>
 
                       <li><a href="ListaModalidade"><strong>MODALIDADES</strong></a></li>
-                      <li><a href="#"><strong>COMISSOES</strong></a></li>
+                      <li><a href="ListaComissao"><strong>COMISSOES</strong></a></li>
                       <li><a href="#"><strong>TABELAS</strong></a></li>                   
                 </ul>
             </li>
         <li><a href="#"><strong>COORDENADORES</strong></a></li>
-        <li><a href="#"><strong>CONTATO</strong></a></li> 
+        <li><a href="contatoadm.jsp"><strong>CONTATO</strong></a></li> 
         <li><a href="ListaAdmin"><strong>LISTA DE USUÁRIOS</strong></a></li>
         <li><a href=""><strong>CADASTROS</strong></a>
         

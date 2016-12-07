@@ -1,10 +1,4 @@
-body{
-    
-}
 
-body:hover{
-    
-}
 				/* ID DAS LOGOS */
 #logoIFF{
 	float:left;
@@ -27,6 +21,7 @@ body:hover{
 	height: 420px; 
         right: 15%;
         top:20px;
+        z-index: -1;
 
         
 }
@@ -55,6 +50,16 @@ body:hover{
         right: 9%;
         height: 420px; 
         top:20px;
+        z-index: -1;
+
+}
+#Ramon:hover{
+	margin-left: 16%;	
+        position: relative;
+        right: 9%;
+        height: 520px; 
+        top:20px;
+        z-index: -1;
 
 }
 #logoCentral{
@@ -247,30 +252,123 @@ width:150px;
 img {
     border: 0px;
 }
-#Workers{
-    position: relative;
-    margin-top: 8%;
-    margin-left: 7%;
-    right:3%;
-    
-}
 
-h1{
-    font-size:20px;
-    color:black;
-    position:relative;
-    top:-371px;
-    right:-360px;
-    border: 1px solid black;
-    text-align:center;
-}
+#menu2 {
+		width: 20%;
+		margin: 0; padding: 0;
+                position:relative;
+                top:-376px;
+                right:-350px;
+		float: left;
+                
+		}
 
-a{
-    color:black;
-    padding: 5px;
-    text-align:center;
-    position:relative;
-    top:-681px;
-    right:-360px;
-
+#menu2 ul li {
+		margin: 0; padding: 0px;
+		border-bottom: 1px solid #CCC;
+		text-align: left;
+		list-style-type: none;
+		}
+#menu2 a:link {
+		background: #F5F5F5;
+		color: black;
+		font-weight: bold;
+		text-decoration: none;
+		padding: 8px;
+		display: block;
+		}
+#menu2 a:hover {
+		background: #E5F0FF;
+		color:black;
 }
+		
+#menu3 {
+		width: 20%;
+		margin: 0; padding: 0;
+                position:relative;
+                top:-827px;
+                right:-715px;
+		float: left;
+                
+		}
+
+#menu3 ul li {
+		margin: 0; padding: 0px;
+		border-bottom: 1px solid #CCC;
+		text-align: left;
+		list-style-type: none;
+		}
+                
+#menu3 a:link {
+		background: #F5F5F5;
+		color: black;
+		font-weight: bold;
+		text-decoration: none;
+		padding: 8px;
+		display: block;
+		}
+                
+#menu3 a:hover {
+		background: #E5F0FF;
+		color:black;
+		}
+#menu4 {
+		width: 19%;
+		margin: 0; padding: 0;
+                position:relative;
+                top:-376px;
+                right:-480px;
+		float: left;
+                
+		}
+
+#menu4 ul li {
+		margin: 0; padding: 0px;
+		border-bottom: 1px solid #CCC;
+		text-align: left;
+		list-style-type: none;
+		}
+                
+#menu4 a:link {
+		background: #F5F5F5;
+		color: black;
+		font-weight: bold;
+		text-decoration: none;
+		padding: 8px;
+		display: block;
+		}
+                
+#menu4 a:hover {
+		background: #E5F0FF;
+		color:black;
+		}
+#menu5 {
+		width: 19%;
+		margin: 0; padding: 0;
+                position:relative;
+                top:-827px;
+                right:355px;
+		float: left;
+                
+		}
+
+#menu5 ul li {
+		margin: 0; padding: 0px;
+		border-bottom: 1px solid #CCC;
+		text-align: left;
+		list-style-type: none;
+		}
+                
+#menu5 a:link {
+		background: #F5F5F5;
+		color: black;
+		font-weight: bold;
+		text-decoration: none;
+		padding: 8px;
+		display: block;
+		}
+                
+#menu5 a:hover {
+		background: #E5F0FF;
+		color:black;
+		}

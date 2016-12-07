@@ -1,59 +1,56 @@
+<%@page import="Entidade.Aluno"%>
 <!DOCTYPE html>
+<%
+response.setHeader("Cache-Control", "no-cache"); //Forces caches to obtain a new copy of the page from the origin server
+    response.setHeader("Cache-Control", "no-store"); //Directs caches not to store the page under any circumstance
+    response.setDateHeader("Expires", 0); //Causes the proxy cache to see the page as "stale"
+    response.setHeader("Pragma", "no-cache"); //HTTP 1.0 backward compatibility
+    Aluno aluno = (Aluno) session.getAttribute("currentSessionUser");
+    if (null == aluno) {
+        request.setAttribute("Error", "Sessao finalizada. Por favor, faça seu login.");
+        RequestDispatcher rd = request.getRequestDispatcher("login.jsp");
+        rd.forward(request, response);
+    }
+%>
 <html>
 <head>
 
     <title>Contato</title>
    
-    <link rel="stylesheet" href="contato.css" type="text/css" />
+    <link rel="stylesheet" href="contact.css" type="text/css" />
                                         <link rel="shortcut icon" href="Imagens/j.png" >
 
    
 </head>
 <body>
-    
+    <form action="LogOut" method="post">
 <fieldset>
 
     <image src = "Imagens/logoiff.gif" id ="logoIFF" />
     <image src = "Imagens/jogos_internos.png" id = "logoJogos"/>
 
 
-    <div id = "login">
-            <a href="login.jsp">
-                <p><strong> Login </strong></p>
-            </a>
-        </div>
-       
-        <div id = "logi">
-            <a href="adminlogin.jsp">
-                <p><strong> Login Admin</strong></p>
-            </a>
-        </div>
+   		 <input type="submit" class="botao" value="Sair">
 
 
        
 
     <nav>
   <ul class="menu">
-        <li><a href="index.jsp"><strong>HOME</strong></a></li>
+        <li><a href="home.jsp"><strong>HOME</strong></a></li>
         <li><a href="#"><strong>SOBRE</strong></a></li>
             <li><a href="#"><strong>MENU</strong></a>
                 <ul>
-                      <li><a href="ListaModalidade2"><strong>MODALIDADES</strong></a></li>
-                      <li><a href="ListaComissao2"><strong>COMISSOES</strong></a></li>
+                      <li><a href="ListaModalidade3"><strong>MODALIDADES</strong></a></li>
+                      <li><a href="ListaComissao3"><strong>COMISSOES</strong></a></li>
                       <li><a href="#"><strong>TABELAS</strong></a></li>                                    
                 </ul>
             </li>
         <li><a href="#"><strong>COORDENADORES</strong></a></li>
 
-        <li><a href=""><strong>CONTATO</strong></a></li>
-        <li><a href="#"><strong>CADASTROS</strong></a>
-        
-                <ul>
-                    <li><a href="cadastro.jsp"><strong>CADASTRO USUÁRIO</strong></a></li>                    
+        <li><a href="contact.jsp"><strong>CONTATO</strong></a></li>
+               <li><a href="ListaAluno"><strong>DADOS PESSOAIS</strong></a></li>
 
-                </ul>
-            </li>
-  </ul>
 </nav>
        
             <image src = "Imagens/Adrielly.png" id ="Adrielly" />
@@ -109,6 +106,6 @@
 
     </div>
 </fieldset>
-    
+                </form>
 </body>
 </html>

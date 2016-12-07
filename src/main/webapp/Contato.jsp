@@ -34,7 +34,7 @@
 
     <nav>
   <ul class="menu">
-        <li><a href="#"><strong>HOME</strong></a></li>
+        <li><a href="index.jsp"><strong>HOME</strong></a></li>
         <li><a href="#"><strong>SOBRE</strong></a></li>
             <li><a href="#"><strong>MENU</strong></a>
                 <ul>
@@ -61,13 +61,39 @@
             <image src = "Imagens/WANDIN.png" id ="Wandinho" />
             <image src = "Imagens/Diego.png" id ="Diego" />
 
-       <div id= "Wan">
-           <h1> Wanderson S. Tinoco </h1>
-           <a>  Idade:18 anos </a>
-           <a>  Sexo: Masculino </a>
-           <a>  Função: Web Designer/Progamador </a>
-           
-       </div>
+      <div id="menu2">
+	  <ul>
+		<li><a href="https://www.facebook.com/wandinho.souza.9?ref=bookmarks">Wanderson S. Tinoco</a></li>
+		<li><a href="https://www.facebook.com/wandinho.souza.9?ref=bookmarks">18 anos</a></li>
+		<li><a href="https://www.facebook.com/wandinho.souza.9?ref=bookmarks">Diretor de Web Designer/Programador </a></li>
+		
+	  </ul>
+	</div>
+      
+      <div id="menu3">
+	  <ul>
+		<li><a href="https://www.facebook.com/ramon.leandrofernandes">Ramon L. Fernandes</a></li>
+		<li><a href="https://www.facebook.com/ramon.leandrofernandes">18 anos</a></li>
+		<li><a href="https://www.facebook.com/ramon.leandrofernandes">Diretor de Programação/Web Designer</a></li>
+		
+	  </ul>
+	</div>
+      <div id="menu4">
+	  <ul>
+		<li><a href="https://www.facebook.com/D.MaiaBr?ref=bookmarks">Diego C. Maia</a></li>
+		<li><a href="https://www.facebook.com/D.MaiaBr?ref=bookmarks">18 anos</a></li>
+		<li><a href="https://www.facebook.com/D.MaiaBr?ref=bookmarks">Product Owner</a></li>
+		
+	  </ul>
+	</div>
+      <div id="menu5">
+	  <ul>
+		<li><a href="https://www.facebook.com/adrielly.maia.14?fref=ts">Adrielly C. Maia</a></li>
+		<li><a href="https://www.facebook.com/adrielly.maia.14?fref=ts">17 anos</a></li>
+		<li><a href="https://www.facebook.com/adrielly.maia.14?fref=ts">Diretora de Aplicação</a></li>
+		
+	  </ul>
+	</div>
    
     <div id = "inferior">
    

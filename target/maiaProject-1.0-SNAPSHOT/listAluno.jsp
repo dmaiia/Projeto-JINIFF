@@ -31,8 +31,10 @@ response.setHeader("Cache-Control", "no-cache"); //Forces caches to obtain a new
 
         
     </head>
-            <fieldset>	
     <body>
+        
+                    <fieldset>	
+
         <form action="LogOut" method="post">
 
         <image src = "Imagens/logoiff.gif" id ="logoIFF" />
@@ -56,7 +58,7 @@ response.setHeader("Cache-Control", "no-cache"); //Forces caches to obtain a new
                 </ul>
             </li>
         <li><a href="#"><strong>CORDENADORES</strong></a></li>
-        <li><a href="Contato"><strong>CONTATO</strong></a></li> 
+        <li><a href="contact.jsp"><strong>CONTATO</strong></a></li> 
         <li><a href="ListaAluno"><strong>DADOS PESSOAIS</strong></a></li>
         
         
@@ -92,7 +94,8 @@ response.setHeader("Cache-Control", "no-cache"); //Forces caches to obtain a new
     
 <br/>
         </form>
+            </fieldset>
+
     </body>
-    </fieldset>
 
 </html>
