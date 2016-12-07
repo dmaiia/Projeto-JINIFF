@@ -1,4 +1,5 @@
 package Servlet;
+
 import Entidade.Aluno;
 import Hibernate.AlunoDAO;
 import java.io.IOException;
@@ -25,13 +26,14 @@ public class CarregaAluno extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+
         String email = request.getParameter("email");
-      
+
         AlunoDAO alunoDao = new AlunoDAO();
-        Aluno aluno= alunoDao.recuperaAluno(email);
-       
-       
+        Aluno aluno = alunoDao.recuperaAluno(email);
+
         request.getSession(true).setAttribute("alunoAtual", aluno);
+
         response.sendRedirect("Atualiza.jsp");
     }
 

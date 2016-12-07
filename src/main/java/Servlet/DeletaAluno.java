@@ -32,7 +32,7 @@ public class DeletaAluno extends HttpServlet {
         try {
 
 
-            Aluno aluno = (Aluno) request.getSession(true).getAttribute("alunoAtual");
+            Aluno aluno = (Aluno) request.getSession(true).getAttribute("currentSessionUser");
             AlunoDAO alunodao = new AlunoDAO();
 
             alunodao.deleteAluno(aluno.getEmail());
@@ -41,7 +41,7 @@ public class DeletaAluno extends HttpServlet {
             request.getSession(true).setAttribute("alunos", alunos);
             // e volta para a página da listagem
             // TODO: Se nessa volta tiver uma mensagem falando que deu certo, ganha uma moral extra
-            response.sendRedirect("index.jsp");
+            response.sendRedirect("LogOut");
 
         } finally {
             out.close();

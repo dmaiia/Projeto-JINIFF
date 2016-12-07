@@ -10,6 +10,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
  *
@@ -28,36 +29,41 @@ public class AtualizaAluno extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        HttpSession session = request.getSession(true);
+
         //esse servlet vai ser bem parecido com o do cadastro.
         // vc pega todas as propriedades que vem do form
         // só que aí vc joga essas informações no método de update do DAO.
 //
-    Aluno aluno = (Aluno) request.getSession(true).getAttribute("currentSessionUser");
+        Aluno aluno = (Aluno) request.getSession(true).getAttribute("currentSessionUser");
         AlunoDAO alunodao = new AlunoDAO();
 
-            String nome = request.getParameter("firstname");
-            String sobrenome = request.getParameter("lastname");
-            String sexo = request.getParameter("gender");
-            String data_nascimento = request.getParameter("bday");
-            String curso = request.getParameter("course");
-            String ano = request.getParameter("ano");
-            String email = request.getParameter("email");
-            String senha = request.getParameter("password");
-            String numero = request.getParameter("numero");
-            
+        String nome = request.getParameter("firstname");
+        String sobrenome = request.getParameter("lastname");
+        String sexo = request.getParameter("gender");
+        String data_nascimento = request.getParameter("bday");
+        String curso = request.getParameter("course");
+        String ano = request.getParameter("ano");
+        String email = request.getParameter("email");
+        String senha = request.getParameter("password");
+        String numero = request.getParameter("numero");
+
 //     ESSE METODO VCS VAO PRECISAR MUDAR PARA QUE TENHA
 //      TODOS OS PARAMETROS DA SUA ENTIDADE!
-            alunodao.updateAluno(aluno.getEmail(), nome, sobrenome, data_nascimento, sexo, curso, ano,
-            numero,  email, senha);
+        alunodao.updateAluno(aluno.getEmail(), nome, sobrenome, data_nascimento, sexo, curso, ano,
+                numero, email, senha);
 
+        // aí, depois de atualizar, vc recarrega a list na sessão http:
+        List<Aluno> alunos = alunodao.listaAluno();
 
-            // aí, depois de atualizar, vc recarrega a list na sessão http:
-            List<Aluno> alunos = alunodao.listaAluno();
-            
-            request.getSession(true).setAttribute("alunos" , alunos );
-            // e volta para a página da listagem
-            // TODO: Se nessa volta tiver uma mensagem falando que deu certo, ganha uma moral extra
-            response.sendRedirect("home.jsp");
+        request.getSession(true).setAttribute("alunos", alunos);
+        aluno = alunodao.recuperaAluno(email);
+        session.setAttribute("currentSessionUser", aluno);
+        session.setAttribute("alunoAtual", aluno);
+
+        // e volta para a página da listagem
+        // TODO: Se nessa volta tiver uma mensagem falando que deu certo, ganha uma moral extra
+        response.sendRedirect("confirmalogin.jsp");
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
