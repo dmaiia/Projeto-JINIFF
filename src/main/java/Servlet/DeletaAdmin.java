@@ -1,6 +1,7 @@
 package Servlet;
+
 import Entidade.Aluno;
-import Hibernate.AlunoDAO;
+import Hibernate.AdminDAO;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.List;
@@ -29,37 +30,22 @@ public class DeletaAdmin extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         PrintWriter out = response.getWriter();
         try {
-            /* TODO output your page here. You may use following sample code. */
-            out.println("<!DOCTYPE html>");
-            out.println("<html>");
-            out.println("<head>");
-            out.println("<title>Servlet DemiteEmpregado</title>");
-            out.println("</head>");
-            out.println("<body>");
-            out.println("<h1>Servlet DemiteEmpregado at " + request.getContextPath() + "</h1>");
-            out.println("ué... o Luiiiiiiiiiizzz não fez o servlet para Deletar a Entidade?");
-            out.println("<br/>Gente, quer moleza? Senta no pudim. Leiam os comentários no servlet para algumas instruções adicionais.");
-            out.println("</body>");
-            out.println("</html>");
 
-            // seguinte, aqui vcs precisam pegar a propriedade que veio do displaytag.
             String email = request.getParameter("email");
-            // eu coloquei o nome do código de "cod" lá na coluna do delete, no arquivo listaTotal.jsp
-   //         request.getParameter("cod");
-            /* daí vcs vão utilizar esse codigo
-            (no caso, A CHAVE PRIMÁRIA das vossas respectivas tabelas)
-            para chamar o objeto e deletá-lo.
-            O método no EmpregadoDAO parece funcionar blzinha...            */
-      AlunoDAO alunodao = new AlunoDAO();
 
-      alunodao.deleteAluno(email);
-        
-        List<Aluno> alunos = alunodao.listaAluno();
-  request.getSession(true).setAttribute("alunos", alunos);
+            //Aluno aluno = (Aluno) request.getSession(true).getAttribute("aluno");
+            //AdminDAO admindao = new AdminDAO();
+            AdminDAO admindao = new AdminDAO();
+            
+
+            admindao.deleteAluno(email);
+
+            List<Aluno> alunos = admindao.listaAluno();
+            request.getSession(true).setAttribute("alunos", alunos);
             // e volta para a página da listagem
             // TODO: Se nessa volta tiver uma mensagem falando que deu certo, ganha uma moral extra
-          response.sendRedirect("ListAdmin.jsp");
-           
+            response.sendRedirect("ListaAdmin");
+
         } finally {
             out.close();
         }
