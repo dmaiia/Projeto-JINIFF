@@ -79,6 +79,7 @@ response.setHeader("Cache-Control", "no-cache"); //Forces caches to obtain a new
         <display:column property="local" />
         <display:column title="Editar" href="CarregaModalidade" paramId="nome" paramProperty="nome"><img src="edit.png"  title="Atualizar"/></display:column>
         <display:column title="Deletar" href="DeletaModalidade" paramId="nome" paramProperty="nome"><img src="delete.png" title="Apagar"/></display:column>
+        
     </display:table>
 
 	

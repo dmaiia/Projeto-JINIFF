@@ -1,0 +1,7 @@
+﻿select m.*, 'sim' from modalidade m, participacao p
+where m.nome = p.lc_modalidade
+
+Union
+
+select m.*, 'não' from modalidade m, participacao p
+where m.nome != p.lc_modalidade
