@@ -23,7 +23,7 @@ response.setHeader("Cache-Control", "no-cache"); //Forces caches to obtain a new
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link rel="stylesheet" type="text/css" href="modalidade3.css">
+        <link rel="stylesheet" type="text/css" href="Modalidades.css">
                                         <link rel="shortcut icon" href="Imagens/j.png" >
 
         <title>Lista</title>

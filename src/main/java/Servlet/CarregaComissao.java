@@ -12,6 +12,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author luizc
  */
+
 public class CarregaComissao extends HttpServlet {
 
     /**
@@ -32,7 +33,6 @@ public class CarregaComissao extends HttpServlet {
        
        
         request.getSession(true).setAttribute("comissaoAtual", comissao);
-        response.sendRedirect("Atualiza.");
 
         response.sendRedirect("AtualizaComissao.jsp");
     }
